@@ -1,10 +1,10 @@
 ---
 layout: layouts/home.njk
 ---
-<p>This is where you write a quick intro about yourself or the blog or both.</p>
-<h2>Recent Posts</h2>
-{% set maxPosts = collections.posts.length | min(3) %}
-{% set postslist = collections.posts | head(-3) %}
+<p>{{ description or metadata.description }}</p>
+<h2>Post recientes</h2>
+{% set maxPosts = collections.posts.length | min(5) %}
+{% set postslist = collections.posts | head(-5) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<p>Más posts se pueden encontrar en <a href="{{ '/posts/' | url }}">el archivo</a>.</p>

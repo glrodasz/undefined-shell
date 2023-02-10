@@ -1,31 +1,43 @@
-html {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #282a36;
-  color: #fff;
-}
+html,
 body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 800px;
+  width: 100%;
+  color: #0d2e32;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 20px;
   margin: 1em auto;
   padding: 0 0.55em;
+  background: #e2ebee;
 }
+
 header {
   display: flex;
 }
+
 header ul {
   float: right;
 }
+
 header span {
   list-style-type: none;
   display: inline;
   padding: 0 0.2rem 0 0.2rem;
   vertical-align: middle;
 }
+
 a {
   text-decoration: none;
   color: #bd93f9;
 }
+
+
+
 .tag,
 time.post {
   color: #fff;
@@ -34,15 +46,30 @@ time.post {
   border: #fff solid 0.5px;
   border-radius: 2px;
   padding: 4px;
-  margin-right: 5px;
 }
+
+.tag {
+  background-color: #C5EAF0;
+  color: #0D2E32;
+  border: none;
+  padding: 8px;
+  white-space: nowrap;
+}
+
 ul.nav {
   list-style: none;
   padding-left: 0;
 }
-h1.title {
-  margin-bottom: -10px;
+
+ul.nav li {
+  margin-bottom: 10px;
 }
+
+h1.title {
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
 pre,
 code {
   background-color: #44475a;
@@ -54,32 +81,38 @@ code {
   width: 90%;
   margin: auto;
 }
+
 .inserted-sign {
   background-color: hsl(126, 31%, 39%);
 }
+
 .token.prefix.inserted,
 .token.prefix.deleted {
   background-color: #15202b;
 }
+
 .deleted-sign {
   background-color: hsl(0, 51%, 37%);
 }
+
 mark {
   background-color: #f1fa8c;
 }
+
 .post-nav-next {
   float: right;
 }
+
 blockquote {
   background-color: #44475a;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
 }
+
 blockquote p {
   display: inline;
 }
-
 
 p:has(img) {
   position: relative;
@@ -87,4 +120,10 @@ p:has(img) {
 
 img {
   width: 100%;
+}
+
+li.post {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

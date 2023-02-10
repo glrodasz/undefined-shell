@@ -1,45 +1,45 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
-  "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "Undefined Shell",
+  "url": "https://undefined.sh/",
+  "language": "es",
+  "description": "Programación y desarrollo web como no te lo habían contado.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Programación y desarrollo web como no te lo habían contado.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://undefined.sh/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": "https://undefined.sh/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
-    "url": "https://example.com/about-me/"
+    "name": "Guillermo Rodas",
+    "email": "me@guillermorodas.com",
+    "url": "https://undefined.sh/about-me/"
   },
   "nav": [{
-    "title": "home",
+    "title": "Inicio",
     "url": "/"
   },
   {
-    "title": "posts",
+    "title": "Posts",
     "url": "/posts"
   },
   {
-    "title": "about",
+    "title": "About",
     "url": "/about"
   },
   {
-    "title": "contact",
+    "title": "Contácto",
     "url": "/contact"
   },
   {
-    "title": "rss",
+    "title": "RSS",
     "url": "/feed/feed.xml"
   },
   {
-    "title": "search",
+    "title": "Search",
     "url": "/search"
   }],
   "config": {
