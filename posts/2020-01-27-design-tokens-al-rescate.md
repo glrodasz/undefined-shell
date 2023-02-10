@@ -3,7 +3,9 @@ title: Design Tokens al rescate
 slug: design-tokens-al-rescate
 date: 2020-01-27T11:11:51.000Z
 date_updated: 2021-01-19T23:26:17.000Z
-tags: CSS, Design Systems
+tags:
+ - CSS
+ - Design Systems
 desription: Se puede decir que los Design Tokens son una metodología que se encarga del manejo de variables en un sistema de diseño. Sin embargo, esta metodología se puede aplicar en una escala mucho más pequeña.
 layout: layouts/post.njk
 ---

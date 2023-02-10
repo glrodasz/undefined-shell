@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   color: #0d2e32;
   font-family: Arial, Helvetica, sans-serif;
@@ -33,21 +33,16 @@ header span {
 
 a {
   text-decoration: none;
-  color: #bd93f9;
+  color: #1B262C;
+  font-weight: bold;
 }
 
-
-
-.tag,
-time.post {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 10.5px;
-  border: #fff solid 0.5px;
-  border-radius: 2px;
-  padding: 4px;
+.post time {
+  width: 110px;
+  white-space: nowrap;
 }
 
+time.post,
 .tag {
   background-color: #C5EAF0;
   color: #0D2E32;
@@ -68,6 +63,7 @@ ul.nav li {
 h1.title {
   margin-bottom: 20px;
   line-height: 1;
+  width: 100%;
 }
 
 pre,

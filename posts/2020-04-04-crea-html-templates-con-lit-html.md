@@ -3,7 +3,10 @@ title: ¿Cómo funcionan los HTML Templates?
 slug: crea-html-templates-con-lit-html
 date: 2020-04-03T23:00:52.000Z
 date_updated: 2022-03-17T10:19:39.000Z
-tags: HTML, Web Components, JavaScript
+tags:
+ - HTML
+ - Web Components
+ - JavaScript
 description: La mayoría de las veces que trabajamos con HTML nos vemos en la necesidad de repetir secciones en multiples partes de una página e incluso en diferentes páginas.
 layout: layouts/post.njk
 ---
