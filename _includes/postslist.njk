@@ -1,13 +1,21 @@
-<ul class="nav">
-{% for post in postslist | reverse %}
-  <li class="post">
-    {% if metadata.config.showDateList %}<time datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>{% endif %}
-    <a class="title" href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    {% for tag in post.data.tags | filterTagList %}
-      {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-      {# {% if '#' not in tag%}<span class="tag">#</span>{% endif %} #}
-      <a class="tag" href="{{ tagUrl | url }}">{{ tag }}</a>
-    {% endfor %}
-  </li>
-{% endfor %}
-</ul>
+<section class="post-list">
+  {% for post in postslist | reverse %}
+    <article class="post-card">
+      {% if metadata.config.showDateList %}
+        <time datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
+      {% endif %}
+      <a class="title" href="{{ post.url | url }}">
+        {% if post.data.title %}
+          {{ post.data.title }}
+        {% else %}
+          <code>{{ post.url }}</code>
+        {% endif %}
+      </a>
+      {% for tag in post.data.tags | filterTagList %}
+        {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+        {# {% if '#' not in tag%}<span class="tag">#</span>{% endif %} #}
+        <a class="tag" href="{{ tagUrl | url }}">{{ tag }}</a>
+      {% endfor %}
+    </article>
+  {% endfor %}
+</section>

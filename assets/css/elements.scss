@@ -1,0 +1,39 @@
+@use "mixins";
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  background: var(--color-black-pearl-50);
+  padding: 16px 0 0;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+
+  @include mixins.container-width;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  @include mixins.container-width;
+}
+
+header nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+header nav ul a {
+  padding: 8px 16px;
+}
+
+a {
+  text-decoration: none;
+}

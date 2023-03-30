@@ -1,0 +1,18 @@
+.link-text-button-md {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--color-aquarius-800);
+
+  .is-active & {
+    color: var(--color-aquarius-600);
+  }
+}
+
+.paragraph-sm-bold {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}

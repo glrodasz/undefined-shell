@@ -18,30 +18,20 @@
     "email": "me@guillermorodas.com",
     "url": "https://undefined.sh/about-me/"
   },
-  "nav": [{
-    "title": "Inicio",
-    "url": "/"
-  },
-  {
-    "title": "Posts",
-    "url": "/posts"
-  },
-  {
-    "title": "About",
-    "url": "/about"
-  },
-  {
-    "title": "Contácto",
-    "url": "/contact"
-  },
-  {
-    "title": "RSS",
-    "url": "/feed/feed.xml"
-  },
-  {
-    "title": "Search",
-    "url": "/search"
-  }],
+  "nav": [
+    {
+      "title": "Inicio",
+      "url": "/"
+    },
+    {
+      "title": "Posts",
+      "url": "/posts"
+    },
+    {
+      "title": "RSS",
+      "url": "/feed/feed.xml"
+    }
+  ],
   "config": {
     "showDateList": true,
     "showDatePost": true

@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
-    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+
+    <!-- Feed -->
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
     <meta property="og:type" content="website">
@@ -13,21 +24,29 @@
     <meta property="og:url" content="{{ metadata.url + page.url.slice(1) }}">
     <meta property="og:title" content="{{ title or metadata.title }}">
     <meta property="og:description" content="{{ description or metadata.description }}">
-
     <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="{{ metadata.url + page.url.slice(1) }}">
     <meta property="twitter:title" content="{{ title or metadata.title }}">
     <meta property="twitter:description" content="{{ description or metadata.description }}">
   </head>
+
   <body>
     <header>
-      {%- for entry in metadata.nav %}
-        <span class="{% if entry.url == page.url %} active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a>{% if not loop.last %} - {% endif %}</span>
-      {%- endfor %}
-    </header>
-
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      {{ content | safe }}
-    </main>
+      <img src="{{ '/assets/logo/undefined-shell.svg' | url }}" alt="Logo">
+      <nav>
+        <ul>
+          {%- for entry in metadata.nav %}
+            <li class="{% if entry.url == page.url %}is-active{% endif %}">
+              <a class="link-text-button-md" href="{{ entry.url | url }}">{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+        </nav>
+      </header>
+      <main {% if templateClass %} class="{{ templateClass }}" {% endif %}>
+        {{ content | safe }}
+      </main>
+    </body>
+    <footer>
+      Footer</footer>
   </body>
 </html>

@@ -1,0 +1,15 @@
+.tag-list {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.tag a {
+  padding: 8px 12px;
+  color: var(--color-black-pearl-900);
+}
+
+.tag.is-active a {
+  color: var(--color-aquarius-50);
+  background-color: var(--color-black-pearl-900);
+}

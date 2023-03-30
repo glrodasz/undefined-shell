@@ -1,10 +1,23 @@
 ---
 layout: layouts/home.njk
 ---
-<p>{{ description or metadata.description }}</p>
-<h2>Post recientes</h2>
-{% set maxPosts = collections.posts.length | min(5) %}
-{% set postslist = collections.posts | head(-5) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
-<p>Más posts se pueden encontrar en <a href="{{ '/posts/' | url }}">el archivo</a>.</p>
+
+<div>
+  <section class="tag-search">
+    <ul class="tag-list">
+      <li class="tag is-active">
+        <a class="paragraph-sm-bold" href="/">Todos</a>
+      </li>
+      {% for tag in collections.tagList %}
+        {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+        <li class="tag">
+          <a class="paragraph-sm-bold" href="{{ tagUrl | url }}">{{ tag }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <input type="text" class="search-input" placeholder="Buscar"></section>
+    {% set maxPosts = collections.posts.length | min(5) %}
+    {% set postslist = collections.posts | head(-5) %}
+    {% set postslistCounter = collections.posts | length %}
+    {% include "postslist.njk" %}
+  </div>
