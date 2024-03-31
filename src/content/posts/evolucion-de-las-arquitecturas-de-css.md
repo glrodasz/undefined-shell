@@ -1,7 +1,7 @@
 ---
 title: Evolución de las Arquitecturas y Metodologías de CSS
 pubDate: "2021-01-10T16:51:36.000Z"
-dateUpdated: "2021-02-23T12:35:06.000Z"
+updatedDate: "2021-02-23T12:35:06.000Z"
 tags: CSS
 description: Las Arquitecturas de CSS nos ayudan a escalar y mantener nuestras hojas de estilo en el tiempo. Estas son necesarias porque, el CSS, al carecer de un sistema de módulos conveniente y debido a su naturaleza de sobrescritura en cascada, crea la combinación perfecta para generar un ambiente caótico.
 heroImage: "https://images.unsplash.com/photo-1567344173647-dfdb5fb8b318?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
@@ -12,7 +12,7 @@ Las Arquitecturas de CSS nos ayudan a escalar y mantener nuestras hojas de estil
 Si bien cada arquitectura propone una solución "absoluta", es bien sabido que usarlas en conjunto puede traer ciertos beneficios. Pero, como todo, no hay que abusar y definitivamente hay que conocer las combinaciones que no tienen sentido en absoluto. Un ejemplo es usar un framework de clases utilitarias como Tailwind CSS mediante un preprocesador como SASS con la directiva @apply. Lo único que se esta haciendo aquí es agregar una capa extra de complejidad que vuelve a nuestro proyecto redundante y absurda.
 
 ```scss
-@import 'components/card.scss';
+@import "components/card.scss";
 
 .home {
   @apply flex flex-col items-center justify-center px-5 py-5;
@@ -33,7 +33,7 @@ Si bien cada arquitectura propone una solución "absoluta", es bien sabido que u
 }
 ```
 
-*Un claro ejemplo de cómo se esta *[*desaprovechando la filosofía de Tailwind CSS*](https://tailwindcss.com/docs/using-with-preprocessors)*, quizás por costumbre o moda, sin realmente entender su propósito.*
+_Un claro ejemplo de cómo se esta _[_desaprovechando la filosofía de Tailwind CSS_](https://tailwindcss.com/docs/using-with-preprocessors)_, quizás por costumbre o moda, sin realmente entender su propósito._
 
 Así que, vamos a hablar sobre lo bueno, lo malo y lo feo de las arquitecturas y metodologías más populares.
 
@@ -59,27 +59,27 @@ Uno de los éxitos de OOCSS aplicado al mundo real ha sido el **media object**. 
 
 ## SMACSS
 
-*Scalable and Modular Architecture of CSS* fue la promesa que nunca se cumplió de solucionar todos nuestros problemas con el CSS. Parecía una idea muy atractiva, pero al aplicarlo al mundo real surgían más preguntas que respuestas. Debo decir que yo mismo tomé [el curso dictado por el mismísimo autor Jonathan Snook](https://frontendmasters.com/courses/smacss/) y aun así me siguió pareciendo bastante complicado.
+_Scalable and Modular Architecture of CSS_ fue la promesa que nunca se cumplió de solucionar todos nuestros problemas con el CSS. Parecía una idea muy atractiva, pero al aplicarlo al mundo real surgían más preguntas que respuestas. Debo decir que yo mismo tomé [el curso dictado por el mismísimo autor Jonathan Snook](https://frontendmasters.com/courses/smacss/) y aun así me siguió pareciendo bastante complicado.
 
 Una de las cosas que puedo rescatar de SMACSS es la categorización de clases exclusivas para el comportamiento de elementos en un layout. Como, por ejemplo, una clase que determina un ancho fijo cuando se aplica a los elementos.
 
 ```css
 #article {
-    width: 80%;
-    float: left;
+  width: 80%;
+  float: left;
 }
 
 #sidebar {
-    width: 20%;
-    float: right;
+  width: 20%;
+  float: right;
 }
 
 .l-fixed #article {
-    width: 600px;
+  width: 600px;
 }
 
 .l-fixed #sidebar {
-    width: 200px;
+  width: 200px;
 }
 ```
 
@@ -87,13 +87,13 @@ También, podemos rescatar la categoría de clases para manejar estados de los e
 
 ```css
 .tab {
-    background-color: purple;
-    color: white;
+  background-color: purple;
+  color: white;
 }
 
 .is-tab-active {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 ```
 
@@ -109,12 +109,17 @@ SUITCSS se podría considerar una evolución de las arquitecturas ya mencionadas
 Esta metodología es una de las pioneras en traer el concepto de componentes a partir de los elementos HTML. Por eso, las clases de los elementos tienen el prefijo del nombre del componente al que hacen referencia.
 
 ```css
-.MyComponent {}
-.MyComponent.is-animating {}
-.MyComponent--modifier {}
+.MyComponent {
+}
+.MyComponent.is-animating {
+}
+.MyComponent--modifier {
+}
 
-.MyComponent-part {}
-.MyComponent-anotherPart {}
+.MyComponent-part {
+}
+.MyComponent-anotherPart {
+}
 ```
 
 Twitter Bootstrap se basó en esta metodología para darle manejo a sus clases de CSS.
@@ -131,7 +136,7 @@ Las capas del triángulo invertido son las siguientes:
 
 1. **Settings:** En esta capa se definen las variables y métodos para el preprocesador de CSS.
 2. **Tools:** En esta capa se definen las funciones y mixins para el preprocesador de CSS.
-3. **Generic:** En esta capa se definen los estilos normalizadores, también conocidos como *reset* de CSS.
+3. **Generic:** En esta capa se definen los estilos normalizadores, también conocidos como _reset_ de CSS.
 4. **Elements:** Cualquier estilo aplicado a elementos HTML directamente, es decir, sin el uso de clases.
 5. **Objects:** Estilos específicos para las estructuras de las páginas, como se hace en OOCSS.
 6. **Components:** Todos los estilos relacionados a componentes, como se hace en SUITCSS.
@@ -154,14 +159,19 @@ Cabe resaltar, que es válido hacer variaciones sobre la convención original. P
 
 BEM establece tres categorías:
 
-1. **Bloques:** Estos son los que conocemos como componentes y establece el *namespace* del mismo.
+1. **Bloques:** Estos son los que conocemos como componentes y establece el _namespace_ del mismo.
 2. **Elementos:** Expresan el contenido de los componentes y tienen un doble guion bajo como prefijo.
 3. **Modificadores**: Son clases que expresan un estado del componente. Tienen un doble guion como prefijo.
 
 ```css
-.block { color: #042; }
-.block__elem { color: #042; }
-.block--hidden { }
+.block {
+  color: #042;
+}
+.block__elem {
+  color: #042;
+}
+.block--hidden {
+}
 ```
 
 BEM es muy útil para evitar colisión de clases si no se cuenta con algún sistema que permita solucionar este problema.
@@ -177,7 +187,7 @@ Finalmente, hay que tener en cuenta que su abuso puede llegar a ser perjudicial.
 
 Atomic Design no es una metodología de CSS, pero como metodología de estructuración de componentes ayuda mucho. Al elegir un paradigma orientado a componentes se nos facilita el problema de reutilización de estilos. Pues, estos deben convivir con el componente definido y no tenemos que pensar en otras formas de abstracción.
 
-La manera como trabajo con Atomic Design y CSS es asegurándome de que los estilos no generen una colisión de clases usando alguna herramienta como CSS Modules, Scoped CSS o CSS-in-JS. También, suelo tener un archivo de *Custom Properties* que refleja mis [Design Tokens](https://undefined.sh/design-tokens-al-rescate/) y [un normalizador de estilos liviano](https://jgthms.com/minireset.css/).
+La manera como trabajo con Atomic Design y CSS es asegurándome de que los estilos no generen una colisión de clases usando alguna herramienta como CSS Modules, Scoped CSS o CSS-in-JS. También, suelo tener un archivo de _Custom Properties_ que refleja mis [Design Tokens](https://undefined.sh/design-tokens-al-rescate/) y [un normalizador de estilos liviano](https://jgthms.com/minireset.css/).
 
 Atomic Design establece que nuestros componentes pueden ser representados por:
 
@@ -210,8 +220,7 @@ Finalmente, algo muy interesante que tiene esta metodología es la manera como s
   class="[ card ] [ section box ] [ bg-base color-primary ]"
   data-state="reversed"
 ></article>
-```    
-
+```
 
 ### Más Información
 
@@ -222,7 +231,7 @@ Finalmente, algo muy interesante que tiene esta metodología es la manera como s
 
 A continuación, hablaremos de ciertas tecnologías que pueden fortalecer las metodologías mencionadas, si se usan adecuadamente.
 
-###  CSS Modules y CSS-in-JS
+### CSS Modules y CSS-in-JS
 
 CSS Modules y CSS-in-JS nos ayudan con el problema de colisión de clases. Si se hace uso de estas tecnologías podemos omitir por completo el prefijo Bloque en BEM. Pues, las clases no van a colisionar. También, hay frameworks como Vue que permiten generar el mismo resultado mediante el atributo `scoped`.
 

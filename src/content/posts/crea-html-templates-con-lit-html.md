@@ -1,11 +1,11 @@
 ---
 title: ¿Cómo funcionan los HTML Templates?
 pubDate: "2020-04-03T23:00:52.000Z"
-dateUpdated: "2022-03-17T10:19:39.000Z"
+updatedDate: "2022-03-17T10:19:39.000Z"
 tags:
- - HTML
- - Web Components
- - JavaScript
+  - HTML
+  - Web Components
+  - JavaScript
 description: La mayoría de las veces que trabajamos con HTML nos vemos en la necesidad de repetir secciones en multiples partes de una página e incluso en diferentes páginas.
 heroImage: "https://images.unsplash.com/photo-1532570204726-145c7199f10e?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
 ---
@@ -17,30 +17,37 @@ El problema de esta técnica es que dichas secciones se convierten en algo poco 
 Para evitar todo este trabajo y centralizar los cambios, hacemos uso de los motores de plantillas de HTML (HTML Templates Engines). Es muy posible que ya los uses sin haberte dado cuenta. Por eso, vamos a revisar las diferentes técnicas y recomendaciones actuales.
 
 ### El problema del footer
+
 Un ejemplo sencillo de la situación de los footers puede ser visto [aquí](https://codepen.io/glrodasz/project/editor/Zrmbyp). En él tenemos 2 páginas: `index.html` y `history.html`, ambas con un footer. Si queremos agregar un nuevo link debemos repetir el proceso por cada página, como lo hablamos con anterioridad.
 
 ## Document.createElement()
+
 La manera más tradicional de crear templates en HTML es mediante la ayuda de JavaScript. El DOM (Document Object Model) es una API de JavaScript que poseen los navegadores web para manipular el HTML. Mediante la funcionalidad `document.createElement()` podemos crear tags HTML y, por ejemplo, realizar un script que al inicio de la página nos inserte el footer dinámicamente. De esta forma, al agregar un nuevo link solo tendríamos que modificar el código de nuestro script y los cambios se verían reflejados en todas las páginas en las que este se incluya.
 
 ### Similitudes con las Single Page Apps
+
 > Las SPA (Single Page App) usan un principio muy similar. La diferencia es que todas la páginas se construyen mediante JavaScript haciendo uso de solo una pagina de HTML. Allí está la razón de su nombre: "Aplicaciones de una sola página".
 
 Si te fijas en el siguiente código, el footer del HTML está vacío. Pues, realmente los creamos mediante JavaScript haciendo uso de `document.createElement`.
 
 ### Más información
+
 - [https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 
 ## HTML Content Template
+
 En el ejemplo anterior revisamos la construcción de un footer de manera dinámica mediante el uso de `document.createElement`. El problema es que, al tener aplicaciones más complejas, esta técnica se convierte en una pesadilla de mantenimiento. Además, puede haber problemas de rendimiento si no se emplea adecuadamente. La buena noticia es que hay una manera más moderna de realizar esta tarea gracias a uno de los nuevos estándares de los [Web Components](https://undefined.sh/introduccion-a-los-web-components/), llamado HTML templates.
 
 El tag de HTML `<template>` es un elemento especial que nos permite definir una plantilla que posteriormente será usada mediante JavaScript. Lo interesante es que esta plantilla no se pinta de inmediato, generando una ventaja frente a otras alternativas que solo usan JavaScript.
 
 Como podemos ver, el código anterior es mucho más simple. Incluso, tuviéramos estructuras más complejas, este método sería más conveniente.
 
-###  Más información
+### Más información
+
 - [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)
 
 ## JavaScript Template Engines
+
 Finalmente, tenemos los motores de plantillas en JavaScript. Es muy posible que hayas usado uno antes. Algunos ejemplos son los clásicos motores que se usan de manera independiente como [Handlebars](https://handlebarsjs.com/) o [Mustache](https://mustache.github.io/). También, tenemos algunos que funcionan de manera mixta, es decir, pueden ser usados de manera independiente o dentro de un framework como [Underscore.js](https://underscorejs.org/). (este es el motor de plantillas por defecto de [Backbone.js](https://backbonejs.org/)). Finalmente, tenemos los más modernos como JSX de React y la sintaxis de plantillas integrada de Angular y Vue.
 
 Todos estos motores tienen en común la necesidad de centralizar plantillas conectadas con datos que posteriormente serán pintados en el navegador.
@@ -55,6 +62,7 @@ Hay que resaltar que la mayoría de estos motores están "llevando JavaScript al
 Esto cada vez es más común debido a lo poderoso que puede ser y lo podemos apreciar, por ejemplo, en [Vue, que oficialmente soporta JSX](https://vuejs.org/v2/guide/render-function.html#JSX) y frameworks como [Flutter](https://flutter.dev/docs/get-started/codelab) o [Swift UI](https://developer.apple.com/xcode/swiftui/) que, aunque no hacen uso directo de HTML, usan el mismo concepto de inversión de control de la interfaz gráfica.
 
 ### Más información
+
 - [https://handlebarsjs.com/](https://handlebarsjs.com/)
 - [https://mustache.github.io/](https://mustache.github.io/)
 - [[https://underscorejs.org/](https://underscorejs.org/)](http://underscorejs.org/)
@@ -62,30 +70,40 @@ Esto cada vez es más común debido a lo poderoso que puede ser y lo podemos apr
 - [https://reactjs.org/docs/jsx-in-depth.html](https://reactjs.org/docs/jsx-in-depth.html)
 
 ### Virtual DOM
+
 > Uno de los procesos más costosos de los motores de plantillas es la inserción de las plantillas en la página, debido a que esto bloquea el proceso principal de JavaScript. El [Virtual DOM](https://reactjs.org/docs/faq-internals.html) es un concepto en el que se hacen cálculos previos de manera "virtual" antes de hacer la inserción real. Gracias a esta técnica, se mejora la experiencia y rendimiento de una manera increíble.
 
 ## Frameworks de HTML templates
+
 **lit-html** es un motor de plantillas de HTML simple, moderno, liviano y rápido para JavaScript.
 
 Nos permite escribir plantillas de HTML haciendo uso de la tecnología [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) de JavaScript con la cual podemos escribir HTML de una forma literal. Lo más interesante es que **lit-html** es capaz de identificar las partes estáticas y dinámicas con el fin de actualizar eficientemente solo las partes que han cambiando. Esto quiere decir que hace uso de una metodología similar a la del Virtual DOM.
 
 ### Interpolación nativa en JavaScript
+
 > Los [templates literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) son strings (cadenas de texto) en JavaScript que permiten integrar expresiones, agregar multi-líneas e interpolación, es decir, reemplazo de variables en la misma cadena de texto.
 
 ### Escribiendo templates con lit-html
+
 Si quisiéramos escribir nuestro footer haciendo uso de **lit-html,** basta con hacerlo de una manera muy literal.
 
 ```javascript
 // Importamos lit-html
-import {html, render} from 'lit-html';
+import { html, render } from "lit-html";
 
 // Declaramos nuestro template en este caso vamos a incluir todo nuestro footer
 const footerTemplate = html`
   <footer>
     <ul>
       <li><a target="_blank" href="index.html">Home</a></li>
-      <li><a target="_blank" href="https://www.twitter.com/glrodasz">Twitter</a></li>
-      <li><a target="_blank" href="https://www.linkedin.com/in/guillermorodas/">LinkedIn</a></li>
+      <li>
+        <a target="_blank" href="https://www.twitter.com/glrodasz">Twitter</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.linkedin.com/in/guillermorodas/"
+          >LinkedIn</a
+        >
+      </li>
       <li><a target="_blank" href="https://github.com/glrodasz">GitHub</a></li>
     </ul>
   </footer>
@@ -99,33 +117,35 @@ Ahora bien, esto nos facilita el hecho de no tener que repetir el código del fo
 
 ```javascript
 // Importamos lit-html
-import {html, render} from 'lit-html';
+import { html, render } from "lit-html";
 
 const linkList = [
   {
     url: "index.html",
-    text: "Home"
+    text: "Home",
   },
   {
     url: "https://www.twitter.com/glrodasz",
-    text: "Twitter"
+    text: "Twitter",
   },
   {
     url: "https://www.linkedin.com/in/guillermorodas",
-    text: "LinkedIn"
+    text: "LinkedIn",
   },
   {
     url: "https://github.com/glrodasz",
-    text: "GitHub"
-  }
+    text: "GitHub",
+  },
 ];
-
 
 // Declaramos nuestro template esta vez usando un map
 const footerTemplate = html`
   <footer>
     <ul>
-      ${linkList.map(({ url, text}) => html`<li><a target="_blank" href=${url}>${text}</a></li>`)}
+      ${linkList.map(
+        ({ url, text }) =>
+          html`<li><a target="_blank" href=${url}>${text}</a></li>`,
+      )}
     </ul>
   </footer>
 `;
@@ -140,13 +160,14 @@ render(footerTemplate, document.body);
 
 ```javascript
 // Esto es equivalente a hacer addEventListener('click', clickHandler)
-const buttonTemplate = () => html`<button @click=${clickHandler}>Click Me!</button>`;
+const buttonTemplate = () =>
+  html`<button @click=${clickHandler}>Click Me!</button>`;
 
 // El manejador puede ser una función tradicional o un objeto de la siguiente forma
 const clickHandler = {
   // El método handleEvent es requerido.
   handleEvent(e) {
-    console.log('clicked!');
+    console.log("clicked!");
   },
   // Tambien se puede definir cero o mas opciones como:
   // capture, passive, y once.
@@ -159,16 +180,20 @@ Hay muchas características disponibles, pero lo que más debemos tener en cuent
 Tomando como referencia nuestro ejemplo anterior, la solución con **lit-html** sería así de sencilla.
 
 ### Más información
+
 - [https://lit-html.polymer-project.org/guide/writing-templates](https://lit-html.polymer-project.org/guide/writing-templates)
 
 ### Estilos en los templates con lit-html
+
 **lit-html** es compatible prácticamente con cualquier sistema de estilos. Desde hojas de estilos tradicionales hasta estilos expresados mediante Shadow DOM. También, nos ofrece un par de directivas para la manipulación dinámica de los atributos `class` y `style`.
 
 ### Más información
+
 - [https://lit-html.polymer-project.org/guide/styling-templates](https://lit-html.polymer-project.org/guide/styling-templates)
 - [https://lit-html.polymer-project.org/guide/template-reference](https://lit-html.polymer-project.org/guide/template-reference)
 
 ## Motor de plantillas similares
+
 Finalmente, recuerden que no hay una tecnología absoluta y que siempre debemos analizar cuales son las necesidades de nuestros proyectos para la elección de esta. En perspectiva, **lit-html **es una alternativa moderna que ofrece gran interoperabilidad.
 
 También es importante tener en cuenta que **lit-html** es un motor de plantillas que usa la librería de Web Components [LitElement](https://lit-element.polymer-project.org/guide/templates) de Google, así que conocerla nos ayudará a entender mejor el uso de [LitElement](https://lit-element.polymer-project.org/).
@@ -177,18 +202,24 @@ Hay una alternativa muy interesante de JSX que funciona de manera independiente 
 
 ```javascript
 // La diferencia aquí es que estamos usando html/preact
-import { html } from 'htm/preact';
+import { html } from "htm/preact";
 
 // Aquí podriamos usar la misma librería de render de lit-html o React DOM
-import { render } from 'preact';
+import { render } from "preact";
 
 // Declaramos nuestro template de la misma manera
 const footerTemplate = html`
   <footer>
     <ul>
       <li><a target="_blank" href="index.html">Home</a></li>
-      <li><a target="_blank" href="https://www.twitter.com/glrodasz">Twitter</a></li>
-      <li><a target="_blank" href="https://www.linkedin.com/in/guillermorodas/">LinkedIn</a></li>
+      <li>
+        <a target="_blank" href="https://www.twitter.com/glrodasz">Twitter</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.linkedin.com/in/guillermorodas/"
+          >LinkedIn</a
+        >
+      </li>
       <li><a target="_blank" href="https://github.com/glrodasz">GitHub</a></li>
     </ul>
   </footer>
@@ -199,4 +230,5 @@ render(footerTemplate, document.body);
 ```
 
 ### Más información
+
 - [https://github.com/developit/htm](https://github.com/developit/htm)
