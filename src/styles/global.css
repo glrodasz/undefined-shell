@@ -9,7 +9,7 @@
 
   --color-black-pearl-50: #e4ebee;
   --color-black-pearl-100: #c9d6de;
-  --color-black-pearl-300: #92ADBC;
+  --color-black-pearl-300: #92adbc;
   --color-black-pearl-400: #7799ac;
   --color-black-pearl-700: #3c5562;
   --color-black-pearl-800: #2c3d47;
@@ -102,7 +102,7 @@ h3 {
   font-size: 1.953em;
 }
 
-h3+ul {
+h3 + ul {
   margin-bottom: 3em;
 }
 
@@ -164,7 +164,7 @@ pre {
   border-radius: 8px;
 }
 
-pre>code {
+pre > code {
   all: unset;
 }
 
@@ -206,7 +206,7 @@ hr {
   counter-reset: line;
 }
 
-.astro-code code>.line::before {
+.astro-code code > .line::before {
   counter-increment: line;
   content: counter(line);
   margin-right: 1em;
@@ -215,21 +215,21 @@ hr {
   display: inline-block;
 }
 
-.astro-code code>.line:hover::before {
+.astro-code code > .line:hover::before {
   opacity: 1;
 }
 
-.astro-code code>.line:last-of-type {
+.astro-code code > .line:last-of-type {
   display: none;
 }
 
-.astro-code code>.line {
+.astro-code code > .line {
   display: inline-block;
   width: 100%;
   padding: 0 5px;
 }
 
-.astro-code code>.line:hover {
+.astro-code code > .line:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 

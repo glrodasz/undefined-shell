@@ -21,7 +21,7 @@ Es un error muy común querer desarrollar todo como una SPA (Single Page App), u
 - Sitios de noticias y revistas digitales.
 - Portafolios y páginas de contacto.
 
-Ahora bien, una página web es simplemente **una página dentro de un sitio web**. Es decir, *un sitio web es simplemente un conjunto de páginas web.* 🤯
+Ahora bien, una página web es simplemente **una página dentro de un sitio web**. Es decir, _un sitio web es simplemente un conjunto de páginas web._ 🤯
 
 Cuando nos referimos a **aplicaciones web**, estamos hablando de una pieza de software que se ejecuta en la Web, como:
 
