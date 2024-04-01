@@ -17,6 +17,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <style>
       .hero-image {
         width: 100%;
+        margin-bottom: 2em;
       }
       .hero-image img {
         display: block;
@@ -27,23 +28,23 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         object-fit: cover;
       }
       .prose {
-        max-width: calc(100% - 2em);
+        max-width: 980px;
         width: 100%;
         margin: auto;
-        padding: 1em;
         color: rgb(var(--gray-dark));
+        box-sizing: border-box;
       }
       .title {
-        margin-bottom: 1em;
-        padding: 1em 0;
-        text-align: center;
+        padding: 1em 0 0;
+        text-align: left;
+        text-wrap: balance;
         line-height: 1;
       }
       .title h1 {
-        margin: 0 0 0.5em 0;
+        margin: 0;
       }
       .date {
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
         color: rgb(var(--gray));
       }
       .last-updated-on {
@@ -60,25 +61,27 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           <div class="hero-image">
             {
               heroImage && (
-                <img width={1020} height={510} src={heroImage} alt="" />
+                <img width={1200} height={510} src={heroImage} alt="" />
               )
             }
           </div>
           <div class="prose">
             <div class="title">
               <div class="date">
-                <FormattedDate date={pubDate} />
+                <FormattedDate
+                  date={pubDate}
+                  leadingComma={Boolean(updatedDate)}
+                />
                 {
                   updatedDate && (
-                    <div class="last-updated-on">
-                      Última actualización el{" "}
+                    <span class="last-updated-on">
+                      última actualización el{" "}
                       <FormattedDate date={updatedDate} />
-                    </div>
+                    </span>
                   )
                 }
               </div>
               <h1>{title}</h1>
-              <hr />
             </div>
             <slot />
           </div>
