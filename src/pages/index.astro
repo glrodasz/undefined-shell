@@ -55,6 +55,7 @@ const posts = (await getCollection("posts")).sort(
         margin-bottom: 1rem;
         aspect-ratio: 16 / 9;
         object-fit: cover;
+        width: 100%;
       }
       ul li a {
         display: flex;
@@ -79,7 +80,7 @@ const posts = (await getCollection("posts")).sort(
       }
       ul li a:hover h4,
       ul li a:hover .date {
-        color: rgb(var(--accent));
+        color: var(--accent-dark);
       }
 
       @media (max-width: 980px) {

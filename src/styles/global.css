@@ -102,7 +102,7 @@ h3 {
   font-size: 1.953em;
 }
 
-h3 + ul {
+h3+ul {
   margin-bottom: 3em;
 }
 
@@ -148,9 +148,22 @@ table {
   width: 100%;
 }
 
+p img {
+  border-radius: 8px;
+  margin: 1.5em 0 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+img+em {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: var(--color-black-pearl-400);
+  margin-bottom: 2em;
 }
 
 code {
@@ -164,7 +177,7 @@ pre {
   border-radius: 8px;
 }
 
-pre > code {
+pre>code {
   all: unset;
 }
 
@@ -206,7 +219,7 @@ hr {
   counter-reset: line;
 }
 
-.astro-code code > .line::before {
+.astro-code code>.line::before {
   counter-increment: line;
   content: counter(line);
   margin-right: 1em;
@@ -215,21 +228,21 @@ hr {
   display: inline-block;
 }
 
-.astro-code code > .line:hover::before {
+.astro-code code>.line:hover::before {
   opacity: 1;
 }
 
-.astro-code code > .line:last-of-type {
+.astro-code code>.line:last-of-type {
   display: none;
 }
 
-.astro-code code > .line {
+.astro-code code>.line {
   display: inline-block;
   width: 100%;
   padding: 0 5px;
 }
 
-.astro-code code > .line:hover {
+.astro-code code>.line:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
