@@ -5,6 +5,7 @@ updatedDate: "2021-01-11T09:27:45.000Z"
 tags: Aprende a programar
 description: La terminal es una herramienta que puede hacer la diferencia a la hora de desarrollar, principalmente porque nos otorga tres grandes ventajas con solo conocer los comandos básicos.
 heroImage: "https://images.unsplash.com/photo-1522799064017-3101eeb9af80?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+redirect: true
 ---
 
 La terminal es una herramienta que puede hacer la diferencia a la hora de desarrollar, principalmente porque nos otorga tres grandes ventajas con solo conocer los comandos básicos:

@@ -5,6 +5,7 @@ updatedDate: "2021-01-23T15:52:40.000Z"
 tags: Aprende a programar
 description: Hoy en día escuchamos términos como páginas estáticas, dinámicas, SPA, Muti-páginas y, recientemente, el término JAMStack. ¿Qué significa todo esto? ¿Por qué es importante entender las diferencias?
 heroImage: "https://images.unsplash.com/photo-1463587480257-3c60227e1e52?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+redirect: true
 ---
 
 Hoy en día escuchamos términos como páginas estáticas, dinámicas, SPA, Muti-páginas y, recientemente, el término JAMStack. ¿Qué significa todo esto? ¿Por qué es importante entender las diferencias? A medida que se va adquiriendo experiencia, nos damos cuenta de que no existe una "navaja suiza" para la web. Por el contrario, cada herramienta suele estar enfocada en solucionar un problema muy particular. Es nuestra responsabilidad conocer las ventajas y desventajas para no tomar una mala decisión a la hora de crear un proyecto.

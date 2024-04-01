@@ -1,7 +1,8 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
-
 import sitemap from "@astrojs/sitemap";
+
+import { getRedirects } from "./helpers/redirects";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,4 +13,5 @@ export default defineConfig({
       theme: "one-dark-pro",
     },
   },
+  redirects: await getRedirects(),
 });
