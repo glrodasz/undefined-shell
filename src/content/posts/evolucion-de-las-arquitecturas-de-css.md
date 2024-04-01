@@ -37,11 +37,11 @@ _Un claro ejemplo de cómo se esta _[_desaprovechando la filosofía de Tailwind 
 
 Así que, vamos a hablar sobre lo bueno, lo malo y lo feo de las arquitecturas y metodologías más populares.
 
-### ¿Son Arquitecturas o Metodologías?
+## ¿Son Arquitecturas o Metodologías?
 
 La palabra metodología se refiere en su forma más simple y general a "un conjunto de reglas". Una arquitectura, por su parte, es solo una metodología que se enfoca en la estructura de un proyecto. Por este motivo, usaremos las palabras "Arquitectura" y "Metodología" de manera intercambiable en este artículo.
 
-## OOCSS
+# OOCSS
 
 Definitivamente, una de mis arquitecturas menos favoritas pero que vale la pena mencionar, ya que es una de las primeras metodologías que nos empieza a dar una luz sobre cómo podemos mejorar la estructura de nuestro CSS.
 
@@ -57,7 +57,7 @@ Uno de los éxitos de OOCSS aplicado al mundo real ha sido el **media object**. 
 - [https://www.slideshare.net/stubbornella/object-oriented-css](https://www.slideshare.net/stubbornella/object-oriented-css)
 - [https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
 
-## SMACSS
+# SMACSS
 
 _Scalable and Modular Architecture of CSS_ fue la promesa que nunca se cumplió de solucionar todos nuestros problemas con el CSS. Parecía una idea muy atractiva, pero al aplicarlo al mundo real surgían más preguntas que respuestas. Debo decir que yo mismo tomé [el curso dictado por el mismísimo autor Jonathan Snook](https://frontendmasters.com/courses/smacss/) y aun así me siguió pareciendo bastante complicado.
 
@@ -102,24 +102,22 @@ También, podemos rescatar la categoría de clases para manejar estados de los e
 - [https://frontendmasters.com/courses/smacss/](https://frontendmasters.com/courses/smacss/)
 - [http://smacss.com/](http://smacss.com/)
 
-## SUITCSS
+# SUITCSS
 
 SUITCSS se podría considerar una evolución de las arquitecturas ya mencionadas. Se basa principalmente en OOCSS con sus clases de utilidades y SMACSS con sus clases para manejo de estados.
 
 Esta metodología es una de las pioneras en traer el concepto de componentes a partir de los elementos HTML. Por eso, las clases de los elementos tienen el prefijo del nombre del componente al que hacen referencia.
 
 ```css
-.MyComponent {
-}
-.MyComponent.is-animating {
-}
-.MyComponent--modifier {
-}
+.MyComponent {}
 
-.MyComponent-part {
-}
-.MyComponent-anotherPart {
-}
+.MyComponent.is-animating {}
+
+.MyComponent--modifier {}
+
+.MyComponent-part {}
+
+.MyComponent-anotherPart {}
 ```
 
 Twitter Bootstrap se basó en esta metodología para darle manejo a sus clases de CSS.
@@ -128,7 +126,7 @@ Twitter Bootstrap se basó en esta metodología para darle manejo a sus clases d
 
 - [[https://github.com/suitcss/suit](http://suitcss.github.io/)](https://github.com/suitcss/suit)
 
-## ITCSS
+# ITCSS
 
 Inverted Triangle CSS fue una metodología creada por el legendario Harry Roberts, más conocido en la web como [CSS Wizardry](https://csswizardry.com/). Su desarrollo evoluciona a partir de la metodología OOCSS en donde se crea una mayor separación de categorías basadas en que tan específicas son las clases. Finalmente, se debe tener en cuenta que está metodología esta pensada para ser usada con un preprocesador de CSS.
 
@@ -149,7 +147,7 @@ Las capas del triángulo invertido son las siguientes:
 - [https://www.hongkiat.com/blog/inverted-triangle-css-web-development/](https://www.hongkiat.com/blog/inverted-triangle-css-web-development/)
 - [https://csswizardry.com/2018/11/itcss-and-skillshare/](https://csswizardry.com/2018/11/itcss-and-skillshare/)
 
-## BEM
+# BEM
 
 Hasta ahora, las metodologías que hemos mencionado tienen fuertes opiniones sobre cómo categorizar el nombramiento de clases e incluso la definición de estructura de archivos. Aun así, todo esto puede llegar a ser bastante confuso, por lo que se presta a malas implementaciones de las metodologías.
 
@@ -183,7 +181,7 @@ Finalmente, hay que tener en cuenta que su abuso puede llegar a ser perjudicial.
 - [http://getbem.com/](http://getbem.com/)
 - [https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/](https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/)
 
-## Atomic Design
+# Atomic Design
 
 Atomic Design no es una metodología de CSS, pero como metodología de estructuración de componentes ayuda mucho. Al elegir un paradigma orientado a componentes se nos facilita el problema de reutilización de estilos. Pues, estos deben convivir con el componente definido y no tenemos que pensar en otras formas de abstracción.
 
@@ -202,7 +200,7 @@ Lo interesante de usar Atomic Design es que la reutilización de estilos no se d
 - [https://bradfrost.com/blog/post/atomic-web-design/](https://bradfrost.com/blog/post/atomic-web-design/)
 - [https://atomicdesign.bradfrost.com/](https://atomicdesign.bradfrost.com/)
 
-## CUBE CSS
+# CUBE CSS
 
 CUBE CSS es una metodología que nace en la modernidad supliendo las necesidades de conceptos como los Design Systems y los [Design Tokens](https://undefined.sh/design-tokens-al-rescate/).
 
@@ -245,7 +243,7 @@ Librerías como React, Vue y Angular suelen traer soluciones para aislar el CSS.
 
 Tailwind CSS ha popularizado el uso de clases de utilidad. Sin embargo, es importante tener en cuenta que este tipo de librerías tienen un propósito muy específico. Por eso, es importante revisar si [escribir hojas de estilos se vuelve redundante con Tailwind CSS](https://ricostacruz.com/til/another-look-at-tailwind).
 
-## Conclusiones
+# Conclusiones
 
 Las arquitecturas y metodologías de CSS han sido empleadas con el fin de solucionar problemas comunes a la hora de escalar los estilos. Sin embargo, la evolución de otras metodologías como el paradigma de componentes o las librerías orientadas a clases utilidad nos ha hecho replantear el uso de las mismas.
 

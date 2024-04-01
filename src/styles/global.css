@@ -47,6 +47,7 @@ main {
   margin: 0 auto;
   padding: 3em 0 1em;
 }
+
 h1,
 h2,
 h3,
@@ -66,6 +67,11 @@ h2 {
 h3 {
   font-size: 1.953em;
 }
+
+h3 + ul {
+  margin-bottom: 3em;
+}
+
 h4 {
   font-size: 1.563em;
 }
@@ -86,7 +92,7 @@ p {
   margin-bottom: 1em;
 }
 .prose p {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 textarea {
   width: 100%;
@@ -129,9 +135,6 @@ hr {
   body {
     font-size: 18px;
   }
-  main {
-    padding: 1em;
-  }
 }
 
 .sr-only {
@@ -150,4 +153,44 @@ hr {
   clip-path: inset(50%);
   /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
   white-space: nowrap;
+}
+
+.astro-code {
+  margin-bottom: 2em;
+}
+
+.astro-code code {
+  counter-reset: line;
+}
+ 
+.astro-code code > .line::before {
+  counter-increment: line;
+  content: counter(line);
+  margin-right: 1em;
+  width: 20px;
+  opacity: 0.65;
+  display: inline-block;
+}
+
+.astro-code code > .line:hover::before {
+  opacity: 1;
+}
+
+.astro-code code > .line:last-of-type {
+  display: none;
+}
+
+.astro-code code > .line {
+  display: inline-block;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.astro-code code > .line:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.codepen,
+.cp_embed_wrapper {
+  margin-bottom: 2em;
 }

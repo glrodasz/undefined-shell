@@ -27,8 +27,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         object-fit: cover;
       }
       .prose {
-        width: 980px;
         max-width: calc(100% - 2em);
+        width: 100%;
         margin: auto;
         padding: 1em;
         color: rgb(var(--gray-dark));
@@ -71,7 +71,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
                 {
                   updatedDate && (
                     <div class="last-updated-on">
-                      Last updated on <FormattedDate date={updatedDate} />
+                      Última actualización el{" "}
+                      <FormattedDate date={updatedDate} />
                     </div>
                   )
                 }

@@ -7,7 +7,7 @@ export interface Props {
   height?: string;
 }
 
-const { slug, user, title, tabs, height } = Astro.props;
+const { slug, user, title, tabs = 'html,result', height } = Astro.props;
 ---
 
 <p

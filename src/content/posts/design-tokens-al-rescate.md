@@ -35,7 +35,7 @@ El concepto más básico es hacer uso de los Design Tokens para limitar nuestras
 
 ¿No les ha pasado que, cuando tienen un menú con muchos platos, les cuesta decidir qué comer? ¿o que, cuando van a ver algo en Netflix, se gastan hasta media hora eligiendo la película? Por el contrario, si llegan a un lugar donde solo hay perros calientes y hamburguesas, ya saben con seguridad qué van a comer. Asimismo, si alguien les da a elegir solo entre dos películas es más fácil darle al botón de play.
 
-Esto mismo pasa con el diseño de interfaces de usuario. Tenemos muchas opciones de colores, espaciado, interlineado, fuentes, etc. La primera tarea de los **Design Tokens** es limitar estas opciones para que a partir de ellas podamos construir todo nuestro sistema de diseño sin pensar mucho en estas unidades mínimas, pues nuestras opciones van a estar limitadas. El capítulo "Limit your choices**" **del libro [_Refactoring UI_](https://refactoringui.com/book/), nos habla claramente de esto. Con su librería Tailwind CSS, los mismos autores han expuesto un archivo de [configuración](https://github.com/tailwindcss/tailwindcss/blob/4d36f81239a8d503f5e2a7d325616070d434a457/stubs/defaultConfig.stub.js#L12) que funciona perfecto como una base de Design Tokens. Además, si se fijan en su selección de [paleta de colores](https://tailwindcss.com/docs/customizing-colors#default-color-palette), es más que suficiente para construir cualquier tipo de aplicación.
+Esto mismo pasa con el diseño de interfaces de usuario. Tenemos muchas opciones de colores, espaciado, interlineado, fuentes, etc. La primera tarea de los **Design Tokens** es limitar estas opciones para que a partir de ellas podamos construir todo nuestro sistema de diseño sin pensar mucho en estas unidades mínimas, pues nuestras opciones van a estar limitadas. El capítulo "Limit your choices" del libro [_Refactoring UI_](https://refactoringui.com/book/), nos habla claramente de esto. Con su librería Tailwind CSS, los mismos autores han expuesto un archivo de [configuración](https://github.com/tailwindcss/tailwindcss/blob/4d36f81239a8d503f5e2a7d325616070d434a457/stubs/defaultConfig.stub.js#L12) que funciona perfecto como una base de Design Tokens. Además, si se fijan en su selección de [paleta de colores](https://tailwindcss.com/docs/customizing-colors#default-color-palette), es más que suficiente para construir cualquier tipo de aplicación.
 
 Un ejemplo de cómo serían nuestras elecciones (Choices) de las fuentes tipográficas, sería más o menos así:
 
@@ -76,7 +76,7 @@ Teniendo nuestras elecciones listas, podemos empezar a tomar Decisiones (Decisio
 
 Por ejemplo, podríamos construir las decisiones para nuestros títulos de la siguiente manera:
 
-```json
+```javascript
 {
     "title": {
       "fontFamily": choices.font.family.sans,
@@ -106,7 +106,7 @@ Si nos ponemos a pensar en el mundo de las diferentes plataformas como lo son la
 
 Por ejemplo, supongamos que necesitamos crear un botón en cada una de las tres plataformas. Nos tocaría especificar en cada una, qué **Choices** usar. El problema de esto es que si quisiéramos actualizar alguna variable deberíamos, hacerlo en cada plataforma. En cambio, si tuviéramos definido nuestro botón como un **Decision**, solo deberíamos aplicarlo directamente. Así, cuando tengamos que actualizar el border radius de nuestro botón solo deberemos hacer el cambio en nuestro Decision y se verá reflejado en todas las plataformas que lo consuman de la manera `button.borderRadius`.
 
-```json
+```javascript
 {
     "button": {
         "borderRadius": choices.size.borderRadius.md

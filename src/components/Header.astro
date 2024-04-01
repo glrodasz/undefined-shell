@@ -14,7 +14,7 @@ import { SITE_TITLE } from "../consts";
       </div>
       <div class="internal-links">
         <HeaderLink href="/">Inicio</HeaderLink>
-        <HeaderLink href="/about">About</HeaderLink>
+        <HeaderLink href="/about">Acerca de</HeaderLink>
       </div>
     </nav>
   </Container>
@@ -74,6 +74,11 @@ import { SITE_TITLE } from "../consts";
   }
   @media (max-width: 980px) {
     .social-links {
+      display: none;
+    }
+
+    .title span,
+    .title p {
       display: none;
     }
   }

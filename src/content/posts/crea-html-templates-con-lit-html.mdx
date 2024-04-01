@@ -10,6 +10,8 @@ description: La mayoría de las veces que trabajamos con HTML nos vemos en la ne
 heroImage: "https://images.unsplash.com/photo-1532570204726-145c7199f10e?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
 ---
 
+import CodePen from "../../components/CodePen.astro";
+
 La mayoría de las veces que trabajamos con HTML nos vemos en la necesidad de repetir secciones en múltiples partes de una página e incluso en diferentes páginas. Un ejemplo claro es la sección de footer (pie de página) o menú. Quienes han escrito HTML de manera tradicional en un proyecto de múltiples páginas saben que dichas secciones deben ser duplicadas una y otra vez.
 
 El problema de esta técnica es que dichas secciones se convierten en algo poco mantenible a medida que empezamos a incluir más páginas en nuestro sitio. Por ejemplo, si tenemos un sitio web que contiene 4 páginas y en cada una de estas tenemos que incluir nuestro footer, al tener que agregar un nuevo link deberemos visitar cada una de las páginas y actualizar cada uno de los footers.
@@ -30,6 +32,8 @@ La manera más tradicional de crear templates en HTML es mediante la ayuda de Ja
 
 Si te fijas en el siguiente código, el footer del HTML está vacío. Pues, realmente los creamos mediante JavaScript haciendo uso de `document.createElement`.
 
+<CodePen user="glrodasz" slug="wvabGmb" />
+
 ### Más información
 
 - [https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
@@ -39,6 +43,8 @@ Si te fijas en el siguiente código, el footer del HTML está vacío. Pues, real
 En el ejemplo anterior revisamos la construcción de un footer de manera dinámica mediante el uso de `document.createElement`. El problema es que, al tener aplicaciones más complejas, esta técnica se convierte en una pesadilla de mantenimiento. Además, puede haber problemas de rendimiento si no se emplea adecuadamente. La buena noticia es que hay una manera más moderna de realizar esta tarea gracias a uno de los nuevos estándares de los [Web Components](https://undefined.sh/introduccion-a-los-web-components/), llamado HTML templates.
 
 El tag de HTML `<template>` es un elemento especial que nos permite definir una plantilla que posteriormente será usada mediante JavaScript. Lo interesante es que esta plantilla no se pinta de inmediato, generando una ventaja frente a otras alternativas que solo usan JavaScript.
+
+<CodePen user="glrodasz" slug="OJVYXgy" />
 
 Como podemos ver, el código anterior es mucho más simple. Incluso, tuviéramos estructuras más complejas, este método sería más conveniente.
 
@@ -63,11 +69,11 @@ Esto cada vez es más común debido a lo poderoso que puede ser y lo podemos apr
 
 ### Más información
 
-- [https://handlebarsjs.com/](https://handlebarsjs.com/)
-- [https://mustache.github.io/](https://mustache.github.io/)
-- [[https://underscorejs.org/](https://underscorejs.org/)](http://underscorejs.org/)
-- [https://reactjs.org/docs/introducing-jsx.html](https://reactjs.org/docs/introducing-jsx.html)
-- [https://reactjs.org/docs/jsx-in-depth.html](https://reactjs.org/docs/jsx-in-depth.html)
+- https://handlebarsjs.com/
+- https://mustache.github.io/
+- https://underscorejs.org/
+- https://reactjs.org/docs/introducing-jsx.html
+- https://reactjs.org/docs/jsx-in-depth.html
 
 ### Virtual DOM
 
@@ -97,7 +103,7 @@ const footerTemplate = html`
     <ul>
       <li><a target="_blank" href="index.html">Home</a></li>
       <li>
-        <a target="_blank" href="https://www.twitter.com/glrodasz">Twitter</a>
+        <a target="_blank" href="https://www.twitter.com/rodasdev">Twitter</a>
       </li>
       <li>
         <a target="_blank" href="https://www.linkedin.com/in/guillermorodas/"
@@ -125,7 +131,7 @@ const linkList = [
     text: "Home",
   },
   {
-    url: "https://www.twitter.com/glrodasz",
+    url: "https://www.twitter.com/rodasdev",
     text: "Twitter",
   },
   {
@@ -179,6 +185,8 @@ Hay muchas características disponibles, pero lo que más debemos tener en cuent
 
 Tomando como referencia nuestro ejemplo anterior, la solución con **lit-html** sería así de sencilla.
 
+<CodePen user="glrodasz" slug="mdJYKRx" />
+
 ### Más información
 
 - [https://lit-html.polymer-project.org/guide/writing-templates](https://lit-html.polymer-project.org/guide/writing-templates)
@@ -213,7 +221,7 @@ const footerTemplate = html`
     <ul>
       <li><a target="_blank" href="index.html">Home</a></li>
       <li>
-        <a target="_blank" href="https://www.twitter.com/glrodasz">Twitter</a>
+        <a target="_blank" href="https://www.twitter.com/rodasdev">Twitter</a>
       </li>
       <li>
         <a target="_blank" href="https://www.linkedin.com/in/guillermorodas/"

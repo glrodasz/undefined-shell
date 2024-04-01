@@ -7,6 +7,8 @@ description: Los web componentes son una serie de tecnologías alineadas a una e
 heroImage: "https://images.unsplash.com/photo-1485550409059-9afb054cada4?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
 ---
 
+import CodePen from "../../components/CodePen.astro";
+
 Los web componentes son una serie de tecnologías alineadas a una especificación **estándar** que nos permiten re-utilizar elementos HTML personalizados, que, en otras palabras, es lo hoy en día llamamos componentes. Esto es muy similar a lo que podemos hacer con librerías como **React**, **Vue** y **Angular,** pero con la gran diferencia de que estos funcionan **de manera nativa**.
 
 ## Especificaciones
@@ -26,9 +28,7 @@ A continuación vamos a describir las tres especificaciones actuales:
 
 Con **Custom Elements** podemos crear elementos HTML de manera personalizada. Por ejemplo, así como tenemos `<div>`, `<span>` e `<input>` podemos crear un elemento llamado `<primary-button>` que, al ser usado, nos mostrará un botón con las características personalizadas que le hayamos especificado.
 
-import CodePen from "../../components/CodePen.astro";
-
-<CodePen user="glrodasz" slug="zVrwov" tabs="html,result" />
+<CodePen user="glrodasz" slug="zVrwov" />
 
 Con este ejemplo, cada vez que insertemos el elemento `<primary-button>` se mostrará el botón azul que vemos arriba. Como podemos ver, estamos aplicando estilos en línea (inline) al contenido de nuestro Custom Element, aunque también podríamos aplicar estilos directamente al Custom Element desde un archivo CSS.
 
@@ -69,11 +69,13 @@ Actualmente, muchas de las librerías de JavaScript soportan el uso de Web Compo
 
 Con **Shadow DOM** tenemos la posibilidad de encapsular estilos y markups de un elemento. Mientras que el DOM (Document Object Model) en el documento es también llamado **Light DOM**, al DOM dentro de un **shadowRoot** se le llama **Shadow DOM**.
 
+<CodePen user="glrodasz" slug="WqrEWy" />
+
 En este ejemplo tenemos dos `<div>` con un elemento `<button>`, respectivamente*. *Sin embargo, vemos que, en vez de mostrarse los botones "Shadow DOM" y "Light DOM", el primero tiene "Shadow Root" como texto y, además, posee unos estilos diferentes. Esto es precisamente porque mediante el **Shadow DOM** hemos encapsulado los estilos y el contenido del botón dentro del `shadowRoot`.
 
 #### Modo abierto y cerrado
 
-A la hora de llamar el método `attachShadow` podemos configurar si queremos que el **mode **(modo) sea **open **(abierto) o **closed **(cerrado). La diferencia es que el modo **open **nos permite acceder al **Shadow DOM** desde el contexto principal de la página mediante el `Element.shadowRoot`. Si, por el contrario, el modo es **closed** el `Element.shadowRoot` va a retornar `null`.
+A la hora de llamar el método `attachShadow` podemos configurar si queremos que el **mode** (modo) sea **open** (abierto) o **closed **(cerrado). La diferencia es que el modo **open **nos permite acceder al **Shadow DOM** desde el contexto principal de la página mediante el `Element.shadowRoot`. Si, por el contrario, el modo es **closed** el `Element.shadowRoot` va a retornar `null`.
 
 ### Más información
 
@@ -82,6 +84,8 @@ A la hora de llamar el método `attachShadow` podemos configurar si queremos que
 ### HTML Templates
 
 Con **HTML Templates** podemos crear templates de forma nativa que no son **pintados** (rendered) antes de ser usados en nuestra página. De esta manera, obtendremos un mayor rendimiento en el procesamiento inicial de la página.
+
+<CodePen user="glrodasz" slug="ydewNe" />
 
 En el ejemplo anterior definimos un template llamado `card-template` y solo hasta después de leer nuestra lista de lugares es que hacemos uso del template. Para ello, se hace una clonación de este y posteriormente una inserción en el documento donde queremosmostrar nuestro template.
 
@@ -93,7 +97,9 @@ Los `slots` son como pequeños **placeholders** (comodines). Estos pueden tener 
 
 Ya que hemos hablado de cada una de las especificaciones y demostramos cómo se pueden usar de manera independiente, veamos su uso en conjunto para crear un **Web Component** en el "mundo real".
 
-Como podemos notar, en este ejemplo estamos usando los tres conceptos para crear un **Custom Element **llamado`beauty-card` que recibe una imagen, un título y una descripción. Además, hemos aplicado una regla en la que, si no encuentra una imagen, se agrega otra por defecto.
+<CodePen user="glrodasz" slug="agdram" />
+
+Como podemos notar, en este ejemplo estamos usando los tres conceptos para crear un **Custom Element** llamado `beauty-card` que recibe una imagen, un título y una descripción. Además, hemos aplicado una regla en la que, si no encuentra una imagen, se agrega otra por defecto.
 
 ### Aplicar estilos a los elementos slot
 
