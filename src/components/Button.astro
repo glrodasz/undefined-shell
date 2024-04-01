@@ -5,7 +5,7 @@ export interface Props {
   type?: string;
 }
 
-const { href, title, type } = Astro.props;
+const { href, title, type = "primary" } = Astro.props;
 ---
 
 <a href={href} target="_blank" class={`button button-${type}`}>
@@ -29,7 +29,6 @@ const { href, title, type } = Astro.props;
     color: var(--color-aquarius-50);
     text-decoration: none;
     transition: background 0.2s ease-in-out;
-    box-sizing: border-box;
   }
 
   .button-primary {

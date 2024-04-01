@@ -6,7 +6,7 @@ import Container from "./Container.astro";
 <footer>
   <Container>
     <div class="content">
-      <div>
+      <div class="copy">
         &copy; {today.getFullYear()} Undefined Shell. Todos los derechos reservados.
       </div>
       <div class="social-links">
@@ -49,9 +49,12 @@ import Container from "./Container.astro";
 <style>
   footer {
     padding: 2em 1em;
-    background: linear-gradient(var(--gray-gradient)) no-repeat;
-    color: rgb(var(--gray));
+    background: var(--color-black-pearl-900);
     text-align: center;
+  }
+
+  .copy {
+    color: var(--color-black-pearl-300);
   }
 
   .content {
@@ -67,9 +70,9 @@ import Container from "./Container.astro";
   }
   .social-links a {
     text-decoration: none;
-    color: rgb(var(--gray));
+    color: var(--accent);
   }
   .social-links a:hover {
-    color: rgb(var(--gray-dark));
+    color: var(--accent-dark);
   }
 </style>

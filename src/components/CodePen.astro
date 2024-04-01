@@ -7,7 +7,7 @@ export interface Props {
   height?: string;
 }
 
-const { slug, user, title, tabs = 'html,result', height } = Astro.props;
+const { slug, user, title, tabs = "html,result", height } = Astro.props;
 ---
 
 <p
@@ -16,7 +16,7 @@ const { slug, user, title, tabs = 'html,result', height } = Astro.props;
   data-default-tab={tabs}
   data-slug-hash={slug}
   data-user={user}
-  style="height:{height}; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+  style={`height:${height}; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;`}
 >
   <span
     >See this Pen <a href=`https://codepen.io/${user}/pen/${slug}`> {title}</a> by
