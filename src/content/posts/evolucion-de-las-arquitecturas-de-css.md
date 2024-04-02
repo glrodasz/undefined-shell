@@ -110,15 +110,20 @@ SUITCSS se podría considerar una evolución de las arquitecturas ya mencionadas
 Esta metodología es una de las pioneras en traer el concepto de componentes a partir de los elementos HTML. Por eso, las clases de los elementos tienen el prefijo del nombre del componente al que hacen referencia.
 
 ```css
-.MyComponent {}
+.MyComponent {
+}
 
-.MyComponent.is-animating {}
+.MyComponent.is-animating {
+}
 
-.MyComponent--modifier {}
+.MyComponent--modifier {
+}
 
-.MyComponent-part {}
+.MyComponent-part {
+}
 
-.MyComponent-anotherPart {}
+.MyComponent-anotherPart {
+}
 ```
 
 Twitter Bootstrap se basó en esta metodología para darle manejo a sus clases de CSS.
