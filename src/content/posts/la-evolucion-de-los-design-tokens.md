@@ -80,7 +80,7 @@ Esto también merece su post independiente, por lo que por ahora les compartiré
 - [Design Tokens. Definition process for a themeable product-service system](https://liferay.design/articles/2021/design-tokens-definition-process/)
 - [A design token taxonomy for Checkout.com](https://www.gerireid.com/design-token-taxonomy.html)
 
-Lo que sí vale la pena dejar claro es que en el nombre del token debe quedar claro a qué nivel pertenece, sea Core o Reference para el primer nivel, o System, Alias, para el segundo, y Components para el tercero, etc.
+Lo que sí es importante a tener en cuenta es que en el nombre del token debe especificarse el nivel al que pertenece, sea *Core* o *Reference* para el primer nivel, o *System*, *Alias*, para el segundo, y *Components* para el tercero, etc.
 
 # Integración con Atomic Design
 

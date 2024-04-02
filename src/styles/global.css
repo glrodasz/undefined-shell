@@ -87,7 +87,8 @@ h5,
 h6 {
   margin: 0 0 0.5rem 0;
   color: rgb(var(--black));
-  line-height: 1.2;
+  line-height: 1.1;
+  text-wrap: balance;
 }
 
 h1 {
@@ -168,8 +169,9 @@ img+em {
 
 code {
   padding: 2px 5px;
-  background-color: rgb(var(--gray-light));
-  border-radius: 2px;
+  background-color: var(--color-aquarius-100);
+  border: 1px solid var(--color-aquarius-600);
+  border-radius: 4px;
 }
 
 pre {
@@ -185,7 +187,11 @@ blockquote {
   border-left: 4px solid var(--accent);
   padding: 0 0 0 20px;
   margin: 0px;
-  font-size: 1.333em;
+  background: var(--color-white);
+}
+
+blockquote p {
+  padding: 10px 0;
 }
 
 hr {
@@ -261,10 +267,10 @@ hr {
   }
 
   h2 {
-    font-size: 1.441em;
+    font-size: 1.5em;
   }
 
   h3 {
-    font-size: 0.953em;
+    font-size: 1.2em;
   }
 }
