@@ -5,15 +5,22 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import Container from "../components/Container.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 type Props = CollectionEntry<"posts">["data"];
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
+const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE}`;
 ---
 
 <html lang="es">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead
+      title={title}
+      tabTitle={tabTitle}
+      description={description}
+    />
     <style>
       .hero-image {
         width: 100%;

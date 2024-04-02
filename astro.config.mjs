@@ -2,11 +2,12 @@ import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
+import { SITE_URL } from "./src/consts";
 import { getRedirects } from "./helpers/redirects";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://undefined.sh",
+  site: SITE_URL,
   integrations: [mdx(), sitemap()],
   markdown: {
     shikiConfig: {

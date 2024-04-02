@@ -8,7 +8,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import Container from "../components/Container.astro";
 
 const posts = (await getCollection("posts")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
