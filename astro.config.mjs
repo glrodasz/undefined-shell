@@ -6,7 +6,7 @@ import { getRedirects } from "./helpers/redirects";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
+  site: "https://undefined.sh",
   integrations: [mdx(), sitemap()],
   markdown: {
     shikiConfig: {
