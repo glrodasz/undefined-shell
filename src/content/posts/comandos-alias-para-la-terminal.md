@@ -1,7 +1,6 @@
 ---
 title: Comandos alias para la Terminal
 pubDate: "2020-02-21T13:36:35.000Z"
-updatedDate: "2021-01-19T23:37:41.000Z"
 tags: Aprende a programar
 description: El uso de la terminal nos facilita las tareas diarias.  Con la terminal podemos realizarlas más rápido, ya que, el acceso o ejecución de estas, es virtualmente inmediato.
 heroImage: "https://images.unsplash.com/photo-1563359250-602107d96e47?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
