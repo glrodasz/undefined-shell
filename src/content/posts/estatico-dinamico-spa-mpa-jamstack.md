@@ -3,7 +3,7 @@ title: Estático, dinámico, single-page, multiple-page y JAMstack
 pubDate: "2020-05-02T10:12:25.000Z"
 tags: Aprende a programar
 description: Hoy en día escuchamos términos como páginas estáticas, dinámicas, SPA, Muti-páginas y, recientemente, el término JAMStack. ¿Qué significa todo esto? ¿Por qué es importante entender las diferencias?
-heroImage: "https://images.unsplash.com/photo-1463587480257-3c60227e1e52?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+heroImage: "https://images.unsplash.com/photo-1463587480257-3c60227e1e52?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 redirect: true
 ---
 

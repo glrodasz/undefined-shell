@@ -3,7 +3,7 @@ title: La evolución de los Design Tokens
 pubDate: "2023-03-27T03:02:31.000Z"
 tags: Design Systems
 description: Han pasado muchos meses desde que escribí mi primer artículo en español sobre Design Tokens, y desde entonces no solo han evolucionado, sino que cada vez se adaptan y se vuelven una parte fundamental de un sistema de diseño. Hoy les quiero compartir los puntos clave de esta evolución.
-heroImage: "https://images.unsplash.com/photo-1580929753603-10519c6e480a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+heroImage: "https://images.unsplash.com/photo-1580929753603-10519c6e480a?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 redirect: true
 ---
 

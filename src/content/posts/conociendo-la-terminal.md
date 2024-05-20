@@ -3,7 +3,7 @@ title: Conociendo la Terminal
 pubDate: "2019-10-29T03:09:57.000Z"
 tags: Aprende a programar
 description: La terminal es una herramienta que puede hacer la diferencia a la hora de desarrollar, principalmente porque nos otorga tres grandes ventajas con solo conocer los comandos básicos.
-heroImage: "https://images.unsplash.com/photo-1522799064017-3101eeb9af80?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+heroImage: "https://images.unsplash.com/photo-1522799064017-3101eeb9af80?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 redirect: true
 ---
 

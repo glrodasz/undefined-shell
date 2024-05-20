@@ -3,7 +3,7 @@ title: Evolución de las Arquitecturas y Metodologías de CSS
 pubDate: "2021-01-10T16:51:36.000Z"
 tags: CSS
 description: Las Arquitecturas de CSS nos ayudan a escalar y mantener nuestras hojas de estilo en el tiempo. Estas son necesarias porque, el CSS, al carecer de un sistema de módulos conveniente y debido a su naturaleza de sobrescritura en cascada, crea la combinación perfecta para generar un ambiente caótico.
-heroImage: "https://images.unsplash.com/photo-1567344173647-dfdb5fb8b318?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+heroImage: "https://images.unsplash.com/photo-1567344173647-dfdb5fb8b318?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 redirect: true
 ---
 
