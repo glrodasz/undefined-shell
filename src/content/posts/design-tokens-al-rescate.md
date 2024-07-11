@@ -5,7 +5,7 @@ tags:
   - CSS
   - Design Systems
 description: Se puede decir que los Design Tokens son una metodología que se encarga del manejo de variables en un sistema de diseño. Sin embargo, esta metodología se puede aplicar en una escala mucho más pequeña.
-heroImage: "/covers/A close-up image of various smooth, rounded stones lying on the ground. The stones come in different colors, including shades of gray, brown, red.jpg"
+heroImage: "/covers/A close-up image of various smooth, rounded stones lying on the ground.jpg"
 redirect: true
 ---
 

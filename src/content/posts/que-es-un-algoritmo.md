@@ -3,7 +3,7 @@ title: ¿Qué es un Algoritmo?
 pubDate: "2024-04-02T10:04:17.000Z"
 tags: Aprende a programar
 description: Un algoritmo es un conjunto de instrucciones o pasos que se siguen para resolver un problema o llevar a cabo una tarea en particular. Así que, un manual para armar un mueble prefabricado o una receta de cocina, podrían ser considerados algoritmos.
-heroImage: "/covers/A close-up view of an open cookbook showing a recipe for sourdough starter. The page is slightly yellowed with age, and the text is clear and legible.jpg"
+heroImage: "/covers/A close-up view of an open cookbook showing a recipe for sourdough starter.jpg"
 ---
 > 🍔 Un algoritmo es un conjunto de instrucciones o pasos que se siguen para resolver un problema o llevar a cabo una tarea en particular. Así que un manual para armar un mueble prefabricado o una receta de cocina, podrían ser considerados algoritmos.
 
