@@ -6,6 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import Container from "../components/Container.astro";
+import SimpleAnalytics from "../components/SimpleAnalytics.astro";
 
 const posts = (await getCollection("posts")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -129,5 +130,6 @@ const posts = (await getCollection("posts")).sort(
       </main>
     </Container>
     <Footer />
+    <SimpleAnalytics />
   </body>
 </html>
