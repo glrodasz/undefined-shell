@@ -1,7 +1,7 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import Container from "./Container.astro";
-import { SITE_TITLE } from "../consts";
+import { SITE_AUTHOR, SITE_SHORT_DESCRIPTION, SITE_TITLE } from "../consts";
 import Button from "./Button.astro";
 ---
 
@@ -9,9 +9,11 @@ import Button from "./Button.astro";
   <Container>
     <nav>
       <div class="title">
-        <h2><a href="/">{SITE_TITLE}</a></h2>
+        <h2>
+          <a href="/">{SITE_TITLE}<span class="author">by {SITE_AUTHOR}</span></a>
+        </h2>
         <span class="separator">•</span>
-        <p>Programación y desarrollo web</p>
+        <p>{SITE_SHORT_DESCRIPTION}</p>
       </div>
       <div class="internal-links">
         <HeaderLink href="/">Inicio</HeaderLink>
@@ -68,9 +70,18 @@ import Button from "./Button.astro";
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
     backdrop-filter: blur(10px);
   }
+
   h2 {
     margin: 0;
     font-size: 1em;
+  }
+
+  .author {
+    display: block;
+    font-size: 12.5px;
+    letter-spacing: 2px;
+    color: var(--color-aquarius-600);
+    margin-top: -4px;
   }
 
   h2 a,
@@ -103,7 +114,7 @@ import Button from "./Button.astro";
 
   .title {
     display: flex;
-    align-items: center;
+    align-items: baseline;
   }
 
   .separator {
@@ -125,9 +136,14 @@ import Button from "./Button.astro";
     .social-links {
       display: none;
     }
-    .title span,
+
+    .title span:not(.author),
     .title p {
       display: none;
+    }
+
+    h2 span.author {
+      font-size: 11px;
     }
   }
 </style>
