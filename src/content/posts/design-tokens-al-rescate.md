@@ -1,6 +1,6 @@
 ---
 title: Design Tokens al rescate
-pubDate: "2020-01-27T11:11:51.000Z"
+pubDate: "2020-01-27T00:00:00.000Z"
 tags:
   - CSS
   - Design Systems
