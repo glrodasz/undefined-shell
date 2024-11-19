@@ -99,7 +99,7 @@ const posts = (await getCollection("posts")).sort(
       }
 
       ul li a img {
-        filter: grayscale(.8);
+        filter: grayscale(0.8);
         transition: filter 0.2s ease-in-out;
       }
 
@@ -109,9 +109,19 @@ const posts = (await getCollection("posts")).sort(
       }
 
       @media (max-width: 920px) {
-        ul {
-          gap: 1.5em;
+        ul li a img {
+          filter: grayscale(0);
         }
+
+        ul li img,
+        ul li:not(:first-child) img {
+          aspect-ratio: 16 / 9;
+        }
+
+        ul {
+          gap: 0em;
+        }
+
         ul li {
           width: 100%;
         }
