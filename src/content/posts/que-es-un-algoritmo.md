@@ -41,7 +41,7 @@ Vamos a explorar a continuación la misma receta, pero esta vez escrita en pseud
 ## La receta expresada en Pseudocódigo
 Veamos cómo podríamos entonces traducir una receta escrita en lenguaje natural a pseudocódigo para que tenga una estructura más cercana a lo que usaríamos en un lenguaje de programación:
 
-```
+```javascript
 Inicio
   Ingredientes: 
   carnes = [500g de carne molida, 100g de tocineta]
@@ -85,7 +85,7 @@ Cómo podemos observar la receta escrita en pseudocódigo tiene una estructura f
 ## La versatilidad de los algoritmos
 Lo interesante de tener la receta estructurada en pseudocódigo, es que ahora podemos cambiar los ingredientes para que la receta sea vegetariana:
 
-```
+```javascript
   Ingredientes: 
   carnes = [500g de "carne" vegetal, 100g de "tocineta" vegetal]
 ```
