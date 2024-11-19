@@ -2,7 +2,7 @@
 title: ¿Cómo funciona un lenguaje de programación?
 pubDate: "2024-11-11T00:00:00.000Z"
 tags: Aprende a programar
-description: Los lenguajes de programación manipulan datos y controlan el flujo mediante expresiones y sentencias. Las expresiones combinan valores, operadores y variables para generar resultados, mientras que las sentencias ejecutan acciones. Estos elementos convierten instrucciones en soluciones prácticas para problemas, desde cálculos simples hasta sistemas avanzados.
+description: Los lenguajes de programación procesan datos y gestionan el flujo mediante expresiones y sentencias. Las expresiones combinan valores, operadores y variables para producir resultados, mientras que las sentencias realizan acciones. Estos componentes transforman instrucciones en soluciones prácticas, abarcando desde cálculos simples hasta sistemas complejos.
 heroImage: "/covers/A realistic image of vintage punched cards used in early computing.jpg"
 ---
 
@@ -31,22 +31,22 @@ Veamos algunos ejemplos de los valores más comúnmente utilizados:
 
 - Al realizar operaciones matemáticas, se emplean valores de tipo _número_, similares a los que usamos en el día a día: `6`, `32`, `0`, `-13`, `π` (el valor de Pi), `9.99` e incluso `∞` (infinito).
 - Para imprimir un valor en pantalla, se utilizan valores de tipo _cadena de texto_, los cuales se escriben entre comillas. Por ejemplo `“A”`, `”Hola"`, `”10"` (que es diferente al número `10`), `”🥸”` (emojis) y caracteres especiales como la letra `"ñ"` o símbolos `"©"` (copyright).
-- Al tomar decisiones dentro de un programa, se hace uso de un valores de tipo _booleano_. Estos solo pueden tener dos estados: _verdadero_ o _falso_.
+- Al tomar decisiones dentro de un programa, se hace uso de un valores de tipo _booleano_. Estos solo pueden tener dos estados: `verdadero` o `falso`.
 
-> ￼💡 Los valores _booleanos_ se les suele llamar "flags" (banderas) o indicadores: un flag "set" (activado) indica _verdadero_, mientras que un flag "cleared" (desactivado) indica _falso_.
+> ￼💡 Los valores _booleanos_ se les suele llamar **flags** (banderas) dónde una bandera arriba indica `verdadero`, (activado) mientras que una bandera abajo  indica `falso` (desactivado).
 
 > ￼ℹ️ Cada lenguaje de programación maneja una variedad de valores y tipos. Más adelante profundizaremos en los tipos específicos que soporta JavaScript.
 
 ### Variables
 
-Las variables en programación nos ayudan a gestionar y organizar información. Imagina que son como carpetas en un escritorio. Cada carpeta lleva una etiqueta con un nombre único para identificar qué contiene. Estas carpetas, a su vez, pueden albergar uno o varios documentos, que representarían nuestros _valores_.
+Las _variables_ en programación nos ayudan a gestionar y organizar información. Imagina que son como carpetas en un escritorio. Cada carpeta lleva una etiqueta con un nombre único para identificar qué contiene. Estas carpetas, a su vez, pueden albergar uno o varios documentos, que representarían nuestros _valores_.
 
 > 💡Piensa en una variable como una carpeta etiquetada con un nombre único, lista para guardar un valor.
 
-Las variables tienen múltiples funciones, pero por ahora, nos enfocaremos en dos aspectos principales:
+Las _variables_ tienen múltiples funciones, pero por ahora, nos enfocaremos en dos aspectos principales:
 
-1. **Almacenamiento de datos**: Como mencionamos anteriormente, las variables son como carpetas donde puedes guardar y acceder a datos esenciales, como el total de ventas o resumen de inventario. Así, siempre tendrás a mano esa información cuando la necesites.
-2. **Manejo de datos dinámicos**: Imagina que tienes un documento que se actualiza constantemente, podría ser un informe de eventos los últimos siete días. Las variables te permiten "capturar" ese dato cambiante y adaptarse a distintas circunstancias.
+1. **Almacenamiento de datos**: Como mencionamos anteriormente, las _variables_ son como carpetas donde puedes guardar y acceder a datos esenciales, como el total de ventas o resumen de inventario. Así, siempre tendrás a mano esa información cuando la necesites.
+2. **Manejo de datos dinámicos**: Imagina que tienes un documento que se actualiza constantemente, podría ser un informe de eventos los últimos siete días. Las _variables_ te permiten "capturar" ese dato cambiante y adaptarse a distintas circunstancias.
 
 Veamos algunos ejemplos:
 
@@ -63,7 +63,7 @@ Para que los _valores_ y las _variables_ tengan utilidad es necesario poder gest
 > Los _operadores_ se suelen representar mediante **símbolos** o **palabras reservadas**.
 > Dependiendo los tipos de _valores_, podemos efectuar cierto tipo de _operaciones_.
 
-￼En este punto es importante aclarar que una _variable_ siempre va a contener un _valor_. Por lo cual, las _operaciones_ se efectúan independientemente de si dichos valores están representados en variables o no.
+￼En este punto es importante aclarar que una _variable_ siempre va a contener un _valor_. Por lo cual, las _operaciones_ se efectúan independientemente de si dichos valores están representados en _variables_ o no.
 
 Por ejemplo el _operador_ suma (+) efectúa la suma de dos valores numéricos, como lo sería `2 + 3`, cuyo resultado sería el valor numérico `5`. Pero este mismo _operador_, usado en valores de cadena de texto, crea una concatenación. Por ejemplo, `”Hola” + “ mundo”`, daría como resultado la cadena de texto: `”Hola mundo"`.
 
@@ -90,18 +90,18 @@ Veamos a continuación algunos operadores, teniendo en cuenta que cada lenguaje 
 
 ￼Aquí estarían el resto de operadores de comparación tales como “mayor que” , “menor que”, “ menor o igual que”, etc.
 
-￼Estos operadores tienen sentido cuando se usan con variables, ya que, es de esta forma que los algoritmos podrían comportarse de una forma u otra dependiendo el valor que tomen estas.
+￼Estos operadores tienen sentido cuando se usan con _variables_, ya que, es de esta forma que los algoritmos podrían comportarse de una forma u otra dependiendo el valor que tomen estas.
 
 #### Operadores lógicos
 
-1. El operador `&&` de conjunción: retorna verdadero si ambas expresiones son verdaderas. Se suele usar en conjunto con los operadores de comparación, por ejemplo: `x > 5 && y < 10` esta expresión sería cierta siempre y cuando `x` sea mayor a `5` y ` y` sea menor que `10`.
-2. El operador `!` de negación: retorna el valor opuesto de una expresión booleana. Si por ejemplo `x > 5` fuese verdadero, es decir `x` es mayor que 5, entonces `!(x > 5)` sería falso. Esto es muy útil cuando queremos tomar una decisión basado en un resultado contrario, en el ejemplo anterior ` !(x > 5)` solo sería verdadero si `x` es `5` o menor que `5`.
+1. El operador `&&` de conjunción: retorna `verdadero` si ambas expresiones son verdaderas. Se suele usar en conjunto con los operadores de comparación, por ejemplo: `x > 5 && y < 10` esta expresión sería cierta siempre y cuando `x` sea mayor a `5` y ` y` sea menor que `10`.
+2. El operador `!` de negación: retorna el valor opuesto de una expresión booleana. Si por ejemplo `x > 5` fuese `verdadero`, es decir `x` es mayor que 5, entonces `!(x > 5)` sería falso. Esto es muy útil cuando queremos tomar una decisión basado en un resultado contrario, en el ejemplo anterior ` !(x > 5)` solo sería `verdadero` si `x` es `5` o menor que `5`.
 
 Aquí tendríamos otros operadores, como lo sería la conjunción y una seria de operadores lógicos binarios o de exclusión que revisaremos más adelante.
 
 ### Funciones
 
-Aunque las funciones son un término matemático que toma variables y las transforma en salidas también suelen usarse en la programación para encapsular una pieza de código y reusarlo con mayor facilidad.
+Aunque las funciones son un término matemático que toma _variables_ y las transforma en salidas también suelen usarse en la programación para encapsular una pieza de código y reusarlo con mayor facilidad.
 
 El primer uso esta mas relacionado a las expresiones mientras que el segundo uso representa una sentencia, es decir, las funciones pueden representarse tanto como expresiones y sentencias.
 
@@ -110,7 +110,7 @@ Miremos algunos ejemplos de **expresiones de funciones**.
 1. La _expresión_ de función `f(x) = x + 2` emplea el _operador_ de suma para incrementar en 2 la _variable_ `x`. Esta función retornara un valor numérico, siempre y cuando el valor de `x`. también sea numérico.
 2. La _expresión_ de función `f(a, b) = (a - b) * 5` emplea multiples operadores y ademas define dos parámetros `a` y `b`. Efectuará una resta de `a` y `b` y a dicho resultado se le multiplica por 5. Siempre y cuando `a` y ` b` sean valores numéricos esta función retornara un valor numérico.
 
-> ￼💡 A diferencia de otras expresiones, las variables que son listadas en la definición de una función como por ejemplo, `x` , `a` y `b` se le llaman **parámetros**.
+> ￼💡 A diferencia de otras expresiones, las _variables_ que son listadas en la definición de una función como por ejemplo, `x` , `a` y `b` se le llaman **parámetros**.
 
 > ￼💡Cuando evaluamos una función y remplazamos sus **parámetros** por valores, les llamamos **argumentos** de una función a dichos valores.
 
@@ -137,7 +137,7 @@ Ahora que entendemos todo lo que puede componer una expresión: **valores**, **v
    - **Funciones**: `f(x)` es una función que toma un parámetro `x`.
 3. `”👩” + "\u200d" + “🚀”`
    - **Valores**: `"👩"`, `"\u200d"` y `"🚀"` son valores de tipo cadena de texto.
-   - **Operadores**: `+` es un operador de concatenación (aparece dos veces).​
+   - **Operadores**: `+` es un operador de concatenación de texto.
 
 ## Sentencias
 
@@ -168,7 +168,7 @@ Ya que sabemos que una sentencia es un conjunto de expresiones, analicemos algun
 A continuación, revisemos las más comunes:
 
 1. **Expresión de valor literal**:
-   Representa valores constantes y fijos, como números, cadenas de texto o valores booleanos. Estas expresiones no dependen de variables ni de cálculos adicionales.
+   Representa valores constantes y fijos, como números, cadenas de texto o valores booleanos. Estas expresiones no dependen de _variables_ ni de cálculos adicionales.
 
 ```javascript
 42;
@@ -243,10 +243,21 @@ En programación, existen sentencias que ejecutan una serie de instrucciones sin
 
 Aun así, son esenciales para controlar el flujo de ejecución del programa, algunos ejemplos son:
 
-1. **Sentencia if:** Evalúa una condición y ejecuta un bloque de código si la condición es verdadera.
-   - `if (edad > 18) { console.log("👵"); }`
-2. **Sentencia return**: Se usa dentro de una función para finalizar su ejecución y, opcionalmente, devolver un valor.
-   - `f = function() { return; }`
+1. **Sentencia** `if`: Evalúa una condición y ejecuta un bloque de código si la condición es verdadera.
+
+```javascript
+if (edad > 18) {
+  console.log("👵");
+}
+```
+
+2. **Sentencia** `return`: Se usa dentro de una función para finalizar su ejecución y, opcionalmente, devolver un valor.
+
+```javascript
+function f(x) {
+  return;
+};
+```
 
 ### Sentencias de funciones
 
@@ -257,7 +268,7 @@ En algunos lenguajes de programación, las funciones pueden existir tanto como s
 Una declaración de función se define normalmente como una sentencia. Ejemplo:
 
 ```javascript
-function (x) {
+function f(x) {
   return x + 2;
 }
 ```

@@ -9,19 +9,22 @@ import Container from "../components/Container.astro";
 import SimpleAnalytics from "../components/SimpleAnalytics.astro";
 
 const posts = (await getCollection("posts")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
-    <BaseHead title={`${SITE_TITLE} by ${SITE_AUTHOR}`} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title={`${SITE_TITLE} by ${SITE_AUTHOR}`}
+      description={SITE_DESCRIPTION}
+    />
     <style>
       ul {
         display: flex;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 1rem 2rem;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -31,33 +34,42 @@ const posts = (await getCollection("posts")).sort(
         width: calc(50% - 1em);
         background: var(--color-white);
         box-shadow: 0px 6px 10px rgba(44, 159, 175, 0.17);
-        transition: box-shadow 0.2s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out;
       }
 
       ul li:hover {
         box-shadow: var(--box-shadow);
+        transition: box-shadow 0.3s ease-in-out;
       }
 
       ul li * {
         text-decoration: none;
-        transition: 0.2s ease;
       }
+
       ul li:first-child {
         width: 100%;
         margin-bottom: 1rem;
       }
+
       ul li:first-child img {
         width: 100%;
       }
+
       ul li:first-child .title {
         font-size: 2.369rem;
       }
+
       ul li img {
         margin-bottom: 1rem;
         aspect-ratio: 24 / 9;
         object-fit: cover;
         width: 100%;
       }
+
+      ul li:not(:first-child) img {
+        aspect-ratio: 4 / 3;
+      }
+
       ul li a {
         display: flex;
         padding: 1em;
@@ -78,10 +90,22 @@ const posts = (await getCollection("posts")).sort(
         color: rgb(var(--gray));
         text-align: left;
         font-size: 16px;
+        line-height: 1.5rem;
       }
+
       ul li a:hover h4,
       ul li a:hover .date {
         color: var(--accent-dark);
+      }
+
+      ul li a img {
+        filter: grayscale(.8);
+        transition: filter 0.2s ease-in-out;
+      }
+
+      ul li a:hover img {
+        filter: grayscale(0);
+        transition: filter 0.2s ease-in-out;
       }
 
       @media (max-width: 920px) {
@@ -112,7 +136,7 @@ const posts = (await getCollection("posts")).sort(
                   <a href={`/posts/${post.slug}/`}>
                     <img
                       width={720}
-                      height={360}
+                      height={420}
                       src={post.data.heroImage}
                       alt=""
                     />

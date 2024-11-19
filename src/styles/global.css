@@ -29,8 +29,8 @@
   --gray: 96, 115, 159;
   --gray-light: 229, 233, 240;
   --gray-dark: 34, 41, 57;
-  --box-shadow: 0 2px 6px rgba(var(--gray), 15%),
-    0 8px 24px rgba(var(--gray), 23%), 0 16px 32px rgba(var(--gray), 23%);
+  --box-shadow: 0 2px 5px rgba(var(--gray), 12%),
+    0 6px 20px rgba(var(--gray), 20%), 0 14px 28px rgba(var(--gray), 18%);
 }
 
 @font-face {
@@ -70,11 +70,12 @@ body {
   overflow-wrap: break-word;
   color: var(--color-black-pearl-700);
   font-size: 20px;
-  line-height: 1.7;
+  line-height: 1.8rem;
 }
 
 main {
   width: 100%;
+  max-width: 980px;
   margin: 0 auto;
   padding: 5.5em 0 2em;
 }
@@ -153,6 +154,14 @@ a {
 
 a:hover {
   color: var(--accent);
+}
+
+a h4 {
+  transition: color 0.4s ease-in-out;
+}
+
+a:hover h4 {
+  transition: color 0.4s ease-in-out;
 }
 
 p {
@@ -247,6 +256,10 @@ hr {
 
 footer .copy {
   font-size: 0.8em;
+}
+
+time {
+  margin: 0.2em 0;;
 }
 
 ::marker {
