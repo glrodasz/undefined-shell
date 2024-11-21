@@ -16,7 +16,7 @@ Es especialmente útil en listas grandes, ya que reduce drásticamente el tiempo
 
 ### El algoritmo de la búsqueda binaria
 
-```
+```javascript
 Inicio
   Baraja de naipes = [Ordenada, As♥, 2♥, 3♥, 4♥, 5♥, ... Rey♥]
   Carta buscada = 6♥

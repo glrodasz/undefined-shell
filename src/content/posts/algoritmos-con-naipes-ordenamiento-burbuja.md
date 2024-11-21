@@ -23,7 +23,7 @@ Este proceso se repite hasta que no se necesitan más intercambios, lo que indic
 
 ### El Algoritmo de ordenamiento burbuja
 
-```
+```javascript
 Inicio
   Baraja de naipes = [Orden aleatorio: 3♥, Rey♥, 9♥, 5♥, 2♥, As♥, ...]
   Hubo cambios = Falso
