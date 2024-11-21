@@ -8,9 +8,12 @@ import Container from "../components/Container.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR } from "../consts";
 import SimpleAnalytics from "../components/SimpleAnalytics.astro";
 
-type Props = CollectionEntry<"posts">["data"];
+type Props = CollectionEntry<"posts">["data"] & {
+  readingTime: number;
+};
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, readingTime } =
+  Astro.props;
 
 const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_AUTHOR}`;
 ---
@@ -31,8 +34,9 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
       .hero-image img {
         display: block;
         margin: 0 auto;
-        aspect-ratio: 32 / 9;
+        aspect-ratio: 48 / 9;
         object-fit: cover;
+        width: 100%;
       }
       .prose {
         max-width: 920px;
@@ -49,43 +53,56 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
         margin: 0;
         color: var(--color-black-pearl-900);
       }
-      .date {
-        margin-bottom: 1em;
+      .date,
+      .reading-time {
         color: rgb(var(--gray));
       }
+
+      .subheader {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 1em;
+      }
+
       .last-updated-on {
         font-style: italic;
+      }
+
+      .post-container {
+        padding-top: 0;
       }
     </style>
   </head>
 
   <body>
     <Header />
+    <div class="hero-image">
+      {heroImage && <img width={1200} height={510} src={heroImage} alt="" />}
+    </div>
     <Container>
-      <main>
+      <main class="post-container">
         <article>
-          <div class="hero-image">
-            {
-              heroImage && (
-                <img width={1200} height={510} src={heroImage} alt="" />
-              )
-            }
-          </div>
           <div class="prose">
             <div class="title">
-              <div class="date">
-                <FormattedDate
-                  date={pubDate}
-                  leadingComma={Boolean(updatedDate)}
-                />
-                {
-                  updatedDate && (
-                    <span class="last-updated-on">
-                      última actualización el{" "}
-                      <FormattedDate date={updatedDate} />
-                    </span>
-                  )
-                }
+              <div class="subheader">
+                <div class="date">
+                  <FormattedDate
+                    date={pubDate}
+                    leadingComma={Boolean(updatedDate)}
+                  />
+                  {
+                    updatedDate && (
+                      <span class="last-updated-on">
+                        última actualización el{" "}
+                        <FormattedDate date={updatedDate} />
+                      </span>
+                    )
+                  }
+                </div>
+                <strong class="reading-time"
+                  >⏱️ {readingTime} min de lectura</strong
+                >
               </div>
               <h1>{title}</h1>
             </div>

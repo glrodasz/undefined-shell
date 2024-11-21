@@ -247,8 +247,9 @@ pre {
 
 pre>code {
   all: unset;
-  overflow-x: scroll;
   font-size: 16px;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 blockquote {
