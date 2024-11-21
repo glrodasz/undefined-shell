@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
   markdown: {
     shikiConfig: {
-      theme: "one-dark-pro",
+      theme: "catppuccin-frappe",
     },
   },
   redirects: await getRedirects(),
