@@ -167,11 +167,11 @@ a:hover {
 }
 
 a h4 {
-  transition: color 0.4s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 a:hover h4 {
-  transition: color 0.4s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 p {
