@@ -60,7 +60,6 @@ const posts = (await getCollection("posts")).sort(
       }
 
       ul li img {
-        margin-bottom: 1rem;
         aspect-ratio: 24 / 9;
         object-fit: cover;
         width: 100%;
@@ -74,6 +73,7 @@ const posts = (await getCollection("posts")).sort(
         display: flex;
         padding: 1em;
         flex-direction: column;
+        gap: 20px;
         height: 100%;
       }
 
@@ -99,6 +99,7 @@ const posts = (await getCollection("posts")).sort(
       }
 
       ul li a img {
+        display: flex;
         filter: grayscale(0.8);
         transition: filter 0.2s ease-in-out;
       }
@@ -115,7 +116,7 @@ const posts = (await getCollection("posts")).sort(
 
         ul li img,
         ul li:not(:first-child) img {
-          aspect-ratio: 16 / 9;
+          aspect-ratio: 32 / 9;
         }
 
         ul {
@@ -128,6 +129,25 @@ const posts = (await getCollection("posts")).sort(
 
         ul li:first-child .title {
           font-size: 1.563em;
+        }
+      }
+
+      .post-card-content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      ul li {
+        container-type: inline-size;
+      }
+
+      @container (width > 650px) {
+        ul li:not(:first-child) a {
+          flex-direction: row;
+        }
+
+        ul li:not(:first-child) a img {
+          width: 40%;
         }
       }
     </style>
@@ -148,11 +168,13 @@ const posts = (await getCollection("posts")).sort(
                       src={post.data.heroImage}
                       alt=""
                     />
-                    <h4 class="title">{post.data.title}</h4>
-                    <p class="date">
-                      <FormattedDate date={post.data.pubDate} />
-                    </p>
-                    <p class="excerpt">{post.data.description}</p>
+                    <div class="post-card-content">
+                      <h4 class="title">{post.data.title}</h4>
+                      <p class="date">
+                        <FormattedDate date={post.data.pubDate} />
+                      </p>
+                      <p class="excerpt">{post.data.description}</p>
+                    </div>
                   </a>
                 </li>
               ))
