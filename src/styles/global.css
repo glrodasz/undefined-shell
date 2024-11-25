@@ -249,7 +249,7 @@ pre>code {
   all: unset;
   font-size: 16px;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 blockquote {
@@ -356,5 +356,9 @@ time {
 
   h3 {
     font-size: 1.2em;
+  }
+
+  .astro-code code>.line:hover {
+    background: transparent;
   }
 }
