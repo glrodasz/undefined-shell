@@ -2,7 +2,7 @@
 title: Diseñando un Algoritmo
 pubDate: "2025-06-20T00:00:00.000Z"
 tags: Aprende a programar
-description: Explora cómo representar algoritmos más allá de una lista de pasos, usando diagramas de flujo y secuencia para entender decisiones y tareas en paralelo, como en una receta de cocina.
+description: Antes mencionamos que un algoritmo es un conjunto de instrucciones para realizar una tarea. Sin embargo, no siempre se ejecutan de forma lineal. Algunos requieren tomar distintos caminos o ejecutarse en distintos momentos. Exploremos una forma más adecuada de diseñar estos algoritmos.
 heroImage: "/covers/A close-up image of a treasure map, showing a big red cross.png"
 ---
 
@@ -16,7 +16,7 @@ Una lista de tareas no es la forma más adecuada para representar situaciones hi
 Para estos casos, un **diagrama de flujo** resulta más útil para visualizar las decisiones que pueden tomarse, así que veamos cómo se utiliza este tipo de diagrama para representar dichos algoritmos.
 
 ## Componentes de un diagrama de flujo
-Lo interesante del diagrama de flujo (En inglés flowchart) es que tiene una definición estandarizada, es decir, hay unas reglas muy claras de como definirse y usarse en la Ia industria, específicamente **ISO 5807** publicado en 1985, pero revisado por última vez en el 2019.
+Lo interesante del diagrama de flujo (En inglés flowchart) es que tiene una definición estandarizada, es decir, hay unas reglas muy claras de como definirse y usarse en la industria, específicamente **ISO 5807** publicado en 1985, pero revisado por última vez en el 2019.
 
 ### Formas básicas populares 
 Aunque no vamos a cubrir todas las formas básicas o extras, si describiremos las más populares. Con estas vamos a poder representar la mayoría de algoritmos que involucran toma de decisiones.
@@ -27,7 +27,7 @@ Se representa con una línea (o flecha de ser necesario) y está indica el flujo
 
 #### Terminal
 Se representan con u rectángulo de esquinas redondeadas (forma de estadio deportivo) y se usa para indicar el principio y fin de un algoritmo. De esta forma tendremos claro por dónde empezar y en qué lugar termina.
-![](/images/disenando-un-algoritmo/diagrama-de-secuencias)
+![](/images/disenando-un-algoritmo/terminal.png)
 
 #### Decisión
 Se representan con un rombo (diamante) y indica una condición que suele tener al dos opciones, generalmente Si / No. Esto quiere decir que del rombo siempre salen dos líneas de flujo donde cada línea representa la decisión tomada por donde continua el algoritmo. Es igual a cuando nos encontramos un camino que se bifurca y luego debemos decidir por dónde continuar.
