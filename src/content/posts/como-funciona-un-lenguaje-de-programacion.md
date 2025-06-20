@@ -6,7 +6,7 @@ description: Los lenguajes de programación procesan datos y gestionan el flujo 
 heroImage: "/covers/A close-up photograph of a vintage punched card, showcasing its intricate design.jpg"
 ---
 
-Los algoritmos en lenguajes de programación se construyen siguiendo estructuras con terminología específica. Principalmente, están compuestos por **expresiones** y **sentencias**.
+En los lenguajes de programación, los algoritmos se construyen utilizando estructuras que siguen una terminología específica. Estas estructuras están compuestas principalmente por **expresiones** y **sentencias**, que son esenciales para hacer que las instrucciones sean claras y fáciles de seguir de manera *secuencial*. Ambas permiten organizar el flujo del programa, facilitando su lectura y comprensión, lo que resulta en un código más entendible y fácil de mantener.
 
 ## Expresiones
 
