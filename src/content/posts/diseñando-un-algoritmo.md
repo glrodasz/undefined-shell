@@ -8,15 +8,15 @@ heroImage: "/covers/A close-up image of a treasure map, showing a big red cross.
 
 Antes mencionamos que *un algoritmo no es más que un conjunto de instrucciones que se siguen para realizar una tarea en particular.* Sin embargo, una lista de instrucciones no siempre es la mejor forma de representarlo, ya que no todas las tareas pueden ejecutarse de manera lineal, es decir, paso a paso. Algunos algoritmos requieren que las instrucciones sigan diferentes caminos o incluso se ejecuten en distintos momentos.
 
-Así que, vamos a exploremos una forma más adecuada de diseñar estos algoritmos que no se ejecutan necesariamente de forma lineal.
+Así que, vamos a explorar una forma más adecuada de diseñar estos algoritmos que no se ejecutan necesariamente de forma lineal.
 
 ## Toma de decisiones
-Una lista de tareas no es la forma más adecuada para representar situaciones hipotéticas en las que elegimos entre distintos caminos, como en los auditemos con naipes. A veces necesitábamos verificar si hubo cambios en el ordenamiento o si la carta del medio era mayor o menor que la carta buscada.
+Una lista de tareas no es la forma más adecuada para representar situaciones hipotéticas en las que elegimos entre distintos caminos, como en los algoritmos con naipes. A veces necesitábamos verificar si hubo cambios en el ordenamiento o si la carta del medio era mayor o menor que la carta buscada.
 
 Para estos casos, un **diagrama de flujo** resulta más útil para visualizar las decisiones que pueden tomarse, así que veamos cómo se utiliza este tipo de diagrama para representar dichos algoritmos.
 
 ## Componentes de un diagrama de flujo
-Lo interesante del diagrama de flujo (En inglés flowchart) es que tiene una definición estandarizada, es decir, hay unas reglas muy claras de como definirse y usarse en la industria, específicamente **ISO 5807** publicado en 1985, pero revisado por última vez en el 2019.
+Lo interesante del diagrama de flujo (En inglés flowchart) es que tiene una definición estandarizada, es decir, hay unas reglas muy claras de cómo definirse y usarse en la industria, específicamente **ISO 5807** publicado en 1985, pero revisado por última vez en el 2019.
 
 ### Formas básicas populares 
 Aunque no vamos a cubrir todas las formas básicas o extras, si describiremos las más populares. Con estas vamos a poder representar la mayoría de algoritmos que involucran toma de decisiones.
@@ -26,7 +26,7 @@ Se representa con una línea (o flecha de ser necesario) y está indica el flujo
 ![](/images/disenando-un-algoritmo/linea-de-flujo.png)
 
 #### Terminal
-Se representan con u rectángulo de esquinas redondeadas (forma de estadio deportivo) y se usa para indicar el principio y fin de un algoritmo. De esta forma tendremos claro por dónde empezar y en qué lugar termina.
+Se representan con un rectángulo de esquinas redondeadas (forma de estadio deportivo) y se usa para indicar el principio y fin de un algoritmo. De esta forma tendremos claro por dónde empezar y en qué lugar termina.
 ![](/images/disenando-un-algoritmo/terminal.png)
 
 #### Decisión
@@ -57,7 +57,7 @@ Por ejemplo, los primeros 15 números serían:
 #### Solución FizzBuzz
 A continuación veamos paso a paso lo que sería una solución de dicho problema usando un diagrama de flujo.
 
-> ℹ️ Las anotaciones numericas en el diagrama de flujo solo estan con un fin educativo. Un diagrama de flujo no suele venir acompañado de notas extras o una descripción paso a paso, pues se considera que el diagrama en si, es mas que suficiente.
+> ℹ️ Las anotaciones númericas en el diagrama de flujo solo están con un fin educativo. Un diagrama de flujo no suele venir acompañado de notas extras o una descripción paso a paso, pues se considera que el diagrama en sí es más que suficiente.
 
 ![](/images/disenando-un-algoritmo/fizz-buzz.png)
 1. Ubicamos la Terminal **“Inicio”**, que por conveniencia está en la parte superior. Aquí es donde comienza el algoritmo. Seguimos la flecha hacia abajo.
@@ -81,18 +81,18 @@ A continuación veamos paso a paso lo que sería una solución de dicho problema
 ### No todo puede o debe ser un diagrama de flujo
 Casi todos los algoritmos escritos en pseudocodigo como una lista pueden ser representados en una diagrama de flujo. Pero si dicho algoritmos no tiene una decision que tomar, quizás la mejor forma de representarlo seguiría siendo la lista tal y como estaba, siguiendo un poco el principio KISS.
 
-> 😘 El principio **KISS** (Keep It Simple, Stupid) es un principio en contra de la sobre ingeniería.  La mayoría de veces la solución mas simple es la mejor solución.
+> 😘 El principio **KISS** (Keep It Simple, Stupid) es un principio en contra de la sobre ingeniería.  La mayoría de veces la solución más simple es la mejor solución.
 
-Por otro lado, hay algoritmos que ademas de tener decisiones, también ejecutan procesos en diferentes momentos y en ese caso un diagrama de flujo puede usarse para representar una parte del mismo, pero requiere otros métodos de visualización para representar mejor su funcionalidad de marco general.
+Por otro lado, hay algoritmos que además de tener decisiones, también ejecutan procesos en diferentes momentos y en ese caso un diagrama de flujo puede usarse para representar una parte del mismo, pero requiere otros métodos de visualización para representar mejor su funcionalidad de marco general.
 
 ## Instrucciones en paralelo
 Tomando como analogía el proceso de seguir una receta de cocina, *quienes hemos cocinado un par de veces* sabemos que es mejor leer toda la receta primero para entender qué se puede hacer en paralelo (a la vez).
 
-> 🤖 Para lo que los humanos puede parecer natural aprovechar el tiempo y hacer ciertas tareas mientras otras se procesan, para las maquinas esto puede ser un poco mas complejo y no es como suele funcionar por defecto. **El paralelismo y asincronismo en la computación es todo un campo de estudio.**
+> 🤖 Para lo que los humanos puede parecer natural aprovechar el tiempo y hacer ciertas tareas mientras otras se procesan, para las maquinas esto puede ser un poco más complejo y no es como suele funcionar por defecto. **El paralelismo y asincronismo en la computación es todo un campo de estudio.**
 
 Tal vez, mientras se asan las hamburguesas, podríamos picar la cebolla o dorar los panes: esto nos permite **ahorrar tiempo** ya que no tenemos que esperar a que algo ser finalice por completo para empezar a trabajar en la siguiente tarea.
 
-Aunque no nos vamos a enfocar en explicar el paralelismo en este capítulo, lo que quiero destacar  es que **una simple lista de instrucciones puede ser insuficiente para describir un algoritmo**, ya que algunas veces es necesario ejecutar múltiples tareas a la vez.
+Aunque no nos vamos a enfocar en explicar el paralelismo en este capítulo, lo que quiero destacar  es que **una lista de instrucciones puede ser insuficiente para describir un algoritmo**, ya que algunas veces es necesario ejecutar múltiples tareas a la vez.
 
 ### Cocinando de manera sincrona
 Vamos a cocinar de manera síncrona un arroz con zanahoria picada y asada. Ya sé que no es el plato más exquisito, pero a veces hay que comer saludable. 🌱
@@ -111,7 +111,7 @@ Imagina que solo tienes **un solo fogón disponible**, y no puedes hacer más de
 ⏱️ **Tiempo total de preparación** 25 a 30 minutos.
 
 ### Cocinando de manera asincrona
-Ahora vamos a hacer exactamente la misma receta, pero usando un enfoque **asíncrono**. Es decir, vamos a **hacer varias cosas al mismo tiempo**. Imagina que tenemos más fogones, o que simplemente nos organizamos mejor para no perder tiempo.
+Ahora vamos a hacer exactamente la misma receta, pero usando un enfoque **asíncrono**. Es decir, vamos a **hacer varias cosas al mismo tiempo**. Imagina que tenemos más fogónes, o que simplemente nos organizamos mejor para no perder tiempo.
 
 > 🍚 Si nunca has hecho arroz, es bueno saber que toma unos 20–25 minutos en total, pero solo requiere tu atención durante los primeros 5 minutos. El resto del tiempo es de cocción y reposo, **así que puedes hacer otras cosas mientras tanto**.
 

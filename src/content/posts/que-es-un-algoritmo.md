@@ -89,7 +89,7 @@ Cómo podemos observar la receta escrita en pseudocódigo tiene una estructura f
 Lo interesante de tener la receta estructurada en pseudocódigo, es que ahora podemos cambiar los ingredientes para que la receta sea vegetariana:
 
 ```javascript
-carnes = ["carne vergal", "tocineta vegetal"]
+carnes = ["carne vegetal", "tocineta vegetal"]
 ```
 
 Lo interesante es que el resto del pseudocódigo permanece exactamente igual, y eso es uno de los pilares de la programación: ¿cómo podemos escribir código que sea fácil de cambiar y mantener en el tiempo?
