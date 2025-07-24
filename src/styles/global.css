@@ -197,6 +197,15 @@ li {
   margin: 1rem 0;
 }
 
+.prose li p,
+.prose ol li {
+  margin: 0 0 0.5rem;
+}
+
+.footnotes {
+  margin-top: 3.5rem;
+}
+
 li li {
   margin: 0.5rem 0;
 }
