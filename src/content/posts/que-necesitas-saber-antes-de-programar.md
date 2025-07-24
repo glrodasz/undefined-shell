@@ -31,7 +31,7 @@ Quisiera decirte que para programar basta con saber **sumar, restar, multiplicar
 
 > 🧠 Técnicamente, **sí** podrían bastar las operaciones básicas para tareas muy puntuales como por ejemplo, “maquetar”, pero… rápidamente, en pruebas técnicas o funcionalidades complejas, vas a necesitar algunos operadores matemáticos extra.
 
-> ℹ️ **Maquetar** significa traducir diseños de interfaz de usuario a código. En la web se usaría HTML, CSS y una pizca de JavaScript, por lo que el código imperativo es mínimo (ver más en [[Tipos de lenguajes de programación]]).
+> ℹ️ **Maquetar** significa traducir diseños de interfaz de usuario a código. En la web se usaría HTML, CSS y una pizca de JavaScript, por lo que el código imperativo es mínimo (ver más en [Tipos de lenguajes de programación](/posts/tipos-de-lenguajes-de-programación/)).
 
 No necesitas ser un experto en matemáticas ni un físico cuántico. El **programador promedio** en la industria comercial utiliza una cantidad muy limitada de matemáticas, prácticamente lo aprendido en la **educación secundaria**, con alguna que otra excepción. Veamos qué áreas conviene repasar (in necesidad de dominarlas a fondo ni tenerlas frescas antes de empezar a programar):
 
@@ -100,9 +100,9 @@ Otras veces, por protestas o acciones maliciosas, alguien retira una librería d
 ## Si me preguntan, no necesitas mucho
 Aunque he mencionado varios puntos aquí, **no los consideraría requisitos**. En realidad, la única condición indispensable son **las ganas de aprender**. Esa motivación te obligará a leer mucho, lo que, a su vez, despertará tu **curiosidad** por entender cómo funcionan los fundamentos de la programación y la computación. Con el tiempo, estas prácticas te permitirán **adaptarte al cambio**, algo vital en una industria que avanza tan rápido.
 
-Este libro se centra justamente en esas bases y en los fundamentos de JavaScript. Mientras el lenguaje siga vivo (y solo dejará de estarlo si JavaScript “muere” 😉), lo aprendido aquí te ayudará a seguir avanzando y a alimentar tu deseo de aprender.
+Este blog se centra justamente en esas bases y en los fundamentos de JavaScript. Mientras el lenguaje siga vivo (y solo dejará de estarlo si JavaScript “muere” 😉), lo aprendido aquí te ayudará a seguir avanzando y a alimentar tu deseo de aprender.
 
-> 🍎 **COBOL**, uno de los lenguajes más antiguos, lleva 65 años existiendo; a **PHP** lo “matan” desde hace 25. **JavaScript** es el lenguaje de la web: sin duda le quedan, como mínimo, entre 2 y 5 décadas de vida… más que suficiente para que termines este libro.
+> 🍎 **COBOL**, uno de los lenguajes más antiguos, lleva 65 años existiendo; a **PHP** lo “matan” desde hace 25. **JavaScript** es el lenguaje de la web: sin duda le quedan, como mínimo, entre 2 y 5 décadas de vida… más que suficiente para que termines este blog.
 
 [^1]: Robert C. Martin, *Código limpio* (trad. español de *Clean Code*, 2008)
 [^2]: https://techcrunch.com/2017/01/30/facebooks-parse-developer-platform-is-shutting-down-today/
