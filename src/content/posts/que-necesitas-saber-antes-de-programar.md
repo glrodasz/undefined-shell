@@ -111,5 +111,5 @@ Este blog se centra justamente en esas bases y en los fundamentos de JavaScript.
 > 🍎 **COBOL**, uno de los lenguajes más antiguos, lleva 65 años existiendo; a **PHP** lo “matan” desde hace 25. **JavaScript** es el lenguaje de la web: sin duda le quedan, como mínimo, entre 2 y 5 décadas de vida… más que suficiente para que termines este blog.
 
 [^1]: Robert C. Martin, *Código limpio* (trad. español de *Clean Code*, 2008)
-[^2]: https://techcrunch.com/2017/01/30/facebooks-parse-developer-platform-is-shutting-down-today/
-[^3]: https://en.wikipedia.org/wiki/Npm_left-pad_incident
+[^2]: Facebook’s Parse developer platform is shutting down today - https://techcrunch.com/2017/01/30/facebooks-parse-developer-platform-is-shutting-down-today/
+[^3]: npm left-pad incident - https://en.wikipedia.org/wiki/Npm_left-pad_incident

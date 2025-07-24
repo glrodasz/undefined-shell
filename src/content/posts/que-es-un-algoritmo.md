@@ -110,7 +110,9 @@ Aunque como principio tanto las recetas como manuales pueden ser considerados al
 
 - En matemáticas, se utilizan algoritmos para realizar cálculos y resolver problemas.
 - En física, se utilizan algoritmos para modelar y simular sistemas físicos.
-- En química, se utilizan algoritmos para predecir y modelar la estructura y el comportamiento de moléculas.
+- En química, se utilizan algoritmos para predecir y modelar la estructura y el comportamiento de moléculas. Gracias a la inteligencia artificial, en 2020 se descubrieron más de 200 millones de proteínas[^1].
 - En biología, se utilizan algoritmos para analizar y procesar grandes cantidades de datos genómicos y proteómicos.
 
 En el próximo post veremos un par de algoritmos aplicados a la ciencia de la computación que nos pueden ayudar a comprender más cómo nos ayudan las computadoras en el día a día con tareas que requieren fuerza de computo.
+
+[^1]: AlphaFold - The Most Useful Thing AI Has Ever Done - https://www.youtube.com/watch?v=P_fHJIYENdI
