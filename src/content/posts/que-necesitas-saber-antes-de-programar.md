@@ -30,7 +30,7 @@ Por eso **leer requerimientos** también es una habilidad vital para el desarrol
 
 > ℹ️ **Requerimientos:** conjunto de condiciones y funcionalidades que una aplicación debe cumplir para satisfacer las necesidades del cliente o usuario final. Esto es lo que comúnmente se conoce como “descripción del ticket o tarea”, hablando de manera muy simplificada.
 
-La buena noticia es que si estás leyendo este libro, es porque eres una de esas personas que está dispuesta a leer para mejorar su futuro profesional, así que ¡vas por buen camino! 🚀
+La buena noticia es que si estás leyendo este blog, es porque eres una de esas personas que está dispuesta a leer para mejorar su futuro profesional, así que ¡vas por buen camino! 🚀
 
 ## Matemáticas básicas… pero no tan básicas
 Quisiera decirte que para programar basta con saber **sumar, restar, multiplicar y dividir**, pero en realidad se necesita **un poquito más** que eso.
