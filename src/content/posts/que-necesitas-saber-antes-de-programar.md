@@ -112,4 +112,4 @@ Este blog se centra justamente en esas bases y en los fundamentos de JavaScript.
 
 [^1]: Robert C. Martin, *Código limpio* (trad. español de *Clean Code*, 2008)
 [^2]: Facebook’s Parse developer platform is shutting down today - https://techcrunch.com/2017/01/30/facebooks-parse-developer-platform-is-shutting-down-today/
-[^3]: npm Blog Archive: kik, left-pad, and npm - https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm
+[^3]: kik, left-pad, and npm - https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm

@@ -1,10 +1,16 @@
 ---
 title: "Algoritmos con naipes: Ordenamiento burbuja"
 pubDate: "2024-05-23T00:00:00.000Z"
+updatedDate: "2025-07-25T00:00:00.000Z"
 tags: Aprende a programar
 description: El algoritmo de ordenamiento de burbuja, o “Bubble Sort”, es un método sencillo para ordenar listas. Compara e intercambia pares adyacentes si están desordenados, repitiendo el proceso hasta que no se necesitan más intercambios. Es ideal por su simplicidad y eficiencia en listas pequeñas.
 heroImage: "/covers/A close-up view of numerous iridescent soap bubbles floating.jpg"
 ---
+Imagina que mezclas una baraja de naipes y luego sin pensarlo mucho la empiezas a ordernar: primero el As, luego el 2, después el 3… Una tarea bastante fácil, ¿cierto? Nuestro cerebro usa la vista, reconoce cada carta al instante y sabe como colocarlas en la posición correcta casi sin esfuerzo consciente.
+
+Ahora bien, hacer lo mismo en una computadora no es tan trivial. Para imitar esa “simple” tarea, habría que recrear todo un sistema de visión artificial que identifique símbolos y colores, además de un “cerebro virtual” que decida dónde va cada carta. Sería como contratar a un ingeniero aeroespacial para servir el café[^1].
+
+Por eso, en programación se suelen crear algoritmos con pasos más específicos; así se logra el mismo objetivo utilizando recursos mínimos. La desventaja es que debemos ser muy explícitos sobre cómo realizar esas tareas y, muchas veces, compensar la falta de otras habilidades, como “ver” o “entender” con soluciones alternativas.
 
 Veamos una serie de algoritmos escritos en pseudocódigo que podrás aplicar por ti mismo con objetos del mundo real:
 
@@ -97,3 +103,5 @@ Al finalizar todos los ciclos de comparación e intercambio, la baraja de naipes
 Este ejercicio visualiza claramente cómo el ordenamiento de burbuja mueve sistemáticamente las cartas hacia sus posiciones correctas, subrayando la importancia de los algoritmos en la organización de datos. 
 
 Aunque simple, este método demuestra la eficacia de seguir pasos detallados para lograr un objetivo complejo, similar a cómo las computadoras resuelven problemas en nuestro día a día.
+
+[^1]: The Stove Top Coffee Maker for Perfect Espresso - https://9barista.com/
