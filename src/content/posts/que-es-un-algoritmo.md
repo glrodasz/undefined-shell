@@ -6,11 +6,11 @@ tags: Aprende a programar
 description: Un algoritmo es un conjunto de instrucciones o pasos que se siguen para resolver un problema o llevar a cabo una tarea en particular. Así que, un manual para armar un mueble prefabricado o una receta de cocina, podrían ser considerados algoritmos.
 heroImage: "/covers/A close-up view of an open cookbook showing a recipe for sourdough starter.jpg"
 ---
-¿Has intentado armar un mueble de IKEA siguiendo los pasos del manual? Aun así, suele sobrar algún tornillo y te quedas con la duda de si algo quedó mal. ¿Y el cubo de Rubik? Quizá has visto a gente girarlo una y otra vez, como si los movimientos no tuvieran sentido, hasta que de pronto todas las caras quedan perfectas.
+¿Has intentado armar un mueble de IKEA siguiendo los pasos del manual? *Y si… suele sobrar algún tornillo y te quedas con la duda de si algo quedó mal. 🙃* ¿Y el cubo de Rubik? Quizá has visto a gente girarlo una y otra vez, como si los movimientos no tuvieran sentido, hasta que de pronto todas las caras quedan perfectas.
 
-En ambos casos se siguen **instrucciones precisas** para resolver un problema: armar un mueble o completar el cubo. De hecho, existe un algoritmo que, si lo sigues paso a paso, resuelve el cubo sin importar cómo esté mezclado.
+En ambos casos se siguen **instrucciones precisas** para resolver un problema: armar un mueble o completar el cubo. De hecho, existe un algoritmo[^1] que, si lo sigues paso a paso, resuelve el cubo sin importar cómo esté mezclado.
 
-También escuchamos que “el algoritmo” decide qué vemos en las redes sociales, aunque esa frase se queda corta para describir cómo funcionan los sistemas de recomendación.
+También escuchamos que “el algoritmo” decide qué vemos en las redes sociales, aunque esa frase se queda corta para describir cómo funcionan los **sistemas de recomendación**.
 
 La verdad es que el concepto de **algoritmo** está presente en muchas situaciones cotidianas, incluso cuando no lo llamamos por su nombre.
 
@@ -110,9 +110,10 @@ Aunque como principio tanto las recetas como manuales pueden ser considerados al
 
 - En matemáticas, se utilizan algoritmos para realizar cálculos y resolver problemas.
 - En física, se utilizan algoritmos para modelar y simular sistemas físicos.
-- En química, se utilizan algoritmos para predecir y modelar la estructura y el comportamiento de moléculas. Gracias a la inteligencia artificial, en 2020 se descubrieron más de 200 millones de proteínas[^1].
+- En química, se utilizan algoritmos para predecir y modelar la estructura y el comportamiento de moléculas. Gracias a la inteligencia artificial, en 2020 se descubrieron más de 200 millones de proteínas[^2].
 - En biología, se utilizan algoritmos para analizar y procesar grandes cantidades de datos genómicos y proteómicos.
 
 En el próximo post veremos un par de algoritmos aplicados a la ciencia de la computación que nos pueden ayudar a comprender más cómo nos ayudan las computadoras en el día a día con tareas que requieren fuerza de computo.
 
-[^1]: AlphaFold - The Most Useful Thing AI Has Ever Done - https://www.youtube.com/watch?v=P_fHJIYENdI
+[^1]: The Official Rubik’s Cube Solution Guides - https://www.rubiks.com/solution-guides
+[^2]: AlphaFold - The Most Useful Thing AI Has Ever Done - https://www.youtube.com/watch?v=P_fHJIYENdI
