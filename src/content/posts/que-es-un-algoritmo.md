@@ -10,7 +10,7 @@ heroImage: "/covers/A close-up view of an open cookbook showing a recipe for sou
 
 En ambos casos se siguen **instrucciones precisas** para resolver un problema: armar un mueble o completar el cubo. De hecho, existe un algoritmo[^1] que, si lo sigues paso a paso, resuelve el cubo sin importar cómo esté mezclado.
 
-También escuchamos que “el algoritmo” decide qué vemos en las redes sociales, aunque esa frase se queda corta para describir cómo funcionan los **sistemas de recomendación**.
+> 🔍 También escuchamos que “el algoritmo” decide qué vemos en las redes sociales, aunque esa frase se queda corta para describir cómo funcionan los **sistemas de recomendación**.
 
 La verdad es que el concepto de **algoritmo** está presente en muchas situaciones cotidianas, incluso cuando no lo llamamos por su nombre.
 
