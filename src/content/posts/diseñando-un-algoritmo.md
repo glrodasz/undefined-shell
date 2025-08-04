@@ -137,7 +137,7 @@ Este tipo de diagrama se usa más comúnmente para mostrar la comunicación entr
 > 🔁 Se lee de izquierda a derecha (quién participa) y de arriba a abajo (en qué orden suceden las cosas). Las flechas indican mensajes entre participantes, como cuando un cocinero pone algo a calentar, espera, y mientras tanto hace otra cosa.
 
 ![](/images/disenando-un-algoritmo/diagrama-de-secuencias.png)
-[🔗 Mira el diagrama en swimlanes.io](https://swimlanes.io/#XZK/TsNADMb3ewqrUyqUSgwsGSpVMCKB2k7d3NRtDyW+4LsgUcQDMfAUfTGca/6SKd/dz/b3OfH0XhPn9GTxJFiaYENBsKacAsLKX385F8eYwUrEXSB3DDtkPDuxaAzWwXFd7kmMqVCCzW2FHODR5ZZJHKCHWSdmE+SlKBCap0GiSLAZMZ9iW9yPuJtKLp2Df/BG368/3NGtnBnT+0mXyzg5u1lEgTgUkvsHKC3PjUnTDF6FtK1e9oP0kjiIdqWiLfGk22h6GHMSV1dD1adOHxcbgImBmKJxIGGMeeVuARuoNZ/BVpD9kcQKiDvgW+Qm/Xp0g0WgSUtI2lwA7AKB2NM5gDsONc8K7QZe/4YDMhTWB1W6VIpnfWxjFotFBl9H9KmvLKuJbyBfkbo8uBEWP+mw7jVVzg/r7rY9ydEJDULyYTv4bpTnDw==)
+[🔗 Mira el diagrama en swimlanes.io](https://glrz.me/diagrama-secuencias)
 
 Más adelante veremos ejemplos concretos del mundo de la programación, como el flujo **cliente-servidor**. Pero, por ahora, usamos este recurso para representar mejor lo que ocurre en nuestra receta, y así visualizar de forma clara lo que significa ejecutar tareas en paralelo.
 
