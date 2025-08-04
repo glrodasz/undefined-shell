@@ -66,4 +66,13 @@ No hay nada más aterrador que ser responsable de algo sin saber cómo funciona.
 
 Por eso, mi consejo es usar la inteligencia artificial como un **acompañante**, un asistente que te ayuda, te inspira y te acelera. Pero la dirección técnica debe seguir en tus manos. Aprender a programar te da el criterio para decidir qué funciona, qué no, y cuándo decirle “gracias, pero no lo haremos así”.
 
+## Es mucho más que escribir código
+Podemos crear nuestros propios universos a imagen y semejanza (no estoy exagerando), o cosas tan simples como automatizar tareas.
+
+Programar nos permite entender cómo funcionan los sistemas que usamos todos los días y tomar mejores decisiones en un mundo lleno de tecnología.
+
+Aprender a programar es como aprender un nuevo idioma: **tu cerebro se expande**, empiezas a ver patrones en todos lados, a pensar de forma más estructurada y a detectar oportunidades para crear y ejecutar ideas en los procesos de nuestro día a día.
+
+No se trata solo de escribir código, sino de entrenar la cabeza para resolver problemas y convertir ideas en realidad. Y lo mejor de todo: no necesitas estudiar una carrera para hacerlo. Con un par de meses y mucha práctica, puedes ser un programador listo para comerte el mundo.
+
 [^1]: Node graph architecture - https://en.m.wikipedia.org/wiki/Node_graph_architecture
