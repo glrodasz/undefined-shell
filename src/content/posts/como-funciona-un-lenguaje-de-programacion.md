@@ -6,8 +6,11 @@ description: Los lenguajes de programación procesan datos y gestionan el flujo 
 heroImage: "/covers/A close-up photograph of a vintage punched card, showcasing its intricate design.jpg"
 ---
 
-En los lenguajes de programación, los algoritmos se construyen utilizando estructuras que siguen una terminología específica. Estas estructuras están compuestas principalmente por **expresiones** y **sentencias**, que son esenciales para hacer que las instrucciones sean claras y fáciles de seguir de manera *secuencial*. Ambas permiten organizar el flujo del programa, facilitando su lectura y comprensión, lo que resulta en un código más entendible y fácil de mantener.
+Si lo piensas bien, los lenguajes de programación no son tan distintos de cualquier idioma humano: cada lengua tiene su propio conjunto de reglas, lo que conocemos como **gramática**, para que lo que decimos tenga sentido.
 
+Aunque cada lenguaje tiene sus matices, en la mayoría de las lenguas romances (inglés, español, francés, italiano y portugués) la oración básica sigue el patrón **sujeto** + **verbo** + **complemento**.
+
+En código pasa algo muy parecido: usamos secuencias de **expresiones** y **sentencias** que organizan el flujo del programa y hacen que las instrucciones sean claras y fáciles de seguir de manera secuencial. Esta organización no solo facilita la lectura y comprensión, sino que también ayuda a mantener el código entendible y más sencillo de mejorar con el tiempo. 🤖
 ## Expresiones
 
 Una expresión es una combinación de ciertos **elementos** que se **evalúan** para producir un resultado.
