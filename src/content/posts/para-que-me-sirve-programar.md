@@ -6,7 +6,7 @@ description: Cuando empecé esta carrera y alguien me preguntaba para qué sirve
 heroImage: "/covers/A close-up image of a typewriter in a old office.jpg"
 ---
 
-Cuando empecé esta carrera y alguien me preguntaba *para qué sirve programar*, respondía sin pensarlo mucho: **para hacer páginas web**. Con el tiempo entendí que programar sirve para muchísimo más, y estoy convencido de que, dentro de unos años, será tan imprescindible como saber manejar hojas de cálculo.
+Cuando estaba en la universidad si alguien me preguntaba *para qué sirve programar*, respondía sin pensarlo mucho: **para hacer páginas web**. Con el tiempo entendí que programar sirve para muchísimo más, y estoy convencido de que, dentro de unos años, será tan imprescindible como saber manejar hojas de cálculo.
 
 > 🥦 **Hojas de cálculo**: herramientas como Microsoft Excel o Google Spreadsheets digitalizan las antiguas tablas de papel. Cumplen la misma misión, guardar y procesar números, pero ahora con fórmulas, gráficos y automatizaciones que en papel es imposible.
 
