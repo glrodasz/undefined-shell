@@ -1,6 +1,6 @@
 ---
 title: "¿La programación es para mi?"
-pubDate: "2025-09-09T00:00:00.000Z"
+pubDate: "2025-09-19T00:00:00.000Z"
 tags: Aprende a programar
 description: La programación no es solo para genios de las matemáticas ni para quienes crecieron con videojuegos. Requiere curiosidad, disciplina y el hábito de resolver problemas. Descubre si este camino, lleno de retos y aprendizaje constante, puede ser la carrera ideal para ti.
 heroImage: "/covers/A close up of hats on wooden shelves.jpg"
