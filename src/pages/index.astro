@@ -79,12 +79,13 @@ export function calculateReadingTime(text: string, wordsPerMinute = 200) {
         aspect-ratio: 4 / 3;
       }
 
-      ul li a {
+      .post-card {
         display: flex;
         padding: 1em;
         flex-direction: column;
         gap: 20px;
         height: 100%;
+        cursor: pointer;
       }
 
       .title {
@@ -107,24 +108,30 @@ export function calculateReadingTime(text: string, wordsPerMinute = 200) {
         line-height: 1.5rem;
       }
 
-      ul li a:hover h4,
-      ul li a:hover .date {
+      .post-card:hover .title,
+      .post-card:hover .date {
         color: var(--accent-dark);
       }
 
-      ul li a img {
+      .post-card img {
         display: flex;
         filter: grayscale(0.8);
         transition: filter 0.2s ease-in-out;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+        pointer-events: none;
       }
 
-      ul li a:hover img {
+      .post-card:hover img {
         filter: grayscale(0);
         transition: filter 0.2s ease-in-out;
       }
 
       @media (max-width: 920px) {
-        ul li a img {
+        .post-card img {
           filter: grayscale(0);
         }
 
@@ -156,15 +163,31 @@ export function calculateReadingTime(text: string, wordsPerMinute = 200) {
       }
 
       @container (width > 650px) {
-        ul li:not(:first-child) a {
+        ul li:not(:first-child) .post-card {
           flex-direction: row;
         }
 
-        ul li:not(:first-child) a img {
+        ul li:not(:first-child) .post-card img {
           width: 40%;
         }
       }
     </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const postCards = document.querySelectorAll('.post-card');
+        
+        postCards.forEach(card => {
+          card.addEventListener('click', (e) => {
+            if (window?.getSelection()?.toString().length === 0) {
+              const href = card.getAttribute('data-href');
+              if (href) {
+                window.location.href = href;
+              }
+            }
+          });
+        });
+      });
+    </script>
   </head>
   <body>
     <Header />
@@ -175,7 +198,7 @@ export function calculateReadingTime(text: string, wordsPerMinute = 200) {
             {
               posts.map((post) => (
                 <li>
-                  <a href={`/posts/${post.slug}/`}>
+                  <div class="post-card" data-href={`/posts/${post.slug}/`}>
                     <img
                       width={720}
                       height={420}
@@ -193,7 +216,7 @@ export function calculateReadingTime(text: string, wordsPerMinute = 200) {
                       </p>
                       <p class="excerpt">{post.data.description}</p>
                     </div>
-                  </a>
+                  </div>
                 </li>
               ))
             }
