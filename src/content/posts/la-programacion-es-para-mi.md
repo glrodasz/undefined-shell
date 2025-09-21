@@ -6,7 +6,7 @@ description: La programación no es solo para genios de las matemáticas ni para
 heroImage: "/covers/A close up of hats on wooden shelves.jpg"
 ---
 
-Sé que muchos no llegan a la programación por simple casualidad, como me pasó a mí. Algunos llegan porque tuvieron una infancia muy cercana a los videojuegos o, en general, a los dispositivos electrónicos, como la computadora.
+Sé que muchos no llegan a la programación por simple casualidad, como nos paso a varios de nosotros. Algunos llegan porque tuvieron una infancia muy cercana a los videojuegos o, en general, a los dispositivos electrónicos, como la computadora.
 
 Como en toda carrera, algunos la eligen porque sus padres se dedicaban a ello, o porque era la carrera del momento, la carrera de moda.
 
@@ -16,7 +16,7 @@ En otros casos, porque es la carrera que promete sacarte de la pobreza. Y esto �
 
 ## No necesitas un título
 
-Algo muy bonito que tiene la programación, a diferencia de otras carreras, es que no necesitas realmente un título universitario para ejercer, y yo soy una prueba viviente de ello. Aunque empecé la universidad, nunca la terminé, pues me puse a trabajar antes de poder graduarme.
+Algo muy bonito que tiene la programación, a diferencia de otras carreras, es que no necesitas realmente un título universitario para ejercer, y muchos somos prueba viviente de ello. Aunque empecé la universidad, nunca la terminé, pues me puse a trabajar antes de poder graduarme.
 
 > ⚡️ Esto también quiere decir que existen programas rápidos como los conocidos **Bootcamps de programación**[^1], en los que puedes aprender a programar profesionalmente de manera intensiva en un lapso de 4 a 6 meses.
 
