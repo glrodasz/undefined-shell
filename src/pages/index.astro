@@ -173,13 +173,14 @@ export function calculateReadingTime(text: string, wordsPerMinute = 200) {
       }
     </style>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const postCards = document.querySelectorAll('.post-card');
-        
-        postCards.forEach(card => {
-          card.addEventListener('click', (e) => {
+      document.addEventListener("DOMContentLoaded", function () {
+        const postCards = document.querySelectorAll(".post-card");
+
+        postCards.forEach((card) => {
+          card.addEventListener("click", (e) => {
+            e.preventDefault();
             if (window?.getSelection()?.toString().length === 0) {
-              const href = card.getAttribute('data-href');
+              const href = card.getAttribute("data-href");
               if (href) {
                 window.location.href = href;
               }
