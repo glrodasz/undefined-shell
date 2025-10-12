@@ -6,7 +6,7 @@ description: Detrás de cada línea de código existe una jerarquía invisible, 
 heroImage: "/covers/A close-up image of a realistic tardigrade crawling over a rough.jpg"
 ---
 
-Hasta ahora hemos visto cómo el código que escribimos está compuesto de partes más pequeñas, como *expresiones* y *sentencias*. Pero, ¿cuántas sentencias y/o expresiones son necesarias para considerarlo un algoritmo? ¿En qué momento un conjunto de algoritmos se convierte en lo que llamamos *frameworks*? ¿Y cuándo un *framework* se diferencia de una *utilidad* o una *biblioteca*?
+Hasta ahora hemos visto cómo el código que escribimos está compuesto de partes más pequeñas, como [*expresiones* y *sentencias*](/posts/como-funciona-un-lenguaje-de-programacion). Pero, ¿cuántas sentencias y/o expresiones son necesarias para considerarlo un algoritmo? ¿En qué momento un conjunto de algoritmos se convierte en lo que llamamos *frameworks*? ¿Y cuándo un *framework* se diferencia de una *utilidad* o una *biblioteca*?
 
 > 📚 **Biblioteca**: en algunas ocasiones también llamada *librería*, debido a una mala traducción de la palabra en inglés *library*.
 
