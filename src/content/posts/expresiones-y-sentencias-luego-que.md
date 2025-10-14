@@ -21,8 +21,8 @@ En el caso del código, esta composición también existe, aunque de forma mucho
 
 > 💧 **Algoritmo** y **código** a veces se usan como sinónimos. Sin embargo, de manera coloquial, muchas veces se le llama *algoritmo* a una parte específica de un producto. Podemos escuchar cosas como *“el algoritmo de búsqueda”* o *“el algoritmo de descuentos”*, etc.
 
-![](/images/composicion-y-categorizacion/composicion.png)
-Podemos considerar las **expresiones** como los *aminoácidos* del código, las unidades más pequeñas con un propósito funcional.
+![Aminoácidos, proteínas, células y organismos](/images/composicion-y-categorizacion/composicion.png)
+_Podemos considerar las **expresiones** como los *aminoácidos* del código, las unidades más pequeñas con un propósito funcional._
 
 ## El código puede ser muchas cosas
 Cuando hablamos de *código*, podemos estar refiriéndonos a muchas cosas, *similar a lo que ocurre con la palabra algoritmo*. Sin embargo, ciertas piezas de código pueden categorizarse según su función y tamaño y aun así, todas siguen considerándose “código”. 
@@ -37,8 +37,8 @@ El concepto de “código” sería, entonces, el **organismo** que engloba todo
 * **Bibliotecas**: conjuntos de utilidades agrupadas con un propósito común.
 * **Frameworks**: bibliotecas más grandes que incluyen múltiples utilidades y añaden estructura, reglas o convenciones para desarrollar un producto.
 
-![](/images/composicion-y-categorizacion/categorizacion.png)
-Las **utilidades**, **bibliotecas** y **frameworks** pueden verse como distintos tipos de organismos dentro del ecosistema del código: desde los más simples hasta los más sofisticados.
+![Organismo unicelular, multicelular y complejo](/images/composicion-y-categorizacion/categorizacion.png)
+_Las **utilidades**, **bibliotecas** y **frameworks** pueden verse como distintos tipos de organismos dentro del ecosistema del código: desde los más simples hasta los más sofisticados._
 
 ## Algoritmos en el codigo 
 Un algoritmo no siempre es algo complejo o misterioso. Muchas veces lo usamos sin darnos cuenta, porque no es más que una secuencia de pasos para resolver un problema específico, como ya hemos discutido antes. En un proyecto, solemos escuchar frases como *“el algoritmo de búsqueda”* o *“el algoritmo que calcula los descuentos”*. En esos casos, hablamos de fragmentos concretos dentro de un sistema más grande.
