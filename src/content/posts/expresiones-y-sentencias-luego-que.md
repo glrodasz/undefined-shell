@@ -10,9 +10,7 @@ Hasta ahora hemos visto cómo el código que escribimos está compuesto de parte
 
 > 📚 **Biblioteca**: en algunas ocasiones también llamada *librería*, debido a una mala traducción de la palabra en inglés *library*.
 
-Si quisiéramos explicarlo de forma práctica, podríamos pensar en cómo las **biomoléculas**, tales como los **aminoácidos**, se combinan para formar **proteínas**, que luego crean **células** y, finalmente, **organismos completos**.
-
-En el caso del código, esta composición también existe, aunque de forma mucho más simple y directa:
+Si quisiéramos explicarlo de forma práctica, podríamos pensar en el diseño atómico donde las **expresiones** generan **sentencias**, las sentencias **algoritmos** y estos finalmente **código**.
 
 * Las **expresiones** son la mínima unidad con significado funcional.
 * Las **sentencias** están compuestas por una o más expresiones.
@@ -21,24 +19,18 @@ En el caso del código, esta composición también existe, aunque de forma mucho
 
 > 💧 **Algoritmo** y **código** a veces se usan como sinónimos. Sin embargo, de manera coloquial, muchas veces se le llama *algoritmo* a una parte específica de un producto. Podemos escuchar cosas como *“el algoritmo de búsqueda”* o *“el algoritmo de descuentos”*, etc.
 
-![Aminoácidos, proteínas, células y organismos](/images/composicion-y-categorizacion/composicion.png)
-_Podemos considerar las **expresiones** como los *aminoácidos* del código, las unidades más pequeñas con un propósito funcional._
+![Expresiones, sentencias, algoritmos y código](/images/composicion-y-categorizacion/composicion.png)
+_Las **expresiones** son las unidades más pequeñas, que se van componiendo hasta generar **código**._
 
 ## El código puede ser muchas cosas
 Cuando hablamos de *código*, podemos estar refiriéndonos a muchas cosas, *similar a lo que ocurre con la palabra algoritmo*. Sin embargo, ciertas piezas de código pueden categorizarse según su función y tamaño y aun así, todas siguen considerándose “código”. 
-
-Siguiendo la analogía biomolecular, cuando hablamos de *organismos* no nos referimos a una sola cosa: existen distintos tipos, y algunos pueden formar parte de otros organismos sin problema.
-
-Un organismo puede ser **unicelular**, **multicelular** o **complejo**.
-
-El concepto de “código” sería, entonces, el **organismo** que engloba todos estos niveles: desde el más simple y aislado, hasta el más estructurado y colaborativo.
 
 * **Utilidades**: piezas de código pequeñas y específicas que resuelven una tarea concreta.
 * **Bibliotecas**: conjuntos de utilidades agrupadas con un propósito común.
 * **Frameworks**: bibliotecas más grandes que incluyen múltiples utilidades y añaden estructura, reglas o convenciones para desarrollar un producto.
 
-![Organismo unicelular, multicelular y complejo](/images/composicion-y-categorizacion/categorizacion.png)
-_Las **utilidades**, **bibliotecas** y **frameworks** pueden verse como distintos tipos de organismos dentro del ecosistema del código: desde los más simples hasta los más sofisticados._
+![Utilidades, bibliotecas y frameworks](/images/composicion-y-categorizacion/categorizacion.png)
+_Las **utilidades**, **bibliotecas** y **frameworks** pueden verse como distintos tipos dentro del ecosistema del código: desde los más simples hasta los más sofisticados._
 
 ## Algoritmos en el codigo 
 Un algoritmo no siempre es algo complejo o misterioso. Muchas veces lo usamos sin darnos cuenta, porque no es más que una secuencia de pasos para resolver un problema específico, como ya hemos discutido antes. En un proyecto, solemos escuchar frases como *“el algoritmo de búsqueda”* o *“el algoritmo que calcula los descuentos”*. En esos casos, hablamos de fragmentos concretos dentro de un sistema más grande.
