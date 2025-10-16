@@ -3,7 +3,7 @@ title: Tipos de lenguajes de programación
 pubDate: "2024-11-24T00:00:00.000Z"
 tags: Aprende a programar
 description: Al igual que las personas que hablan diversos idiomas, en programación existen múltiples lenguajes, cada uno con características y propósitos específicos. Los lenguajes de programación se pueden categorizar en varios paradigmas, como imperativos, declarativos, orientados a objetos, funcionales, procedimentales y lógicos.
-heroImage: "/covers/A pristine wooden desk with architectural tools bathed in natural sunlight.jpg"
+heroImage: "/covers/architect-desk-with-tools-and-blueprints.jpg"
 ---
 
 Así como las personas nos comunicamos en diferentes idiomas, usualmente del lugar donde nos encontramos, en programación también existen diversos lenguajes. Para un programador experimentado, puede ser relativamente sencillo entender múltiples lenguajes de programación, de forma similar a la intercomprensión entre hablantes de idiomas romances como el español, italiano o portugués.

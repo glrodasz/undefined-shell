@@ -3,7 +3,7 @@ title: "Algoritmos con naipes: Busqueda binaria"
 pubDate: "2024-07-11T00:00:00.000Z"
 tags: Aprende a programar
 description: El algoritmo de búsqueda binaria, o “Binary Search”, es un método eficiente para encontrar un elemento en una lista ordenada. Divide repetidamente el rango de búsqueda a la mitad, reduciendo significativamente el número de comparaciones necesarias.
-heroImage: "/covers/A serene natural scene featuring tree branches and leaves in the foreground.jpg"
+heroImage: "/covers/intertwined-tree-branches-with-green-leaves.jpg"
 ---
 > 🤿 Esto hace parte de la serie ilustrada "**Algoritmos con naipes**", puedes encontrar el primer articulo [aquí](/posts/algoritmos-con-naipes-ordenamiento-burbuja/) en el que hablamos del _ordenamiento burbuja_.
 

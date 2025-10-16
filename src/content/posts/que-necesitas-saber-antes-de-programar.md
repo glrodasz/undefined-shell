@@ -3,7 +3,7 @@ title: "¿Qué necesito saber antes de programar?"
 pubDate: "2025-07-24T00:00:00.000Z"
 tags: Aprende a programar
 description: Antes de empezar a programar no hace falta ser un genio ni memorizar fórmulas; basta con seguir tres pilares que simplifican el camino, aprender a leer documentación, repasar las matemáticas de la secundaria y mantener una curiosidad inagotable para adaptarte a los constantes cambios tecnológicos. Veamos por qué, con esos cimientos, cualquier persona puede dar sus primeros pasos con confianza.
-heroImage: "/covers/A weathered wooden toolbox in the nature.jpg"
+heroImage: "/covers/vintage-wooden-toolbox-with-metal-wrenches.jpg"
 ---
 Antes de empezar a programar no hace falta ser un genio ni memorizar fórmulas; basta con seguir tres pilares que simplifican el camino: 
 

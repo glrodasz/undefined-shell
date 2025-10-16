@@ -3,7 +3,7 @@ title: Diseñando un Algoritmo
 pubDate: "2025-06-20T00:00:00.000Z"
 tags: Aprende a programar
 description: Antes mencionamos que un algoritmo es un conjunto de instrucciones para realizar una tarea. Sin embargo, no siempre se ejecutan de forma lineal. Algunos requieren tomar distintos caminos o ejecutarse en distintos momentos. Exploremos una forma más adecuada de diseñar estos algoritmos.
-heroImage: "/covers/A close-up image of a treasure map, showing a big red cross.jpg"
+heroImage: "/covers/old-treasure-map-with-red-x-mark.jpg"
 ---
 
 Antes mencionamos que *un algoritmo no es más que un conjunto de instrucciones que se siguen para realizar una tarea en particular.* Sin embargo, una lista de instrucciones no siempre es la mejor forma de representarlo, ya que no todas las tareas pueden ejecutarse de manera lineal, es decir, paso a paso. Algunos algoritmos requieren que las instrucciones sigan diferentes caminos o incluso se ejecuten en distintos momentos.

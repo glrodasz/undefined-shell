@@ -3,7 +3,7 @@ title: Estático, dinámico, single-page, multiple-page y JAMstack
 pubDate: "2020-05-02T00:00:00.000Z"
 tags: Aprende a programar
 description: Hoy en día, escuchamos términos como páginas estáticas, dinámicas, SPA, Multi-páginas y JAMStack. ¿Qué significan y por qué es importante entender sus diferencias? No existe una “navaja suiza” para la web; cada herramienta resuelve problemas específicos. Es crucial conocer sus ventajas y desventajas para tomar buenas decisiones al crear proyectos.
-heroImage: "/covers/A close-up view of the rear wheel and gear mechanism of a blue bicycle.jpg"
+heroImage: "/covers/blue-bicycle-gear-and-chain-close-up.jpg"
 redirect: true
 ---
 

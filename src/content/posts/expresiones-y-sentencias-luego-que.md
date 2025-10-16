@@ -4,7 +4,7 @@ pubDate: "2025-10-13T00:00:00.000Z"
 updatedDate: "2025-10-16T00:00:00.000Z"
 tags: Aprende a programar
 description: Detrás de cada línea de código existe una jerarquía invisible, expresiones que forman sentencias, sentencias que componen algoritmos, y algoritmos que, al escalar, se convierten en bibliotecas o frameworks. Entender esa composición no solo ayuda a escribir mejor código, sino a reconocer cuándo algo deja de ser una función aislada para transformarse en una herramienta, un framework o incluso un producto.
-heroImage: "/covers/A set of boxes with a red toolbox.jpg"
+heroImage: "/covers/cardboard-boxes-with-red-toolbox-and-wrenches.jpg"
 ---
 
 Hasta ahora hemos visto cómo el código que escribimos está compuesto de partes más pequeñas, como [*expresiones* y *sentencias*](/posts/como-funciona-un-lenguaje-de-programacion). Pero, ¿cuántas sentencias y/o expresiones son necesarias para considerarlo un algoritmo? ¿En qué momento un conjunto de algoritmos se convierte en lo que llamamos *frameworks*? ¿Y cuándo un *framework* se diferencia de una *utilidad* o una *biblioteca*?
@@ -47,7 +47,7 @@ Cuando comenzamos a organizar un poco nuestras piezas de código, aparece una ca
 
 Las utilidades suelen ser funciones pequeñas que no dictan cómo debe funcionar la aplicación, sino que ayudan a resolver tareas muy específicas, generalmente repetitivas.
 
-Un ejemplo clásico son los formatos. Imagina que necesitamos transformar un número en un formato de moneda, por ejemplo de 2333.4 a **$2,333.40**, o que recibimos una fecha en el estándar **ISO 8601**, por ejemplo 2025-10-12T22:27:06.416Z y queremos mostrarla como *“Domingo, Oct 13, 12:27 AM”* o incluso de una forma más humana como *“Hace 32 minutos”*.
+Un ejemplo clásico son los formatos. Imagina que necesitamos transformar un número en un formato de moneda, por ejemplo de `2333.4` a `$2,333.40`, o que recibimos una fecha en el estándar **ISO 8601**, por ejemplo `2025-10-12T22:27:06.416Z` y queremos mostrarla como `Domingo, Oct 13, 12:27 AM` o incluso de una forma más humana como `Hace 32 minutos`.
 
 Las utilidades para dar formato son solo un tipo. También existen utilidades para manipular objetos, arreglos, cadenas de texto, eventos y mucho más.
 

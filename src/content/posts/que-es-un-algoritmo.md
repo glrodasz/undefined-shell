@@ -4,7 +4,7 @@ pubDate: "2024-04-02T00:00:00.000Z"
 updatedDate: "2025-07-24T00:00:00.000Z"
 tags: Aprende a programar
 description: Un algoritmo es un conjunto de instrucciones o pasos que se siguen para resolver un problema o llevar a cabo una tarea en particular. Así que, un manual para armar un mueble prefabricado o una receta de cocina, podrían ser considerados algoritmos.
-heroImage: "/covers/A close-up view of an open cookbook showing a recipe for sourdough starter.jpg"
+heroImage: "/covers/open-cookbook-with-sourdough-recipe.jpg"
 ---
 ¿Has intentado armar un mueble de IKEA siguiendo los pasos del manual? *Y si… suele sobrar algún tornillo y te quedas con la duda de si algo quedó mal. 🙃* ¿Y el cubo de Rubik? Quizá has visto a gente girarlo una y otra vez, como si los movimientos no tuvieran sentido, hasta que de pronto todas las caras quedan perfectas.
 

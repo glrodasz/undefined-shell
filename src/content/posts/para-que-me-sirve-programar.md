@@ -3,7 +3,7 @@ title: "¿Para qué me sirve programar?"
 pubDate: "2025-08-01T00:00:00.000Z"
 tags: Aprende a programar
 description: Cuando empecé esta carrera y alguien me preguntaba para qué sirve programar, respondía sin pensarlo mucho, para hacer páginas web. Con el tiempo entendí que programar sirve para muchísimo más, y estoy convencido de que, dentro de unos años, será tan imprescindible como saber manejar hojas de cálculo.
-heroImage: "/covers/A close-up image of a typewriter in a old office.jpg"
+heroImage: "/covers/vintage-typewriter-on-wooden-desk.jpg"
 ---
 
 Cuando estaba en la universidad si alguien me preguntaba *para qué sirve programar*, respondía sin pensarlo mucho: **para hacer páginas web**. Con el tiempo entendí que programar sirve para muchísimo más, y estoy convencido de que, dentro de unos años, será tan imprescindible como saber manejar hojas de cálculo.

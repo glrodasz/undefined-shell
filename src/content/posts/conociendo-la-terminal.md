@@ -3,7 +3,7 @@ title: Conociendo la Terminal
 pubDate: "2019-10-29T00:00:00.000Z"
 tags: Aprende a programar
 description: La terminal es una herramienta clave en el desarrollo, ofreciendo ventajas al conocer sus comandos básicos, descubrir la interfaz del sistema operativo, y realizar tareas rápidamente sin dejar el teclado. No es esencial para empezar a programar, pero es inevitable enfrentarla, así que ¿por qué no empezar ya?
-heroImage: "/covers/A close-up image of a single seashell lying on sandy ground.jpg"
+heroImage: "/covers/close-up-of-seashell-on-sandy-beach.jpg"
 redirect: true
 ---
 
