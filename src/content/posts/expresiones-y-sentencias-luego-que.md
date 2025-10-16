@@ -1,9 +1,10 @@
 ---
 title: Expresiones y sentencias, ¿luego qué?
 pubDate: "2025-10-13T00:00:00.000Z"
+updatedDate: "2025-10-16T00:00:00.000Z"
 tags: Aprende a programar
-description: Detrás de cada línea de código existe una jerarquía invisible, expresiones que forman sentencias, sentencias que componen algoritmos, y algoritmos que, al escalar, se convierten en bibliotecas o frameworks. Tal como los aminoácidos crean proteínas y organismos, el software también crece por capas, de lo simple a lo complejo, de la utilidad al sistema completo. Entender esa composición no solo ayuda a escribir mejor código, sino a reconocer cuándo algo deja de ser una función aislada para transformarse en una herramienta, un framework o incluso un producto.
-heroImage: "/covers/A close-up image of a realistic tardigrade crawling over a rough.jpg"
+description: Detrás de cada línea de código existe una jerarquía invisible, expresiones que forman sentencias, sentencias que componen algoritmos, y algoritmos que, al escalar, se convierten en bibliotecas o frameworks. Entender esa composición no solo ayuda a escribir mejor código, sino a reconocer cuándo algo deja de ser una función aislada para transformarse en una herramienta, un framework o incluso un producto.
+heroImage: "/covers/A set of boxes with a red toolbox.jpg"
 ---
 
 Hasta ahora hemos visto cómo el código que escribimos está compuesto de partes más pequeñas, como [*expresiones* y *sentencias*](/posts/como-funciona-un-lenguaje-de-programacion). Pero, ¿cuántas sentencias y/o expresiones son necesarias para considerarlo un algoritmo? ¿En qué momento un conjunto de algoritmos se convierte en lo que llamamos *frameworks*? ¿Y cuándo un *framework* se diferencia de una *utilidad* o una *biblioteca*?
