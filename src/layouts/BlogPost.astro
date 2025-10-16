@@ -65,10 +65,6 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
         margin-bottom: 1em;
       }
 
-      .last-updated-on {
-        font-style: italic;
-      }
-
       .has-hero-image {
         padding-top: 0;
       }
@@ -76,6 +72,16 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
       @media (max-width: 920px) {
         .hero-image img {
           aspect-ratio: 24 / 9;
+        }
+
+        .subheader {
+          flex-direction: column;
+          gap: 0.5em;
+        }
+
+        .date {
+          display: flex;
+          flex-direction: column;
         }
       }
     </style>
