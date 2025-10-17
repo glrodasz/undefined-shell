@@ -26,7 +26,7 @@ El mismo principio controla hoy los frenos **ABS** de tu coche (qué evitan que 
 
 Incluso programar nos llevó (literalmente) a la Luna: Margaret Hamilton y su equipo escribieron cientos de miles de líneas de código para el software de navegación y control del Apollo 11.
 
-![](/images/para-que-me-sirve-programar/margaret-hamilton.jpg)
+![](/images/posts/para-que-me-sirve-programar/margaret-hamilton.jpg)
 *Hamilton en 1969, de pie junto a los listados del software de orientación del Apolo que ella y su equipo del MIT produjeron.*
 
 Lo más increíble es que ni siquiera necesitas un entorno complicado para empezar. Sí tienes un iPhone, por ejemplo, puedes automatizar tareas con la app propia de **Shortcuts**, una herramienta *low-code* que te deja crear flujos arrastrando bloques. Sigue siendo programación, solo que con menos tecleo y resultados inmediatos.
