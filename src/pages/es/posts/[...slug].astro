@@ -1,19 +1,19 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import BlogPost from "../../layouts/BlogPost.astro";
-import { calculateReadingTime } from "../index.astro";
+import BlogPost from "../../../layouts/BlogPost.astro";
+import { calculateReadingTime } from "../../index.astro";
 
 export async function getStaticPaths() {
-  // Get English posts (default locale)
-  const enPosts = await getCollection("posts/en");
-  return enPosts.map((post) => ({
+  // Get Spanish posts
+  const esPosts = await getCollection("posts/es");
+  return esPosts.map((post) => ({
     params: { slug: post.slug },
-    props: { post, locale: "en" }
+    props: { post, locale: "es" }
   }));
 }
 
 type Props = {
-  post: CollectionEntry<"posts/en">;
+  post: CollectionEntry<"posts/es">;
   locale: string;
 };
 

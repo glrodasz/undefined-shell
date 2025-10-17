@@ -10,11 +10,11 @@ const ES_POSTS_FOLDER = "src/content/posts/es";
 
 const SPECIAL_CHARS_BLOG_POSTS_REDIRECTS: Redirect = {
   "/posts/tipos-de-lenguajes-de-programación": {
-    destination: "/posts/es/tipos-de-lenguajes-de-programacion",
+    destination: "/es/posts/tipos-de-lenguajes-de-programacion",
     status: 301,
   },
   "/posts/diseñando-un-algoritmo": {
-    destination: "/posts/es/disenando-un-algoritmo",
+    destination: "/es/posts/disenando-un-algoritmo",
     status: 301,
   },
 }
@@ -49,7 +49,7 @@ export const getRedirects = async (): Promise<Redirect> => {
 
   const prefixedBlogPostsRedirects = blogPosts.reduce((redirects, post) => {
     redirects[`/${post.slug}`] = {
-      destination: `/posts/es/${post.slug}`,
+      destination: `/es/posts/${post.slug}`,
       status: 301,
     };
 

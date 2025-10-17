@@ -55,24 +55,24 @@ Siguiendo el proceso descrito, veremos cómo encontraremos la carta buscada, **6
 
 > 🃏  Recordemos que para que la búsqueda binaria funcione **el conjunto de elementos tiene que estar ordenado desde el principio**. Pero, esto no es un requisito para todos los algoritmos de búsqueda, como por ejemplo la búsqueda lineal.
 
-![Figura 1: Mano apuntando al medio (Siete de corazones) de una baraja de naipes ordenada.](/images/posts/algoritmos-con-naipes-busqueda-binaria/paso-1.jpg)_Figura 1: Mano apuntando al medio (Siete de corazones) de una baraja de naipes ordenada._
+![Figura 1: Mano apuntando al medio (Siete de corazones) de una baraja de naipes ordenada.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-1.jpg)_Figura 1: Mano apuntando al medio (Siete de corazones) de una baraja de naipes ordenada._
 Definimos los limites, la primera carta será el **Inicio**, la última el **Fin**, y finalmente la carta del medio será la que verificaremos como la carta que buscamos.
 
-![Figura 2: Baraja de naipes divida en el medio, descartando la sección de la derecha.](/images/posts/algoritmos-con-naipes-busqueda-binaria/paso-2.jpg)_Figura 2: Baraja de naipes divida en el medio, descartando la sección de la derecha._
+![Figura 2: Baraja de naipes divida en el medio, descartando la sección de la derecha.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-2.jpg)_Figura 2: Baraja de naipes divida en el medio, descartando la sección de la derecha._
 Cómo la carta del medio era el **siete de corazones**, teniendo un valor mayor, entonces descartaremos toda la mitad de la derecha.
 
-![Figura 3: Mano apuntando al medio (Tres de corazones) de la sección izquierda previa.](/images/posts/algoritmos-con-naipes-busqueda-binaria/paso-3.jpg)_Figura 3: Mano apuntando al medio (Tres de corazones) de la sección izquierda previa._
+![Figura 3: Mano apuntando al medio (Tres de corazones) de la sección izquierda previa.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-3.jpg)_Figura 3: Mano apuntando al medio (Tres de corazones) de la sección izquierda previa._
 Volveremos a establecer los limites, esta vez el final paso a ser **seis de corazones**, y de nuevo buscaremos la carta del medio.
 
 > 🃏  Cuando teníamos 13 cartas en total, para buscar la carta del medio dividimos 13 por 2. El resultado nos da 6.5, pero como no existe la carta 6.5 ya que estamos trabajando con valores enteros, debemos decidir si queremos redondear hacia abajo o hacia arriba. Para esta ocasión hemos decidido siempre redondear hacia arriba y es por eso que tomamos el  **7 de corazones**.
 
-![Figura 4: Baraja de naipes divida en el medio, descartando la sección derecha previa.](/images/posts/algoritmos-con-naipes-busqueda-binaria/paso-4.jpg)_Figura 4: Baraja de naipes divida en el medio, descartando la sección derecha previa._
+![Figura 4: Baraja de naipes divida en el medio, descartando la sección derecha previa.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-4.jpg)_Figura 4: Baraja de naipes divida en el medio, descartando la sección derecha previa._
 La carta del medio el **3 de corazones**, cómo esta es menor que la carta buscada entonces vamos a descartar toda la mitad izquierda.
 
-![Figura 5: Mano apuntando al medio (Cinco de corazones) de la sección derecha previa.](/images/posts/algoritmos-con-naipes-busqueda-binaria/paso-5.jpg)_Figura 5: Mano apuntando al medio (Cinco de corazones) de la sección derecha previa._
+![Figura 5: Mano apuntando al medio (Cinco de corazones) de la sección derecha previa.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-5.jpg)_Figura 5: Mano apuntando al medio (Cinco de corazones) de la sección derecha previa._
 Volvemos a establecer los limites, el fin queda igual pero el inicio pasa a ser la nueva carta primera, en este caso el  **4 de corazones**.
 
-![Figura 6: Mano mostrando la carta encontrada, Seis de corazones.](/images/posts/algoritmos-con-naipes-busqueda-binaria/paso-6.jpg)_Figura 6: Mano mostrando la carta encontrada, Seis de corazones._
+![Figura 6: Mano mostrando la carta encontrada, Seis de corazones.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-6.jpg)_Figura 6: Mano mostrando la carta encontrada, Seis de corazones._
 Finalmente, la carta del medio resultará ser menor que la carta buscada, descartamos toda la mitad izquierda de nuevo.
 
 Cómo esta vez solo queda una carta, solo nos queda preguntar si dicha carta es el **6 de corazones**, y ¡efectivamente lo es!.

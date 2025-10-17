@@ -20,7 +20,7 @@ Si quisiéramos explicarlo de forma práctica, podríamos pensar en el diseño a
 
 > 💧 **Algoritmo** y **código** a veces se usan como sinónimos. Sin embargo, de manera coloquial, muchas veces se le llama *algoritmo* a una parte específica de un producto. Podemos escuchar cosas como *“el algoritmo de búsqueda”* o *“el algoritmo de descuentos”*, etc.
 
-![Expresiones, sentencias, algoritmos y código](/images/posts/expresiones-y-sentencias-luego-que/composicion.png)
+![Expresiones, sentencias, algoritmos y código](/images/posts/es/expresiones-y-sentencias-luego-que/composicion.png)
 _Las **expresiones** son las unidades más pequeñas, que se van componiendo hasta generar **código**._
 
 ## El código puede ser muchas cosas
@@ -30,7 +30,7 @@ Cuando hablamos de *código*, podemos estar refiriéndonos a muchas cosas, *simi
 * **Bibliotecas**: conjuntos de utilidades agrupadas con un propósito común.
 * **Frameworks**: bibliotecas más grandes que incluyen múltiples utilidades y añaden estructura, reglas o convenciones para desarrollar un producto.
 
-![Utilidades, bibliotecas y frameworks](/images/posts/expresiones-y-sentencias-luego-que/categorizacion.png)
+![Utilidades, bibliotecas y frameworks](/images/posts/es/expresiones-y-sentencias-luego-que/categorizacion.png)
 _Las **utilidades**, **bibliotecas** y **frameworks** pueden verse como distintos tipos dentro del ecosistema del código: desde los más simples hasta los más sofisticados._
 
 ## Algoritmos en el codigo 

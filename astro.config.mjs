@@ -9,6 +9,13 @@ import { getRedirects } from "./helpers/redirects";
 export default defineConfig({
   site: SITE_URL,
   integrations: [mdx(), sitemap()],
+  i18n: {
+    locales: ["en", "es"],
+    defaultLocale: "en",
+    routing: {
+      prefixDefaultLocale: false
+    }
+  },
   markdown: {
     shikiConfig: {
       theme: "catppuccin-frappe",

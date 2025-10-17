@@ -7,18 +7,20 @@ import FormattedDate from "../components/FormattedDate.astro";
 import Container from "../components/Container.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR } from "../consts";
 import SimpleAnalytics from "../components/SimpleAnalytics.astro";
+import { type Locale } from "../i18n/config";
 
-type Props = CollectionEntry<"posts">["data"] & {
+type Props = (CollectionEntry<"posts/en">["data"] | CollectionEntry<"posts/es">["data"]) & {
   readingTime?: number;
+  locale?: Locale;
 };
 
-const { title, description, pubDate, updatedDate, heroImage, readingTime } =
+const { title, description, pubDate, updatedDate, heroImage, readingTime, locale = "en" } =
   Astro.props;
 
 const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_AUTHOR}`;
 ---
 
-<html lang="es">
+<html lang={locale}>
   <head>
     <BaseHead
       title={title}
@@ -106,7 +108,7 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
                   {
                     updatedDate && (
                       <span class="last-updated-on">
-                        última actualización el{" "}
+                        {locale === "es" ? "última actualización el" : "last updated on"}{" "}
                         <FormattedDate date={updatedDate} />
                       </span>
                     )
@@ -115,7 +117,7 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
                 {
                   readingTime && (
                     <strong class="reading-time">
-                      ⏱️ {readingTime} min de lectura
+                      ⏱️ {readingTime} {locale === "es" ? "min de lectura" : "min read"}
                     </strong>
                   )
                 }
