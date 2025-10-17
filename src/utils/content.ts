@@ -27,3 +27,36 @@ export function getPostUrl(slug: string, locale: Locale): string {
   
   return `/${locale}/posts/${cleanSlug}/`;
 }
+
+export function calculateReadingTime(text: string, wordsPerMinute = 200): number {
+  const words = text.trim().split(/\s+/);
+  const totalWords = words.length;
+
+  const readingTimeMinutes = totalWords / wordsPerMinute;
+  const roundedMinutes = Math.round(readingTimeMinutes);
+
+  return roundedMinutes;
+}
+
+export async function generateRSSFeed(locale: Locale, context: any) {
+  const posts = await getPostsByLanguage(locale);
+  
+  return {
+    title: "Undefined Shell",
+    description: "Blog about programming, web development, and technology",
+    site: context.site,
+    items: posts.map((post) => ({
+      ...post.data,
+      link: getPostUrl(post.slug, locale),
+    })),
+  };
+}
+
+export async function generateSlugPaths(locale: Locale) {
+  const posts = await getPostsByLanguage(locale);
+  
+  return posts.map((post) => ({
+    params: { slug: getCleanSlug(post.slug) },
+    props: { post, locale }
+  }));
+}

@@ -1,18 +1,11 @@
 ---
 import { type CollectionEntry } from "astro:content";
 import BlogPost from "../../../layouts/BlogPost.astro";
-import { calculateReadingTime } from "../../index.astro";
+import { calculateReadingTime, generateSlugPaths } from "../../../utils/content";
 import { type Locale } from "../../../i18n/config";
-import { getPostsByLanguage, getCleanSlug } from "../../../utils/content";
 
 export async function getStaticPaths() {
-  // Get Spanish posts
-  const esPosts = await getPostsByLanguage("es");
-  
-  return esPosts.map((post) => ({
-    params: { slug: getCleanSlug(post.slug) },
-    props: { post, locale: "es" as Locale }
-  }));
+  return await generateSlugPaths("es");
 }
 
 type Props = {
