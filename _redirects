@@ -1,9 +1,13 @@
-/comandos-alias-para-la-terminal /posts/comandos-alias-para-la-terminal 301
-/conociendo-la-terminal /posts/conociendo-la-terminal 301
-/crea-html-templates-con-lit-html /posts/crea-html-templates-con-lit-html 301
-/design-tokens-al-rescate /posts/design-tokens-al-rescate 301
-/estatico-dinamico-spa-mpa-jamstack /posts/estatico-dinamico-spa-mpa-jamstack 301
-/evolucion-de-las-arquitecturas-de-css /posts/evolucion-de-las-arquitecturas-de-css 301
-/introduccion-a-los-web-components /posts/introduccion-a-los-web-components 301
-/la-evolucion-de-los-design-tokens /posts/la-evolucion-de-los-design-tokens 301
-/posts/tipos-de-lenguajes-de-programación /posts/tipos-de-lenguajes-de-programacion 301
+# Migration from old posts to new posts
+/comandos-alias-para-la-terminal			/posts/es/comandos-alias-para-la-terminal 301
+/conociendo-la-terminal						/posts/es/conociendo-la-terminal 301
+/crea-html-templates-con-lit-html			/posts/es/crea-html-templates-con-lit-html 301
+/design-tokens-al-rescate					/posts/es/design-tokens-al-rescate 301
+/estatico-dinamico-spa-mpa-jamstack			/posts/es/estatico-dinamico-spa-mpa-jamstack 301
+/evolucion-de-las-arquitecturas-de-css		/posts/es/evolucion-de-las-arquitecturas-de-css 301
+/introduccion-a-los-web-components			/posts/es/introduccion-a-los-web-components 301
+/la-evolucion-de-los-design-tokens			/posts/es/la-evolucion-de-los-design-tokens 301
+
+# Special chars posts redirects
+/posts/tipos-de-lenguajes-de-programación	/posts/es/tipos-de-lenguajes-de-programacion 301
+/posts/diseñando-un-algoritmo				/posts/es/disenando-un-algoritmo 301

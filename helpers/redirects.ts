@@ -6,13 +6,26 @@ export type Post = {
   slug: string;
 };
 
-export const getPostsToRedirect = async (): Promise<Post[]> => {
-  const files = fs.readdirSync("src/content/posts");
+const ES_POSTS_FOLDER = "src/content/posts/es";
+
+const SPECIAL_CHARS_BLOG_POSTS_REDIRECTS: Redirect = {
+  "/posts/tipos-de-lenguajes-de-programación": {
+    destination: "/posts/es/tipos-de-lenguajes-de-programacion",
+    status: 301,
+  },
+  "/posts/diseñando-un-algoritmo": {
+    destination: "/posts/es/disenando-un-algoritmo",
+    status: 301,
+  },
+}
+
+export const getSpanishPostsToRedirect = async (): Promise<Post[]> => {
+  const files = fs.readdirSync(ES_POSTS_FOLDER);
 
   return files
     .map((file) => {
       const slug = file.replace(/\.mdx?$/, "");
-      const content = fs.readFileSync(`src/content/posts/${file}`, "utf-8");
+      const content = fs.readFileSync(`${ES_POSTS_FOLDER}/${file}`, "utf-8");
       const { data } = matter(content);
 
       return {
@@ -32,13 +45,21 @@ type Redirect = Record<
 >;
 
 export const getRedirects = async (): Promise<Redirect> => {
-  const blogPosts = await getPostsToRedirect();
+  const blogPosts = await getSpanishPostsToRedirect();
 
-  return blogPosts.reduce((config, post) => {
-    config[`/${post.slug}`] = {
-      destination: `/posts/${post.slug}`,
+  const prefixedBlogPostsRedirects = blogPosts.reduce((redirects, post) => {
+    redirects[`/${post.slug}`] = {
+      destination: `/posts/es/${post.slug}`,
       status: 301,
     };
-    return config;
+
+    return redirects;
   }, {} as Redirect);
+
+  const totalRedirects = {
+    ...prefixedBlogPostsRedirects,
+    ...SPECIAL_CHARS_BLOG_POSTS_REDIRECTS,
+  };
+
+  return totalRedirects;
 };
