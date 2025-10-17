@@ -1,4 +1,26 @@
 {
   "name": "undefined-shell",
+  "type": "module",
+  "version": "0.2.0",
+  "scripts": {
+    "format": "prettier --write .",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build && cp _redirects dist/_redirects",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/mdx": "^2.2.2",
+    "@astrojs/rss": "^4.0.5",
+    "@astrojs/sitemap": "^3.1.2",
+    "astro": "^4.5.12",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0"
+  },
   "packageManager": "yarn@4.10.3"
 }
