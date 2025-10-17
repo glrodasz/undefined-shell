@@ -104,12 +104,13 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
                   <FormattedDate
                     date={pubDate}
                     leadingComma={Boolean(updatedDate)}
+                    locale={locale}
                   />
                   {
                     updatedDate && (
                       <span class="last-updated-on">
                         {locale === "es" ? "última actualización el" : "last updated on"}{" "}
-                        <FormattedDate date={updatedDate} />
+                        <FormattedDate date={updatedDate} locale={locale} />
                       </span>
                     )
                   }

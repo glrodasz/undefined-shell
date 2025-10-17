@@ -1,15 +1,21 @@
 ---
+import { getLocaleFromUrl } from "../i18n/config";
+
 interface Props {
   date: Date;
   leadingComma?: boolean;
+  locale?: string;
 }
 
-const { date, leadingComma } = Astro.props;
+const { date, leadingComma, locale } = Astro.props;
+
+// Get locale from URL if not provided as prop
+const currentLocale = locale || getLocaleFromUrl(Astro.url);
 ---
 
 <time datetime={date.toISOString()}>
   {
-    date.toLocaleDateString("es", {
+    date.toLocaleDateString(currentLocale, {
       year: "numeric",
       month: "long",
       day: "numeric",
