@@ -9,7 +9,6 @@ interface Props {
 
 const { date, leadingComma, locale } = Astro.props;
 
-// Get locale from URL if not provided as prop
 const currentLocale = locale || getLocaleFromUrl(Astro.url);
 ---
 

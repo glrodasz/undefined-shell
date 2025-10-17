@@ -7,7 +7,6 @@ export function getLanguageFromSlug(slug: string): Locale {
 }
 
 export function getCleanSlug(slug: string): string {
-  // Remove language prefix for URL generation
   const pattern = new RegExp(`^(${LOCALES.join('|')})/`);
   return slug.replace(pattern, '');
 }

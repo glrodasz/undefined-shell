@@ -23,7 +23,6 @@ export function getLocalizedPath(path: string, locale: Locale): string {
     return path;
   }
   
-  // Remove leading slash for processing
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   
   return `/${locale}/${cleanPath}`;
