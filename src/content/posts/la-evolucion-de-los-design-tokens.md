@@ -62,7 +62,7 @@ Finalmente, el tercer nivel no es realmente tan nuevo, pues los tokens asociados
 
 Si siguiéramos la metáfora, una página de nuestra app sería toda la experiencia de una cena, con platillos de entrada, principal y postre, pero eso es una historia que prefiero contar con otra analogía: _Física Cuántica y vendrá en otro post._
 
-![Sistema de tokens de 3 niveles](/images/representacion-design-tokens.png)
+![Sistema de tokens de 3 niveles](/images/posts/la-evolucion-de-los-design-tokens/representacion-design-tokens.png)
 _Sistema de tokens de 3 niveles, aplicado metafóricamente a nuestro restaurante "The Tasty Token Bistro"._
 
 # Convención de nombres

@@ -25,7 +25,7 @@ No es un requisito para empezar a programar, pero tarde o que temprano nos vamos
 - **Linux/Ubuntu:** Ctrl + Alt + T
 - **Mac OS:**  Cmd + Tecla espaciadora y buscar por "Terminal"
 
-![Terminal en Mac OS, usando Pure un ZSH prompt.](/images/terminal-en-mac-os.png)_Terminal en Mac OS, usando Pure un ZSH prompt._
+![Terminal en Mac OS, usando Pure un ZSH prompt.](/images/posts/conociendo-la-terminal/terminal-en-mac-os.png)_Terminal en Mac OS, usando Pure un ZSH prompt._
 
 ## ¿Cómo funciona la terminal?
 
