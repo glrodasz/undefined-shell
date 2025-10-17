@@ -3,14 +3,15 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR } from "../consts";
-import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
 import Container from "../components/Container.astro";
 import SimpleAnalytics from "../components/SimpleAnalytics.astro";
+import { getPostsByLanguage, getPostUrl } from "../utils/content";
+import { DEFAULT_LOCALE } from "../i18n/config";
 
-const posts = (await getCollection("posts", ({ slug }) => {
-  return slug.startsWith("en/");
-})).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getPostsByLanguage(DEFAULT_LOCALE)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 
 export function calculateReadingTime(text: string, wordsPerMinute = 200) {
   const words = text.trim().split(/\s+/);
@@ -200,7 +201,7 @@ export function calculateReadingTime(text: string, wordsPerMinute = 200) {
             {
               posts.map((post) => (
                 <li>
-                  <div class="post-card" data-href={`/posts/${post.slug.replace("en/", "")}/`}>
+                  <div class="post-card" data-href={getPostUrl(post.slug, DEFAULT_LOCALE)}>
                     <img
                       width={720}
                       height={420}

@@ -1,17 +1,17 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry } from "astro:content";
 import BlogPost from "../../layouts/BlogPost.astro";
 import { calculateReadingTime } from "../index.astro";
-import { type Locale } from "../../i18n/config";
+import { type Locale, DEFAULT_LOCALE } from "../../i18n/config";
+import { getPostsByLanguage, getCleanSlug } from "../../utils/content";
 
 export async function getStaticPaths() {
   // Get English posts (default locale)
-  const enPosts = await getCollection("posts", ({ slug }) => {
-    return slug.startsWith("en/");
-  });
+  const enPosts = await getPostsByLanguage(DEFAULT_LOCALE);
+  
   return enPosts.map((post) => ({
-    params: { slug: post.slug.replace("en/", "") }, // Remove en/ prefix from URL
-    props: { post, locale: "en" }
+    params: { slug: getCleanSlug(post.slug) },
+    props: { post, locale: DEFAULT_LOCALE }
   }));
 }
 
