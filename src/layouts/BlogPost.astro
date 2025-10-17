@@ -9,7 +9,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR } from "../consts";
 import SimpleAnalytics from "../components/SimpleAnalytics.astro";
 import { type Locale } from "../i18n/config";
 
-type Props = (CollectionEntry<"posts/en">["data"] | CollectionEntry<"posts/es">["data"]) & {
+type Props = CollectionEntry<"posts">["data"] & {
   readingTime?: number;
   locale?: Locale;
 };

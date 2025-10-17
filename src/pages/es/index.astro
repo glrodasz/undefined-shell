@@ -8,9 +8,9 @@ import FormattedDate from "../../components/FormattedDate.astro";
 import Container from "../../components/Container.astro";
 import SimpleAnalytics from "../../components/SimpleAnalytics.astro";
 
-const posts = (await getCollection("posts/es")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+const posts = (await getCollection("posts", ({ slug }) => {
+  return slug.startsWith("es/");
+})).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 export function calculateReadingTime(text: string, wordsPerMinute = 200) {
   const words = text.trim().split(/\s+/);
@@ -200,7 +200,7 @@ export function calculateReadingTime(text: string, wordsPerMinute = 200) {
             {
               posts.map((post) => (
                 <li>
-                  <div class="post-card" data-href={`/es/posts/${post.slug}/`}>
+                  <div class="post-card" data-href={`/es/posts/${post.slug.replace("es/", "")}/`}>
                     <img
                       width={720}
                       height={420}
