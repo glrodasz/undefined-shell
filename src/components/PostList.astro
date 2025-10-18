@@ -2,9 +2,10 @@
 import FormattedDate from "./FormattedDate.astro";
 import { getPostUrl, calculateReadingTime } from "../utils/content";
 import type { Locale } from "../i18n/config";
+import type { CollectionEntry } from "astro:content";
 
 export interface Props {
-  posts: any[];
+  posts: CollectionEntry<"posts">[];
   locale: Locale;
 }
 
@@ -16,20 +17,13 @@ const { posts, locale } = Astro.props;
     posts.map((post) => (
       <li>
         <div class="post-card" data-href={getPostUrl(post.slug, locale)}>
-          <img
-            width={720}
-            height={420}
-            src={post.data.heroImage}
-            alt=""
-          />
+          <img width={720} height={420} src={post.data.heroImage} alt="" />
           <div class="post-card-content">
             <h4 class="title">{post.data.title}</h4>
             <p class="date">
               <FormattedDate date={post.data.pubDate} locale={locale} />{" "}
               <span> • </span>
-              <strong>
-                ⏱️ {calculateReadingTime(post.body)} min
-              </strong>
+              <strong>⏱️ {calculateReadingTime(post.body)} min</strong>
             </p>
             <p class="excerpt">{post.data.description}</p>
           </div>
