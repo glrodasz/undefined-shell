@@ -96,5 +96,3 @@ A los usuarios les da igual si usaste la última biblioteca, el lenguaje de moda
 Así que, cuando elijas un framework o una biblioteca, no te preocupes tanto por cuál es “el mejor”. Revisa si se alinea con tu propósito, si tiene una comunidad activa y buena documentación. Y si simplemente te gusta, también está bien. Lo importante es que te permita construir algo que te motive y aporte valor.
 
 Finalmente, recuerda que también es válido no usar frameworks ni bibliotecas y crear los tuyos propios cuando lo necesites. Solo asegúrate de que no se vuelva paradójico: pasar más tiempo construyendo herramientas que desarrollando el producto para el que realmente las necesitabas.
-
-

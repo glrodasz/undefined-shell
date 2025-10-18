@@ -94,5 +94,3 @@ Users don't care if you used the latest library, the trendy language or a *low-c
 So, when you choose a framework or library, don't worry so much about which one is "the best". Check if it aligns with your purpose, if it has an active community and good documentation. And if you simply like it, that's fine too. The important thing is that it allows you to build something that motivates you and adds value.
 
 Finally, remember that it's also valid not to use frameworks or libraries and create your own when you need them. Just make sure it doesn't become paradoxical: spending more time building tools than developing the product you actually needed them for.
-
-
