@@ -1,8 +1,16 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import Container from "./Container.astro";
-import { SITE_AUTHOR, SITE_SHORT_DESCRIPTION, SITE_TITLE } from "../consts";
 import Button from "./Button.astro";
+import { type Locale, DEFAULT_LOCALE } from "../i18n/config";
+import { getMessages } from "../i18n";
+
+type Props = {
+  locale?: Locale;
+};
+
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const messages = getMessages(locale);
 ---
 
 <header>
@@ -10,14 +18,18 @@ import Button from "./Button.astro";
     <nav>
       <div class="title">
         <h2>
-          <a href="/">{SITE_TITLE}<span class="author">by {SITE_AUTHOR}</span></a>
+          <a href="/"
+            >{messages.site.title}<span class="author"
+              >by {messages.site.author}</span
+            ></a
+          >
         </h2>
         <span class="separator">•</span>
-        <p>{SITE_SHORT_DESCRIPTION}</p>
+        <p>{messages.site.shortDescription}</p>
       </div>
       <div class="internal-links">
-        <HeaderLink href="/">Inicio</HeaderLink>
-        <HeaderLink href="/about">Acerca</HeaderLink>
+        <HeaderLink href="/">{messages.navigation.home}</HeaderLink>
+        <HeaderLink href="/about">{messages.navigation.about}</HeaderLink>
       </div>
       <div class="buttons-container">
         <Button
