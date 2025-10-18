@@ -1,40 +1,4 @@
 import fs from "node:fs";
-import matter from "gray-matter";
-
-export type Post = {
-  redirect: boolean;
-  slug: string;
-};
-
-const ES_POSTS_FOLDER = "src/content/posts/es";
-
-const SPECIAL_CHARS_BLOG_POSTS_REDIRECTS: Redirect = {
-  "/posts/tipos-de-lenguajes-de-programación": {
-    destination: "/es/posts/tipos-de-lenguajes-de-programacion",
-    status: 301,
-  },
-  "/posts/diseñando-un-algoritmo": {
-    destination: "/es/posts/disenando-un-algoritmo",
-    status: 301,
-  },
-}
-
-export const getSpanishPostsToRedirect = async (): Promise<Post[]> => {
-  const files = fs.readdirSync(ES_POSTS_FOLDER);
-
-  return files
-    .map((file) => {
-      const slug = file.replace(/\.mdx?$/, "");
-      const content = fs.readFileSync(`${ES_POSTS_FOLDER}/${file}`, "utf-8");
-      const { data } = matter(content);
-
-      return {
-        redirect: data.redirect,
-        slug,
-      };
-    })
-    .filter((post) => post.redirect);
-};
 
 type Redirect = Record<
   string,
@@ -45,21 +9,23 @@ type Redirect = Record<
 >;
 
 export const getRedirects = async (): Promise<Redirect> => {
-  const blogPosts = await getSpanishPostsToRedirect();
+  const redirectsContent = fs.readFileSync("_redirects", "utf-8");
+  
+  const redirects: Redirect = {};
+  
+  redirectsContent
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line && !line.startsWith("#"))
+    .forEach((line) => {
+      const [from, to, status] = line.split(" ");
+      if (from && to && status === "301") {
+        redirects[from] = {
+          destination: to,
+          status: 301,
+        };
+      }
+    });
 
-  const prefixedBlogPostsRedirects = blogPosts.reduce((redirects, post) => {
-    redirects[`/${post.slug}`] = {
-      destination: `/es/posts/${post.slug}`,
-      status: 301,
-    };
-
-    return redirects;
-  }, {} as Redirect);
-
-  const totalRedirects = {
-    ...prefixedBlogPostsRedirects,
-    ...SPECIAL_CHARS_BLOG_POSTS_REDIRECTS,
-  };
-
-  return totalRedirects;
+  return redirects;
 };
