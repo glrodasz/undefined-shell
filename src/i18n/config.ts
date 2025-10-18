@@ -3,6 +3,17 @@ export const DEFAULT_LOCALE = "en" as const;
 
 export type Locale = typeof LOCALES[number];
 
+export const LANGUAGE_CONFIG = {
+  en: { name: "English", flag: "🇺🇸" },
+  es: { name: "Español", flag: "🇪🇸" },
+  fr: { name: "Français", flag: "🇫🇷" },
+  pt: { name: "Português", flag: "🇵🇹" },
+  de: { name: "Deutsch", flag: "🇩🇪" },
+  it: { name: "Italiano", flag: "🇮🇹" },
+} as const;
+
+export type LanguageConfig = typeof LANGUAGE_CONFIG;
+
 export function isValidLocale(locale: string): locale is Locale {
   return LOCALES.includes(locale as Locale);
 }

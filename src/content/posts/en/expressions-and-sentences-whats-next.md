@@ -5,6 +5,9 @@ updatedDate: "2025-10-16T00:00:00.000Z"
 tags: Learn to program
 description: Behind every line of code there is an invisible hierarchy, expressions that form statements, statements that compose algorithms, and algorithms that, when scaled, become libraries or frameworks. Understanding this composition not only helps write better code, but also recognize when something stops being an isolated function to transform into a tool, a framework, or even a product.
 heroImage: "/covers/cardboard-boxes-with-red-toolbox-and-wrenches.jpg"
+languageVersions:
+  - language: "es"
+    url: "/es/posts/expresiones-y-sentencias-luego-que"
 ---
 
 So far we've seen how the code we write is composed of smaller parts, like [*expressions* and *statements*](/posts/como-funciona-un-lenguaje-de-programacion). But how many statements and/or expressions are needed to consider it an algorithm? At what point does a set of algorithms become what we call *frameworks*? And when does a *framework* differ from a *utility* or a *library*?

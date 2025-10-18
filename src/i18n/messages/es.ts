@@ -18,5 +18,17 @@ export const messages = {
     copyright: "Todos los derechos reservados.",
     followTwitter: "Sigue Undefined Shell en Twitter",
     followInstagram: "Sigue Undefined Shell en Instagram"
+  },
+  languageBanner: {
+    readIn: "Puedes leer la versión en {language} de este artículo",
+    linkText: "aquí",
+    languages: {
+      es: "Español",
+      en: "Inglés",
+      fr: "Francés",
+      pt: "Portugués",
+      de: "Alemán",
+      it: "Italiano"
+    }
   }
 } as const;

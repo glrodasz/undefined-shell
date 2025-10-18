@@ -1,5 +1,10 @@
 ---
-import { type Locale, switchLocalePath } from "../i18n/config";
+import {
+  type Locale,
+  switchLocalePath,
+  LANGUAGE_CONFIG,
+  LOCALES,
+} from "../i18n/config";
 
 type Props = {
   currentLocale: Locale;
@@ -8,10 +13,11 @@ type Props = {
 
 const { currentLocale, currentPath } = Astro.props;
 
-const languages = [
-  { code: "en", name: "English", flag: "🇺🇸" },
-  { code: "es", name: "Español", flag: "🇪🇸" },
-] as const;
+const languages = LOCALES.map((code) => ({
+  code,
+  name: LANGUAGE_CONFIG[code].name,
+  flag: LANGUAGE_CONFIG[code].flag,
+}));
 
 const currentLanguage = languages.find((lang) => lang.code === currentLocale);
 const otherLanguages = languages.filter((lang) => lang.code !== currentLocale);

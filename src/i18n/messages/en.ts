@@ -18,5 +18,17 @@ export const messages = {
     copyright: "All rights reserved.",
     followTwitter: "Follow Undefined Shell on Twitter",
     followInstagram: "Follow Undefined Shell on Instagram"
+  },
+  languageBanner: {
+    readIn: "You can read the {language} version of this post",
+    linkText: "here",
+    languages: {
+      es: "Spanish",
+      en: "English",
+      fr: "French",
+      pt: "Portuguese",
+      de: "German",
+      it: "Italian"
+    }
   }
 } as const;

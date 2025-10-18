@@ -8,6 +8,10 @@ const postSchema = z.object({
   heroImage: z.string().optional(),
   redirect: z.boolean().optional(),
   tags: z.union([z.string(), z.array(z.string())]).optional(),
+  languageVersions: z.array(z.object({
+    language: z.string(),
+    url: z.string()
+  })).optional(),
 });
 
 const posts = defineCollection({
