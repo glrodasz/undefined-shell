@@ -1,8 +1,8 @@
 ---
 title: "Algorithms with cards: Binary search"
 pubDate: "2024-07-11T00:00:00.000Z"
-tags: Learn to program
-description: The binary search algorithm, or "Binary Search", is an efficient method for finding an element in an ordered list. It repeatedly divides the search range in half, significantly reducing the number of comparisons needed.
+tags: [Learn to program]
+description: "The binary search algorithm, or \"Binary Search\", is an efficient method for finding an element in an ordered list. It repeatedly divides the search range in half, significantly reducing the number of comparisons needed."
 heroImage: "/covers/intertwined-tree-branches-with-green-leaves.jpg"
 languageVersions:
   - language: "es"

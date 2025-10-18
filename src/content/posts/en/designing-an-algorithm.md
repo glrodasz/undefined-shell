@@ -1,8 +1,8 @@
 ---
 title: Designing an Algorithm
 pubDate: "2025-06-20T00:00:00.000Z"
-tags: Learn to program
-description: We previously mentioned that an algorithm is a set of instructions to perform a task. However, they don't always execute linearly. Some require taking different paths or executing at different times. Let's explore a more appropriate way to design these algorithms.
+tags: [Learn to program]
+description: "We previously mentioned that an algorithm is a set of instructions to perform a task. However, they don't always execute linearly. Some require taking different paths or executing at different times. Let's explore a more appropriate way to design these algorithms."
 heroImage: "/covers/old-treasure-map-with-red-x-mark.jpg"
 languageVersions:
   - language: "es"

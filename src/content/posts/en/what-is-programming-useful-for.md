@@ -1,8 +1,8 @@
 ---
 title: "What is programming useful for?"
 pubDate: "2025-08-01T00:00:00.000Z"
-tags: Learn to program
-description: When I started this career and someone asked me what programming is useful for, I answered without thinking much: to make web pages. Over time I understood that programming is useful for much more, and I'm convinced that, in a few years, it will be as essential as knowing how to use spreadsheets.
+tags: [Learn to program]
+description: "When I started this career and someone asked me what programming is useful for, I answered without thinking much: to make web pages. Over time I understood that programming is useful for much more, and I'm convinced that, in a few years, it will be as essential as knowing how to use spreadsheets."
 heroImage: "/covers/vintage-typewriter-on-wooden-desk.jpg"
 languageVersions:
   - language: "es"

@@ -1,8 +1,8 @@
 ---
 title: "Is programming for me?"
 pubDate: "2025-09-19T00:00:00.000Z"
-tags: Learn to program
-description: Programming isn't just for math geniuses or those who grew up with video games. It requires curiosity, discipline, and the habit of solving problems. Discover if this path, full of challenges and constant learning, could be the ideal career for you.
+tags: [Learn to program]
+description: "Programming isn't just for math geniuses or those who grew up with video games. It requires curiosity, discipline, and the habit of solving problems. Discover if this path, full of challenges and constant learning, could be the ideal career for you."
 heroImage: "/covers/beige-hats-arranged-on-wooden-shelves.jpg"
 languageVersions:
   - language: "es"

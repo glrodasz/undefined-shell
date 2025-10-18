@@ -1,8 +1,8 @@
 ---
 title: "What do I need to know before programming?"
 pubDate: "2025-07-24T00:00:00.000Z"
-tags: Learn to program
-description: Before starting to program, you don't need to be a genius or memorize formulas; just follow three pillars that simplify the path: learn to read documentation, review high school math, and maintain endless curiosity to adapt to constant technological changes. Let's see why, with these foundations, anyone can take their first steps with confidence.
+tags: [Learn to program]
+description: "Before starting to program, you don't need to be a genius or memorize formulas; just follow three pillars that simplify the path: learn to read documentation, review high school math, and maintain endless curiosity to adapt to constant technological changes. Let's see why, with these foundations, anyone can take their first steps with confidence."
 heroImage: "/covers/vintage-wooden-toolbox-with-metal-wrenches.jpg"
 languageVersions:
   - language: "es"

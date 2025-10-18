@@ -2,8 +2,8 @@
 title: What is an Algorithm?
 pubDate: "2024-04-02T00:00:00.000Z"
 updatedDate: "2025-07-24T00:00:00.000Z"
-tags: Learn to program
-description: An algorithm is a set of instructions or steps that are followed to solve a problem or carry out a particular task. So, a manual for assembling a prefabricated piece of furniture or a cooking recipe could be considered algorithms.
+tags: [Learn to program]
+description: "An algorithm is a set of instructions or steps that are followed to solve a problem or carry out a particular task. So, a manual for assembling a prefabricated piece of furniture or a cooking recipe could be considered algorithms."
 heroImage: "/covers/open-cookbook-with-sourdough-recipe.jpg"
 languageVersions:
   - language: "es"

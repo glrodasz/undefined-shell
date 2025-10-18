@@ -1,8 +1,8 @@
 ---
 title: How does a programming language work?
 pubDate: "2024-11-11T00:00:00.000Z"
-tags: Learn to program
-description: Programming languages process data and manage flow through expressions and statements. Expressions combine values, operators, and variables to produce results, while statements perform actions. These components transform instructions into practical solutions, ranging from simple calculations to complex systems.
+tags: [Learn to program]
+description: "Programming languages process data and manage flow through expressions and statements. Expressions combine values, operators, and variables to produce results, while statements perform actions. These components transform instructions into practical solutions, ranging from simple calculations to complex systems."
 heroImage: "/covers/vintage-punched-card-on-wooden-table.jpg"
 languageVersions:
   - language: "es"

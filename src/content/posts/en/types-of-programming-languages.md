@@ -1,8 +1,8 @@
 ---
 title: Types of programming languages
 pubDate: "2024-11-24T00:00:00.000Z"
-tags: Learn to program
-description: Just as people speak various languages, in programming there are multiple languages, each with specific characteristics and purposes. Programming languages can be categorized into several paradigms, such as imperative, declarative, object-oriented, functional, procedural, and logical.
+tags: [Learn to program]
+description: "Just as people speak various languages, in programming there are multiple languages, each with specific characteristics and purposes. Programming languages can be categorized into several paradigms, such as imperative, declarative, object-oriented, functional, procedural, and logical."
 heroImage: "/covers/architect-desk-with-tools-and-blueprints.jpg"
 languageVersions:
   - language: "es"

@@ -2,8 +2,8 @@
 title: "Algorithms with cards: Bubble sort"
 pubDate: "2024-05-23T00:00:00.000Z"
 updatedDate: "2025-07-25T00:00:00.000Z"
-tags: Learn to program
-description: The bubble sort algorithm, or "Bubble Sort", is a simple method for sorting lists. It compares and swaps adjacent pairs if they are out of order, repeating the process until no more swaps are needed. It's ideal for its simplicity and efficiency in small lists.
+tags: [Learn to program]
+description: "The bubble sort algorithm, or \"Bubble Sort\", is a simple method for sorting lists. It compares and swaps adjacent pairs if they are out of order, repeating the process until no more swaps are needed. It's ideal for its simplicity and efficiency in small lists."
 heroImage: "/covers/underwater-bubbles-with-sunlight-rays.jpg"
 languageVersions:
   - language: "es"
