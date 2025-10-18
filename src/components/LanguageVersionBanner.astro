@@ -69,8 +69,15 @@ const formatMessage = (template: string, language: string) => {
 
   .language-banner {
     margin: 1rem 0;
-    background-color: var(--color-black-pearl-800);
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--color-black-pearl-800),
+      var(--color-black-pearl-800) 10px,
+      var(--color-black-pearl-900) 10px,
+      var(--color-black-pearl-900) 20px
+    );
     color: var(--color-white);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   }
 
   .language-banner a {
