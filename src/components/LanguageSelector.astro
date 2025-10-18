@@ -1,0 +1,177 @@
+---
+import { type Locale, switchLocalePath } from "../i18n/config";
+
+type Props = {
+  currentLocale: Locale;
+  currentPath: string;
+};
+
+const { currentLocale, currentPath } = Astro.props;
+
+const languages = [
+  { code: "en", name: "English", flag: "🇺🇸" },
+  { code: "es", name: "Español", flag: "🇪🇸" },
+] as const;
+
+const currentLanguage = languages.find((lang) => lang.code === currentLocale);
+const otherLanguages = languages.filter((lang) => lang.code !== currentLocale);
+---
+
+<div class="language-selector">
+  <button
+    class="language-button"
+    aria-label="Select language"
+    aria-expanded="false"
+  >
+    <img src="/icons/language.svg" alt="" width="20" height="20" />
+    <span class="current-flag">{currentLanguage?.flag}</span>
+  </button>
+
+  <div class="language-dropdown">
+    {
+      otherLanguages.map((language) => (
+        <a
+          href={switchLocalePath(currentPath, language.code as Locale)}
+          class="language-option"
+          hreflang={language.code}
+        >
+          <span class="flag">{language.flag}</span>
+          <span class="name">{language.name}</span>
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .language-selector {
+    position: relative;
+    display: inline-block;
+  }
+
+  .language-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 4px;
+    color: var(--color-black-pearl-900);
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: -5px;
+  }
+
+  .language-button:hover {
+    background-color: rgba(var(--black), 5%);
+  }
+
+  .language-button:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid rgba(var(--black), 10%);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(var(--black), 15%);
+    min-width: 140px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.2s ease;
+    z-index: 100;
+    margin-top: 4px;
+  }
+
+  .language-selector:hover .language-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .language-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.75em 1em;
+    color: var(--color-black-pearl-900);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+    margin: 4px;
+  }
+
+  .language-option:hover {
+    background-color: rgba(var(--black), 5%);
+  }
+
+  .language-option:first-child {
+    margin-top: 0;
+  }
+
+  .language-option:last-child {
+    margin-bottom: 0;
+  }
+
+  .current-flag {
+    font-size: 1.5em;
+  }
+
+  .flag {
+    font-size: 1.2em;
+  }
+
+  .name {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+
+  /* Mobile: Show dropdown on click instead of hover */
+  @media (max-width: 768px) {
+    .language-selector:hover .language-dropdown {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+    }
+
+    .language-selector.active .language-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    /* Hide language icon on mobile, only show flag */
+    .language-button img {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  // Handle mobile click behavior
+  document.addEventListener("DOMContentLoaded", () => {
+    const languageSelector = document.querySelector(".language-selector");
+    const languageButton = document.querySelector(".language-button");
+
+    if (languageButton) {
+      languageButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        languageSelector?.classList.toggle("active");
+      });
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!languageSelector?.contains(e.target as Node)) {
+        languageSelector?.classList.remove("active");
+      }
+    });
+  });
+</script>

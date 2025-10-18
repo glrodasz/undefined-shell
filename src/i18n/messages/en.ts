@@ -13,5 +13,10 @@ export const messages = {
   navigation: {
     home: "Home",
     about: "About"
+  },
+  footer: {
+    copyright: "All rights reserved.",
+    followTwitter: "Follow Undefined Shell on Twitter",
+    followInstagram: "Follow Undefined Shell on Instagram"
   }
 } as const;

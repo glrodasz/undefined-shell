@@ -1,17 +1,28 @@
 ---
-const today = new Date();
 import Container from "./Container.astro";
+import { type Locale, DEFAULT_LOCALE } from "../i18n/config";
+import { getMessages } from "../i18n";
+
+type Props = {
+  locale?: Locale;
+};
+
+const { locale = DEFAULT_LOCALE } = Astro.props;
+const messages = getMessages(locale);
+const today = new Date();
 ---
 
 <footer>
   <Container>
     <div class="content">
       <div class="copy">
-        &copy; {today.getFullYear()} Undefined Shell. Todos los derechos reservados.
+        &copy; {today.getFullYear()} Undefined Shell. {
+          messages.footer.copyright
+        }
       </div>
       <div class="social-links">
         <a href="https://twitter.com/undefinedshell" target="_blank">
-          <span class="sr-only">Sigue Undefined Shell en Twitter</span>
+          <span class="sr-only">{messages.footer.followTwitter}</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -27,7 +38,7 @@ import Container from "./Container.astro";
           </svg>
         </a>
         <a href="https://instagram.com/undefinedshell" target="_blank">
-          <span class="sr-only">Sigue Undefined Shell en Instagram</span>
+          <span class="sr-only">{messages.footer.followInstagram}</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
