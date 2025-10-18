@@ -11,7 +11,7 @@ Antes mencionamos que *un algoritmo no es más que un conjunto de instrucciones 
 Así que, vamos a explorar una forma más adecuada de diseñar estos algoritmos que no se ejecutan necesariamente de forma lineal.
 
 ## Toma de decisiones
-Una lista de tareas no es la forma más adecuada para representar situaciones hipotéticas en las que elegimos entre distintos caminos, como en los [algoritmos de naipes](/posts/algoritmos-con-naipes-ordenamiento-burbuja/). A veces necesitábamos verificar si hubo cambios en el ordenamiento o si la carta del medio era mayor o menor que la carta buscada.
+Una lista de tareas no es la forma más adecuada para representar situaciones hipotéticas en las que elegimos entre distintos caminos, como en los [algoritmos de naipes](/es/posts/algoritmos-con-naipes-ordenamiento-burbuja/). A veces necesitábamos verificar si hubo cambios en el ordenamiento o si la carta del medio era mayor o menor que la carta buscada.
 
 Para estos casos, un **diagrama de flujo** resulta más útil para visualizar las decisiones que pueden tomarse, así que veamos cómo se utiliza este tipo de diagrama para representar dichos algoritmos.
 
@@ -52,7 +52,7 @@ Por ejemplo, los primeros 15 números serían:
 
 > 📝 **n** sería un número entero, por ejemplo el número 100, en ese caso se procesarían los números del 1 al 100.
 
- *Te recomiendo que intentes escribir la solución en forma de lista pseudocodigo como lo hemos hecho en los [algoritmos de naipes](/posts/algoritmos-con-naipes-ordenamiento-burbuja/).*
+ *Te recomiendo que intentes escribir la solución en forma de lista pseudocodigo como lo hemos hecho en los [algoritmos de naipes](/es/posts/algoritmos-con-naipes-ordenamiento-burbuja/).*
 
 #### Solución FizzBuzz
 A continuación veamos paso a paso lo que sería una solución de dicho problema usando un diagrama de flujo.

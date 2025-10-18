@@ -1,0 +1,78 @@
+---
+import Layout from "../../layouts/BlogPost.astro";
+import { getMessages } from "../../i18n";
+import { DEFAULT_LOCALE } from "../../i18n/config";
+
+const messages = getMessages(DEFAULT_LOCALE);
+---
+
+<Layout
+  title="Acerca del blog"
+  description={messages.site.description}
+  pubDate={new Date("April 01 2024")}
+  locale={DEFAULT_LOCALE}
+>
+  <p>
+    En <strong>Undefined Shell</strong>, somos mucho más que un simple blog de
+    programación y desarrollo web. Nos apasiona explorar y aprender sobre el
+    desarrollo de productos digitales innovadores, con un enfoque especial en
+    tecnologías Full-stack y JavaScript.
+  </p>
+
+  <p>
+    Además de proporcionar un espacio para profundizar en este fascinante campo,
+    hemos organizado iniciativas como el <a
+      href="https://undf.sh/academy"
+      target="_blank">Bootcamp Full-stack de 16 semanas</a
+    >, dirigido por <a href="https://glrz.me/web" target="_blank"
+      >Guillermo Rodas</a
+    >. Esta experiencia intensiva no solo te equipará con las habilidades
+    necesarias, sino que también te conectará con una comunidad apasionada de
+    profesionales y entusiastas.
+  </p>
+
+  <p>
+    ¿Quisieras unirte a este emocionante viaje? ¡Únete a nuestro <a
+      href="https://undf.sh/discord"
+      target="_blank">Discord</a
+    > y comienza a explorar el mundo del desarrollo de software en comunidad!
+  </p>
+
+  <h2>Sobre el organizador</h2>
+  <p>
+    <a href="https://glrz.me/web" target="_blank">Guillermo Rodas</a> es un desarrollador
+    Full-stack especializado en JavaScript, con más de una década de experiencia.
+    Originario de Colombia y residente en Suecia desde 2019, <a
+      href="https://glrz.me/web"
+      target="_blank">Guillermo</a
+    > ha sido un destacado organizador de la <a href="https://csscommunity.dev/"
+      >CSS Community Dev</a
+    >, una organización que agrupa diferentes comunidades de CSS en todo el
+    mundo (Medellín, Bogotá y Estocolmo), y de la <a href="https://cssconf.co/"
+      >CSS Conf Colombia</a
+    >, una conferencia internacional de CSS.
+    <p>
+      <a href="https://glrz.me/web" target="_blank">Guillermo</a> es <a
+        href="https://glrz.me/gde">Google Developer Expert en Tecnologías Web</a
+      >, <a href="https://glrz.me/auth0">Auth0 Ambassador</a>,
+      <a href="https://glrz.me/stream"> Twitch Partner</a> en la categoría de Desarrollo
+      de Software y Juegos, profesor en Platzi y Código Facilito, las plataformas
+      de educación en línea más grandes de América Latina.
+    </p>
+
+    <p>
+      Conoces más sobre Guillermo Rodas visitando su <a
+        href="https://glrz.me/vitae"
+        target="_blank">Curriculum vitae</a
+      > o sus <a href="https://glrz.me/links" target="_blank">redes sociales</a
+      >.
+    </p>
+    <h2>Comentarios, ideas y/o sugerencias</h2>
+    <p>
+      Cualquier comentario, idea o sugerencia que tengas, no dudes en escribirme
+      a <a href="mailto:contacto@undefined.sh" target="_blank"
+        >contacto(at)undefined.sh</a
+      >
+    </p>
+  </p>
+</Layout>
