@@ -1,0 +1,29 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { type Locale, DEFAULT_LOCALE } from "../i18n/config";
+
+type Props = {
+  href: string;
+  locale: Locale;
+};
+
+const { href, locale } = Astro.props;
+const localizedHref = locale === DEFAULT_LOCALE ? href : `/${locale}${href}`;
+---
+
+<HeaderLink href={localizedHref}>
+  <slot />
+</HeaderLink>
+<style>
+  :global(a) {
+    padding: 1em 0.2em;
+    color: var(--color-black-pearl-900);
+    border-bottom: 4px solid transparent;
+    text-decoration: none !important;
+  }
+
+  :global(a.active) {
+    text-decoration: none !important;
+    border-bottom-color: var(--accent);
+  }
+</style>

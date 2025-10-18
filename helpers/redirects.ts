@@ -1,27 +1,4 @@
 import fs from "node:fs";
-import matter from "gray-matter";
-
-export type Post = {
-  redirect: boolean;
-  slug: string;
-};
-
-export const getPostsToRedirect = async (): Promise<Post[]> => {
-  const files = fs.readdirSync("src/content/posts");
-
-  return files
-    .map((file) => {
-      const slug = file.replace(/\.mdx?$/, "");
-      const content = fs.readFileSync(`src/content/posts/${file}`, "utf-8");
-      const { data } = matter(content);
-
-      return {
-        redirect: data.redirect,
-        slug,
-      };
-    })
-    .filter((post) => post.redirect);
-};
 
 type Redirect = Record<
   string,
@@ -32,13 +9,23 @@ type Redirect = Record<
 >;
 
 export const getRedirects = async (): Promise<Redirect> => {
-  const blogPosts = await getPostsToRedirect();
+  const redirectsContent = fs.readFileSync("_redirects", "utf-8");
+  
+  const redirects: Redirect = {};
+  
+  redirectsContent
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line && !line.startsWith("#"))
+    .forEach((line) => {
+      const [from, to, status] = line.split(" ");
+      if (from && to && status === "301") {
+        redirects[from] = {
+          destination: to,
+          status: 301,
+        };
+      }
+    });
 
-  return blogPosts.reduce((config, post) => {
-    config[`/${post.slug}`] = {
-      destination: `/posts/${post.slug}`,
-      status: 301,
-    };
-    return config;
-  }, {} as Redirect);
+  return redirects;
 };

@@ -1,72 +1,78 @@
 ---
-import { SITE_DESCRIPTION } from "../consts";
 import Layout from "../layouts/BlogPost.astro";
+import { getMessages } from "../i18n";
+import { getLocaleFromAstro } from "../i18n/config";
+
+const locale = getLocaleFromAstro(Astro);
+const messages = getMessages(locale);
 ---
 
 <Layout
-  title="Acerca del blog"
-  description={SITE_DESCRIPTION}
+  title="About the blog"
+  description={messages.site.description}
   pubDate={new Date("April 01 2024")}
+  locale={locale}
 >
   <p>
-    En <strong>Undefined Shell</strong>, somos mucho más que un simple blog de
-    programación y desarrollo web. Nos apasiona explorar y aprender sobre el
-    desarrollo de productos digitales innovadores, con un enfoque especial en
-    tecnologías Full-stack y JavaScript.
+    At <strong>Undefined Shell</strong>, we are much more than just a simple
+    programming and web development blog. We are passionate about exploring and
+    learning about innovative digital product development, with a special focus
+    on Full-stack technologies and JavaScript.
   </p>
 
   <p>
-    Además de proporcionar un espacio para profundizar en este fascinante campo,
-    hemos organizado iniciativas como el <a
+    In addition to providing a space to delve deeper into this fascinating
+    field, we have organized initiatives such as the <a
       href="https://undf.sh/academy"
-      target="_blank">Bootcamp Full-stack de 16 semanas</a
-    >, dirigido por <a href="https://glrz.me/web" target="_blank"
-      >Guillermo Rodas</a
-    >. Esta experiencia intensiva no solo te equipará con las habilidades
-    necesarias, sino que también te conectará con una comunidad apasionada de
-    profesionales y entusiastas.
+      target="_blank">16-week Full-stack Bootcamp</a
+    >, led by <a href="https://glrz.me/web" target="_blank">Guillermo Rodas</a>.
+    This intensive experience will not only equip you with the necessary skills,
+    but will also connect you with a passionate community of professionals and
+    enthusiasts.
   </p>
 
   <p>
-    ¿Quisieras unirte a este emocionante viaje? ¡Únete a nuestro <a
+    Would you like to join this exciting journey? Join our <a
       href="https://undf.sh/discord"
       target="_blank">Discord</a
-    > y comienza a explorar el mundo del desarrollo de software en comunidad!
+    > and start exploring the world of software development in community!
   </p>
 
-  <h2>Sobre el organizador</h2>
+  <h2>About the organizer</h2>
   <p>
-    <a href="https://glrz.me/web" target="_blank">Guillermo Rodas</a> es un desarrollador
-    Full-stack especializado en JavaScript, con más de una década de experiencia.
-    Originario de Colombia y residente en Suecia desde 2019, <a
+    <a href="https://glrz.me/web" target="_blank">Guillermo Rodas</a> is a Full-stack
+    developer specialized in JavaScript, with over a decade of experience. Originally
+    from Colombia and residing in Sweden since 2019, <a
       href="https://glrz.me/web"
       target="_blank">Guillermo</a
-    > ha sido un destacado organizador de la <a href="https://csscommunity.dev/"
+    > has been a prominent organizer of <a href="https://csscommunity.dev/"
       >CSS Community Dev</a
-    >, una organización que agrupa diferentes comunidades de CSS en todo el
-    mundo (Medellín, Bogotá y Estocolmo), y de la <a href="https://cssconf.co/"
+    >, an organization that brings together different CSS communities around the
+    world (Medellín, Bogotá and Stockholm), and of <a href="https://cssconf.co/"
       >CSS Conf Colombia</a
-    >, una conferencia internacional de CSS.
+    >, an international CSS conference.
     <p>
-      <a href="https://glrz.me/web" target="_blank">Guillermo</a> es <a
-        href="https://glrz.me/gde">Google Developer Expert en Tecnologías Web</a
+      <a href="https://glrz.me/web" target="_blank">Guillermo</a> is a <a
+        href="https://glrz.me/gde"
+        >Google Developer Expert in Web Technologies</a
       >, <a href="https://glrz.me/auth0">Auth0 Ambassador</a>,
-      <a href="https://glrz.me/stream"> Twitch Partner</a> en la categoría de Desarrollo
-      de Software y Juegos, profesor en Platzi y Código Facilito, las plataformas
-      de educación en línea más grandes de América Latina.
+      <a href="https://glrz.me/stream"> Twitch Partner</a> in the Software and Game
+      Development category, professor at Platzi and Código Facilito, the largest
+      online education platforms in Latin America.
     </p>
 
     <p>
-      Conoces más sobre Guillermo Rodas visitando su <a
+      Learn more about Guillermo Rodas by visiting his <a
         href="https://glrz.me/vitae"
         target="_blank">Curriculum vitae</a
-      > o sus <a href="https://glrz.me/links" target="_blank">redes sociales</a
+      > or his <a href="https://glrz.me/links" target="_blank"
+        >social networks</a
       >.
     </p>
-    <h2>Comentarios, ideas y/o sugerencias</h2>
+    <h2>Comments, ideas and/or suggestions</h2>
     <p>
-      Cualquier comentario, idea o sugerencia que tengas, no dudes en escribirme
-      a <a href="mailto:contacto@undefined.sh" target="_blank"
+      Any comments, ideas or suggestions you may have, don't hesitate to write
+      to me at <a href="mailto:contacto@undefined.sh" target="_blank"
         >contacto(at)undefined.sh</a
       >
     </p>

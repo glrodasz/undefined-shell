@@ -1,8 +1,23 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
 import Container from "./Container.astro";
-import { SITE_AUTHOR, SITE_SHORT_DESCRIPTION, SITE_TITLE } from "../consts";
-import Button from "./Button.astro";
+import NavigationLink from "./NavigationLink.astro";
+import BootcampButton from "./BootcampButton.astro";
+import DiscordButton from "./DiscordButton.astro";
+import LanguageSelector from "./LanguageSelector.astro";
+import {
+  type Locale,
+  getLocaleFromAstro,
+  DEFAULT_LOCALE,
+} from "../i18n/config";
+import { getMessages } from "../i18n";
+
+type Props = {
+  locale?: Locale;
+};
+
+const locale = getLocaleFromAstro(Astro);
+const messages = getMessages(locale);
+const currentPath = Astro.url.pathname;
 ---
 
 <header>
@@ -10,52 +25,27 @@ import Button from "./Button.astro";
     <nav>
       <div class="title">
         <h2>
-          <a href="/">{SITE_TITLE}<span class="author">by {SITE_AUTHOR}</span></a>
+          <a href={locale === DEFAULT_LOCALE ? "/" : `/${locale}/`}
+            >{messages.site.title}<span class="author"
+              >by {messages.site.author}</span
+            ></a
+          >
         </h2>
-        <span class="separator">•</span>
-        <p>{SITE_SHORT_DESCRIPTION}</p>
       </div>
-      <div class="internal-links">
-        <HeaderLink href="/">Inicio</HeaderLink>
-        <HeaderLink href="/about">Acerca</HeaderLink>
-      </div>
-      <div class="buttons-container">
-        <Button
-          href="https://undefined.academy"
-          type="primary"
-          title="Undefined Academy"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-            aria-hidden="true"
+      <div class="navigation">
+        <div class="internal-links">
+          <NavigationLink href="/" locale={locale}
+            >{messages.navigation.home}</NavigationLink
           >
-            <path
-              d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"
-            ></path>
-          </svg>
-        </Button>
-        <Button
-          href="https://undf.sh/discord"
-          type="secondary"
-          title="Únete a Discord"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-            aria-hidden="true"
+          <NavigationLink href="/about" locale={locale}
+            >{messages.navigation.about}</NavigationLink
           >
-            <path
-              d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"
-            ></path>
-          </svg>
-        </Button>
+          <LanguageSelector currentLocale={locale} currentPath={currentPath} />
+        </div>
+        <div class="buttons-container">
+          <BootcampButton />
+          <DiscordButton />
+        </div>
       </div>
     </nav>
   </Container>
@@ -65,7 +55,7 @@ import Button from "./Button.astro";
     margin: 0;
     width: 100%;
     position: fixed;
-    padding: 0 1em;
+    padding: 0;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
     backdrop-filter: blur(10px);
@@ -85,29 +75,30 @@ import Button from "./Button.astro";
     margin-top: -4px;
   }
 
+  h2 a {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: none !important;
+  }
+
   h2 a,
   h2 a.active {
     text-decoration: none;
   }
+
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   nav a {
-    padding: 1em 0.5em;
+    padding: 1em 0.2em;
     color: var(--color-black-pearl-900);
     border-bottom: 4px solid transparent;
     text-decoration: none;
   }
 
-  nav a:first-of-type {
-    padding-left: 0;
-  }
-
-  nav a:last-of-type {
-    padding-right: 0;
-  }
   nav a.active {
     text-decoration: none;
     border-bottom-color: var(--accent);
@@ -121,6 +112,18 @@ import Button from "./Button.astro";
   .separator {
     margin: 0 0.5em;
   }
+
+  .navigation {
+    display: flex;
+    gap: 1.5em;
+  }
+
+  .internal-links {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+  }
+
   .social-links,
   .social-links a {
     display: flex;
@@ -129,7 +132,7 @@ import Button from "./Button.astro";
   .buttons-container {
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.8em;
   }
 
   @media (max-width: 1200px) {

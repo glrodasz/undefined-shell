@@ -1,9 +1,33 @@
-/comandos-alias-para-la-terminal /posts/comandos-alias-para-la-terminal 301
-/conociendo-la-terminal /posts/conociendo-la-terminal 301
-/crea-html-templates-con-lit-html /posts/crea-html-templates-con-lit-html 301
-/design-tokens-al-rescate /posts/design-tokens-al-rescate 301
-/estatico-dinamico-spa-mpa-jamstack /posts/estatico-dinamico-spa-mpa-jamstack 301
-/evolucion-de-las-arquitecturas-de-css /posts/evolucion-de-las-arquitecturas-de-css 301
-/introduccion-a-los-web-components /posts/introduccion-a-los-web-components 301
-/la-evolucion-de-los-design-tokens /posts/la-evolucion-de-los-design-tokens 301
-/posts/tipos-de-lenguajes-de-programación /posts/tipos-de-lenguajes-de-programacion 301
+# Migration from ghost posts to astro posts
+/comandos-alias-para-la-terminal /es/posts/comandos-alias-para-la-terminal 301
+/conociendo-la-terminal /es/posts/conociendo-la-terminal 301
+/crea-html-templates-con-lit-html /es/posts/crea-html-templates-con-lit-html 301
+/design-tokens-al-rescate /es/posts/design-tokens-al-rescate 301
+/estatico-dinamico-spa-mpa-jamstack /es/posts/estatico-dinamico-spa-mpa-jamstack 301
+/evolucion-de-las-arquitecturas-de-css /es/posts/evolucion-de-las-arquitecturas-de-css 301
+/introduccion-a-los-web-components /es/posts/introduccion-a-los-web-components 301
+/la-evolucion-de-los-design-tokens /es/posts/la-evolucion-de-los-design-tokens 301
+
+# Special chars posts redirects
+/posts/tipos-de-lenguajes-de-programación /es/posts/tipos-de-lenguajes-de-programacion 301
+/posts/diseñando-un-algoritmo /es/posts/disenando-un-algoritmo 301
+
+# i18n posts migrations
+/posts/algoritmos-con-naipes-busqueda-binaria /es/posts/algoritmos-con-naipes-busqueda-binaria 301
+/posts/algoritmos-con-naipes-ordenamiento-burbuja /es/posts/algoritmos-con-naipes-ordenamiento-burbuja 301
+/posts/comandos-alias-para-la-terminal /es/posts/comandos-alias-para-la-terminal 301
+/posts/como-funciona-un-lenguaje-de-programacion /es/posts/como-funciona-un-lenguaje-de-programacion 301
+/posts/conociendo-la-terminal /es/posts/conociendo-la-terminal 301
+/posts/crea-html-templates-con-lit-html /es/posts/crea-html-templates-con-lit-html 301
+/posts/design-tokens-al-rescate /es/posts/design-tokens-al-rescate 301
+/posts/disenando-un-algoritmo /es/posts/disenando-un-algoritmo 301
+/posts/estatico-dinamico-spa-mpa-jamstack /es/posts/estatico-dinamico-spa-mpa-jamstack 301
+/posts/evolucion-de-las-arquitecturas-de-css /es/posts/evolucion-de-las-arquitecturas-de-css 301
+/posts/expresiones-y-sentencias-luego-que /es/posts/expresiones-y-sentencias-luego-que 301
+/posts/introduccion-a-los-web-components /es/posts/introduccion-a-los-web-components 301
+/posts/la-evolucion-de-los-design-tokens /es/posts/la-evolucion-de-los-design-tokens 301
+/posts/la-programacion-es-para-mi /es/posts/la-programacion-es-para-mi 301
+/posts/para-que-me-sirve-programar /es/posts/para-que-me-sirve-programar 301
+/posts/que-es-un-algoritmo /es/posts/que-es-un-algoritmo 301
+/posts/que-necesitas-saber-antes-de-programar /es/posts/que-necesitas-saber-antes-de-programar 301
+/posts/tipos-de-lenguajes-de-programacion /es/posts/tipos-de-lenguajes-de-programacion 301

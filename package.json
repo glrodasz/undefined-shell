@@ -1,7 +1,7 @@
 {
   "name": "undefined-shell",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "scripts": {
     "format": "prettier --write .",
     "dev": "astro dev",
@@ -22,5 +22,5 @@
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.10.3"
 }
