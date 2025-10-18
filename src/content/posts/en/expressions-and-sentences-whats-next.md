@@ -10,7 +10,7 @@ languageVersions:
     url: "/es/posts/expresiones-y-sentencias-luego-que"
 ---
 
-So far we've seen how the code we write is composed of smaller parts, like [*expressions* and *statements*](/posts/como-funciona-un-lenguaje-de-programacion). But how many statements and/or expressions are needed to consider it an algorithm? At what point does a set of algorithms become what we call *frameworks*? And when does a *framework* differ from a *utility* or a *library*?
+So far we've seen how the code we write is composed of smaller parts, like [*expressions* and *statements*](/posts/how-does-a-programming-language-work). But how many statements and/or expressions are needed to consider it an algorithm? At what point does a set of algorithms become what we call *frameworks*? And when does a *framework* differ from a *utility* or a *library*?
 
 If we wanted to explain it practically, we could think of atomic design where **expressions** generate **statements**, statements generate **algorithms** and these finally become **code**.
 

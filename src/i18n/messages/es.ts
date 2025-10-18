@@ -20,7 +20,7 @@ export const messages = {
     followInstagram: "Sigue Undefined Shell en Instagram"
   },
   languageBanner: {
-    readIn: "Puedes leer la versión en {language} de este artículo",
+    readIn: "Puedes leer la versión en {language}",
     linkText: "aquí",
     languages: {
       es: "Español",
