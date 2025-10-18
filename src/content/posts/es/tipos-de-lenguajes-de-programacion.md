@@ -4,6 +4,9 @@ pubDate: "2024-11-24T00:00:00.000Z"
 tags: Aprende a programar
 description: Al igual que las personas que hablan diversos idiomas, en programación existen múltiples lenguajes, cada uno con características y propósitos específicos. Los lenguajes de programación se pueden categorizar en varios paradigmas, como imperativos, declarativos, orientados a objetos, funcionales, procedimentales y lógicos.
 heroImage: "/covers/architect-desk-with-tools-and-blueprints.jpg"
+languageVersions:
+  - language: "en"
+    url: "/posts/types-of-programming-languages"
 ---
 
 Así como las personas nos comunicamos en diferentes idiomas, usualmente del lugar donde nos encontramos, en programación también existen diversos lenguajes. Para un programador experimentado, puede ser relativamente sencillo entender múltiples lenguajes de programación, de forma similar a la intercomprensión entre hablantes de idiomas romances como el español, italiano o portugués.
@@ -20,7 +23,7 @@ A continuación, exploraremos algunas de estas categorías.
 El paradigma está relacionado con el propósito del lenguaje. Generalmente, cuando surge un problema muy específico, los lenguajes de propósito general no suelen ser eficientes. Por eso, es común que se desarrollen lenguajes especializados, optimizados para resolver dichos problemas, acompañados de estilos de escritura más adecuados para sus propósitos.
 
 ### Imperativos
-Esta es probablemente la categoría más común y con la que la mayoría de las personas comienzan, debido a que se asemejan a las listas de instrucciones que seguimos en la vida diaria. Son lenguajes que se ejecutan mediante [instrucciones paso a paso, como una receta](https://undefined.sh/posts/que-es-un-algoritmo/). Estos lenguajes son útiles porque permiten un control detallado de cómo se ejecutan las tareas, lo cual es particularmente importante en aplicaciones que necesitan un alto grado de precisión.
+Esta es probablemente la categoría más común y con la que la mayoría de las personas comienzan, debido a que se asemejan a las listas de instrucciones que seguimos en la vida diaria. Son lenguajes que se ejecutan mediante [instrucciones paso a paso, como una receta](/posts/what-is-an-algorithm/). Estos lenguajes son útiles porque permiten un control detallado de cómo se ejecutan las tareas, lo cual es particularmente importante en aplicaciones que necesitan un alto grado de precisión.
 
 **Ejemplos:** Python, Java, PHP, JavaScript.
 ```python

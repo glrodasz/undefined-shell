@@ -4,6 +4,9 @@ pubDate: "2025-07-24T00:00:00.000Z"
 tags: Aprende a programar
 description: Antes de empezar a programar no hace falta ser un genio ni memorizar fórmulas; basta con seguir tres pilares que simplifican el camino, aprender a leer documentación, repasar las matemáticas de la secundaria y mantener una curiosidad inagotable para adaptarte a los constantes cambios tecnológicos. Veamos por qué, con esos cimientos, cualquier persona puede dar sus primeros pasos con confianza.
 heroImage: "/covers/vintage-wooden-toolbox-with-metal-wrenches.jpg"
+languageVersions:
+  - language: "en"
+    url: "/posts/what-you-need-to-know-before-programming"
 ---
 Antes de empezar a programar no hace falta ser un genio ni memorizar fórmulas; basta con seguir tres pilares que simplifican el camino: 
 
@@ -37,7 +40,7 @@ Quisiera decirte que para programar basta con saber **sumar, restar, multiplicar
 
 > 🧠 Técnicamente, **sí** podrían bastar las operaciones básicas para tareas muy puntuales como por ejemplo, “maquetar”, pero… rápidamente, en pruebas técnicas o funcionalidades complejas, vas a necesitar algunos operadores matemáticos extra.
 
-> ℹ️ **Maquetar** significa traducir diseños de interfaz de usuario a código. En la web se usaría HTML, CSS y una pizca de JavaScript, por lo que el código imperativo es mínimo (ver más en [Tipos de lenguajes de programación](/es/posts/tipos-de-lenguajes-de-programación/)).
+> ℹ️ **Maquetar** significa traducir diseños de interfaz de usuario a código. En la web se usaría HTML, CSS y una pizca de JavaScript, por lo que el código imperativo es mínimo (ver más en [Tipos de lenguajes de programación](/posts/types-of-programming-languages/)).
 
 No necesitas ser un experto en matemáticas ni un físico cuántico. El **programador promedio** en la industria comercial utiliza una cantidad muy limitada de matemáticas, prácticamente lo aprendido en la **educación secundaria**, con alguna que otra excepción. Veamos qué áreas conviene repasar (in necesidad de dominarlas a fondo ni tenerlas frescas antes de empezar a programar):
 

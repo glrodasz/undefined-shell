@@ -4,6 +4,9 @@ pubDate: "2025-06-20T00:00:00.000Z"
 tags: Aprende a programar
 description: Antes mencionamos que un algoritmo es un conjunto de instrucciones para realizar una tarea. Sin embargo, no siempre se ejecutan de forma lineal. Algunos requieren tomar distintos caminos o ejecutarse en distintos momentos. Exploremos una forma más adecuada de diseñar estos algoritmos.
 heroImage: "/covers/old-treasure-map-with-red-x-mark.jpg"
+languageVersions:
+  - language: "en"
+    url: "/posts/designing-an-algorithm"
 ---
 
 Antes mencionamos que *un algoritmo no es más que un conjunto de instrucciones que se siguen para realizar una tarea en particular.* Sin embargo, una lista de instrucciones no siempre es la mejor forma de representarlo, ya que no todas las tareas pueden ejecutarse de manera lineal, es decir, paso a paso. Algunos algoritmos requieren que las instrucciones sigan diferentes caminos o incluso se ejecuten en distintos momentos.
@@ -11,7 +14,7 @@ Antes mencionamos que *un algoritmo no es más que un conjunto de instrucciones 
 Así que, vamos a explorar una forma más adecuada de diseñar estos algoritmos que no se ejecutan necesariamente de forma lineal.
 
 ## Toma de decisiones
-Una lista de tareas no es la forma más adecuada para representar situaciones hipotéticas en las que elegimos entre distintos caminos, como en los [algoritmos de naipes](/es/posts/algoritmos-con-naipes-ordenamiento-burbuja/). A veces necesitábamos verificar si hubo cambios en el ordenamiento o si la carta del medio era mayor o menor que la carta buscada.
+Una lista de tareas no es la forma más adecuada para representar situaciones hipotéticas en las que elegimos entre distintos caminos, como en los [algoritmos de naipes](/posts/algorithms-with-cards-bubble-sort/). A veces necesitábamos verificar si hubo cambios en el ordenamiento o si la carta del medio era mayor o menor que la carta buscada.
 
 Para estos casos, un **diagrama de flujo** resulta más útil para visualizar las decisiones que pueden tomarse, así que veamos cómo se utiliza este tipo de diagrama para representar dichos algoritmos.
 
@@ -52,7 +55,7 @@ Por ejemplo, los primeros 15 números serían:
 
 > 📝 **n** sería un número entero, por ejemplo el número 100, en ese caso se procesarían los números del 1 al 100.
 
- *Te recomiendo que intentes escribir la solución en forma de lista pseudocodigo como lo hemos hecho en los [algoritmos de naipes](/es/posts/algoritmos-con-naipes-ordenamiento-burbuja/).*
+ *Te recomiendo que intentes escribir la solución en forma de lista pseudocodigo como lo hemos hecho en los [algoritmos de naipes](/posts/algorithms-with-cards-bubble-sort/).*
 
 #### Solución FizzBuzz
 A continuación veamos paso a paso lo que sería una solución de dicho problema usando un diagrama de flujo.

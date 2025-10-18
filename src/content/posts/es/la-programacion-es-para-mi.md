@@ -4,6 +4,9 @@ pubDate: "2025-09-19T00:00:00.000Z"
 tags: Aprende a programar
 description: La programación no es solo para genios de las matemáticas ni para quienes crecieron con videojuegos. Requiere curiosidad, disciplina y el hábito de resolver problemas. Descubre si este camino, lleno de retos y aprendizaje constante, puede ser la carrera ideal para ti.
 heroImage: "/covers/beige-hats-arranged-on-wooden-shelves.jpg"
+languageVersions:
+  - language: "en"
+    url: "/posts/is-programming-for-me"
 ---
 
 Sé que muchos no llegan a la programación por simple casualidad, como nos paso a varios de nosotros. Algunos llegan porque tuvieron una infancia muy cercana a los videojuegos o, en general, a los dispositivos electrónicos, como la computadora.

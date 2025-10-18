@@ -3,8 +3,11 @@ title: "Algoritmos con naipes: Ordenamiento burbuja"
 pubDate: "2024-05-23T00:00:00.000Z"
 updatedDate: "2025-07-25T00:00:00.000Z"
 tags: Aprende a programar
-description: El algoritmo de ordenamiento de burbuja, o “Bubble Sort”, es un método sencillo para ordenar listas. Compara e intercambia pares adyacentes si están desordenados, repitiendo el proceso hasta que no se necesitan más intercambios. Es ideal por su simplicidad y eficiencia en listas pequeñas.
+description: El algoritmo de ordenamiento de burbuja, o "Bubble Sort", es un método sencillo para ordenar listas. Compara e intercambia pares adyacentes si están desordenados, repitiendo el proceso hasta que no se necesitan más intercambios. Es ideal por su simplicidad y eficiencia en listas pequeñas.
 heroImage: "/covers/underwater-bubbles-with-sunlight-rays.jpg"
+languageVersions:
+  - language: "en"
+    url: "/posts/algorithms-with-cards-bubble-sort"
 ---
 Imagina que mezclas una baraja de naipes y luego sin pensarlo mucho la empiezas a ordernar: primero el As, luego el 2, después el 3… Una tarea bastante fácil, ¿cierto? Nuestro cerebro usa la vista, reconoce cada carta al instante y sabe como colocarlas en la posición correcta casi sin esfuerzo consciente.
 

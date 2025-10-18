@@ -4,6 +4,9 @@ pubDate: "2025-08-01T00:00:00.000Z"
 tags: Aprende a programar
 description: Cuando empecé esta carrera y alguien me preguntaba para qué sirve programar, respondía sin pensarlo mucho, para hacer páginas web. Con el tiempo entendí que programar sirve para muchísimo más, y estoy convencido de que, dentro de unos años, será tan imprescindible como saber manejar hojas de cálculo.
 heroImage: "/covers/vintage-typewriter-on-wooden-desk.jpg"
+languageVersions:
+  - language: "en"
+    url: "/posts/what-is-programming-useful-for"
 ---
 
 Cuando estaba en la universidad si alguien me preguntaba *para qué sirve programar*, respondía sin pensarlo mucho: **para hacer páginas web**. Con el tiempo entendí que programar sirve para muchísimo más, y estoy convencido de que, dentro de unos años, será tan imprescindible como saber manejar hojas de cálculo.
@@ -32,7 +35,7 @@ Incluso programar nos llevó (literalmente) a la Luna: Margaret Hamilton y su eq
 Lo más increíble es que ni siquiera necesitas un entorno complicado para empezar. Sí tienes un iPhone, por ejemplo, puedes automatizar tareas con la app propia de **Shortcuts**, una herramienta *low-code* que te deja crear flujos arrastrando bloques. Sigue siendo programación, solo que con menos tecleo y resultados inmediatos.
 
 ## Low-code
-Para programar no es necesario verse como un hacker de película, con una terminal negra llena de letras verdes y tecleando a toda velocidad sin tocar el mouse. De hecho, programar suele ser un proceso pausado, con mucha lectura, análisis, pruebas, búsquedas en internet y revisión constante para asegurarse de que todo funcione como se espera. Como mencionamos en el capítulo [¿Qué necesito saber antes?](/es/posts/que-necesitas-saber-antes-de-programar/), la lógica y la paciencia pesan más que la velocidad de los dedos.
+Para programar no es necesario verse como un hacker de película, con una terminal negra llena de letras verdes y tecleando a toda velocidad sin tocar el mouse. De hecho, programar suele ser un proceso pausado, con mucha lectura, análisis, pruebas, búsquedas en internet y revisión constante para asegurarse de que todo funcione como se espera. Como mencionamos en el capítulo [¿Qué necesito saber antes?](/posts/what-you-need-to-know-before-programming/), la lógica y la paciencia pesan más que la velocidad de los dedos.
 
 Ahora bien, el *low-code* va un paso más allá: permite programar sin escribir tantas líneas de código. En lugar de escribir todo desde cero, usas controles visuales, generalmente en forma de pequeñas cajas que se conectan entre sí. Y aunque se llame *low-code*, eso no significa que no puedas escribir código cuando lo necesites, solo que muchas cosas ya están resueltas de antemano.
 
