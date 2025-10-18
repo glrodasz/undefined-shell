@@ -47,7 +47,7 @@ Utilities are usually small functions that don't dictate how the application sho
 
 A classic example is formatting. Imagine we need to transform a number into a currency format, for example from `2333.4` to `$2,333.40`, or that we receive a date in **ISO 8601** standard, for example `2025-10-12T22:27:06.416Z` and we want to display it as `Sunday, Oct 13, 12:27 AM` or even in a more human way like `32 minutes ago`.
 
-Formatting utilities are just one type. There are also utilities for manipulating objects, arrays, text strings, events and much more.
+Formatting utilities are just one type. There are also utilities for manipulating **objects**, **arrays**, **text strings**, **events** and much more.
 
 What's interesting about utilities is that, by solving common problems, they can be used in practically any project. However, there are other functions that, although they fulfill a similar role, depend too much on business logic or the particular context of a project. Those are usually called **helpers**.
 
@@ -62,22 +62,22 @@ In both cases they fulfill the same idea: they help, but only within their own c
 ## Libraries
 Another category that usually classifies the type of code is when a series of utilities oriented to a common purpose accumulate. This collection is called a **library**, and its main idea is that it's ready to be distributed and used in any project.
 
-Libraries are usually born when a set of solutions begins to repeat over and over again: functions to handle dates, make HTTP requests or manipulate interfaces. Instead of rewriting them in each project, they are grouped, documented and shared to facilitate their reuse.
+Libraries are usually born when a set of solutions begins to repeat over and over again: functions to **handle dates**, make **HTTP requests** or manipulate **interfaces**. Instead of rewriting them in each project, they are grouped, documented and shared to facilitate their reuse.
 
 In addition to saving time, libraries provide consistency: they allow solving the same problems uniformly, without depending on how each person implements them. So, creating a library involves thinking about something more than code: you have to design a clear interface, maintain versions and document its use so others can understand and adopt it easily.
 
 The important thing is that a library is **at the service of the developer**, it doesn't impose rules or structure. We are the ones who decide how and when to use it. However, when a library grows too much and starts to define conventions or work patterns, it stops being just a collection of utilities to become something bigger: a **framework**.
 
 ## Frameworks
-Although I would like to say that the pattern repeats and that a **framework** (in Spanish, *marco de trabajo*) is simply a set of libraries, the truth is that it goes much further than that.
+Although I would like to say that the pattern repeats and that a **framework** is simply a set of libraries, the truth is that it goes much further than that.
 
-It's inevitable that a framework includes its own utilities, *helpers* and, in many cases, multiple libraries. However, what really differentiates it from other pieces of code is its **purpose**. A framework has a series of built-in opinions and decisions about *how* things should be done, with the purpose that we don't have to devise a solution from scratch for each common problem.
+It's inevitable that a framework includes its own *utilities*, *helpers* and, in many cases, multiple libraries. However, what really differentiates it from other pieces of code is its **purpose**. A framework has a series of built-in opinions and decisions about *how* things should be done, with the purpose that we don't have to devise a solution from scratch for each common problem.
 
 While a library is at our service, in a framework the opposite happens: we work within its structure. The framework is the one who decides when and how our code is executed.
 
 We could classify frameworks into three large groups:
 * **Conventional frameworks**: they focus on solving a specific area of development, such as backend, interface or communication between components. They are flexible and allow us to decide which other tools to combine them with.
-* **Full-stack frameworks**: they cover the entire application construction process. They define how the project is organized and usually include everything from the database structure to the server code and user interface. They require less manual intervention and are almost ready to use for the purpose they were created for, such as an *e-commerce* or a content management system.
+* **Full-stack frameworks**: they cover the entire application construction process. They define how the project is organized and usually include everything from the database structure to the server code and user interface. They require less manual intervention and are almost ready to use for the purpose they were created for, such as an *e-commerce* or a *content management system*.
 * **Metaframeworks**: they are built on top of other existing frameworks and offer an additional level of integration and scalability. They don't dictate exactly how to do each thing, but they do include tools and conventions to facilitate development, optimize performance and scale complex applications.
 
 In any case, all frameworks share a common idea: they seek to accelerate development and offer coherence. They free us from repetitive decisions, although in return **they ask us to accept their rules**.

@@ -49,7 +49,7 @@ Las utilidades suelen ser funciones pequeñas que no dictan cómo debe funcionar
 
 Un ejemplo clásico son los formatos. Imagina que necesitamos transformar un número en un formato de moneda, por ejemplo de `2333.4` a `$2,333.40`, o que recibimos una fecha en el estándar **ISO 8601**, por ejemplo `2025-10-12T22:27:06.416Z` y queremos mostrarla como `Domingo, Oct 13, 12:27 AM` o incluso de una forma más humana como `Hace 32 minutos`.
 
-Las utilidades para dar formato son solo un tipo. También existen utilidades para manipular objetos, arreglos, cadenas de texto, eventos y mucho más.
+Las utilidades para dar formato son solo un tipo. También existen utilidades para manipular **objetos**, **arreglos**, **cadenas de texto**, **eventos** y mucho más.
 
 Lo interesante de las utilidades es que, al resolver problemas comunes, pueden usarse prácticamente en cualquier proyecto. Sin embargo, hay otras funciones que, aunque cumplen un rol similar, dependen demasiado de la lógica de negocio o del contexto particular de un proyecto. A esas se les suele llamar **helpers** (*ayudantes*).
 
@@ -64,7 +64,7 @@ En ambos casos cumplen la misma idea: ayudan, pero solo dentro de su propio cont
 ## Bibliotecas
 Otra categoría que suele clasificar el tipo de código es cuando se acumula una serie de utilidades orientadas a un propósito común. A esta colección se le llama **biblioteca**, y su idea principal es que esté lista para ser distribuida y utilizada en cualquier proyecto.
 
-Las bibliotecas suelen nacer cuando un conjunto de soluciones comienza a repetirse una y otra vez: funciones para manejar fechas, hacer solicitudes HTTP o manipular interfaces. En lugar de reescribirlas en cada proyecto, se agrupan, se documentan y se comparten para facilitar su reutilización.
+Las bibliotecas suelen nacer cuando un conjunto de soluciones comienza a repetirse una y otra vez: funciones para **manejar fechas**, hacer **solicitudes HTTP** o manipular **interfaces**. En lugar de reescribirlas en cada proyecto, se agrupan, se documentan y se comparten para facilitar su reutilización.
 
 Además de ahorrar tiempo, las bibliotecas aportan consistencia: permiten resolver los mismos problemas de forma uniforme, sin depender de cómo cada persona los implemente. Por lo que, crear una biblioteca implica pensar en algo más que el código: hay que diseñar una interfaz clara, mantener versiones y documentar su uso para que otros puedan entenderla y adoptarla fácilmente.
 
@@ -73,13 +73,13 @@ Lo importante es que una biblioteca está **al servicio del desarrollador**, no 
 ## Frameworks
 Aunque quisiera decir que el patrón se repite y que un **framework** (en español, *marco de trabajo*) es simplemente un conjunto de bibliotecas, la verdad es que va mucho más allá de eso.
 
-Es inevitable que un framework incluya sus propias utilidades, *helpers* y, en muchos casos, múltiples bibliotecas. Aunque, lo que realmente lo diferencia de otras piezas de código es su **objetivo**. Un framework tiene una serie de opiniones y decisiones incorporadas sobre *cómo* deben hacerse las cosas, con el propósito de que no tengamos que idear una solución desde cero para cada problema común.
+Es inevitable que un framework incluya sus propias *utilidades*, *helpers* y, en muchos casos, múltiples bibliotecas. Aunque, lo que realmente lo diferencia de otras piezas de código es su **objetivo**. Un framework tiene una serie de opiniones y decisiones incorporadas sobre *cómo* deben hacerse las cosas, con el propósito de que no tengamos que idear una solución desde cero para cada problema común.
 
 Mientras que una biblioteca está a nuestro servicio, en un framework ocurre lo contrario: nosotros trabajamos dentro de su estructura. El framework es quien decide cuándo y cómo se ejecuta nuestro código.
 
 Podríamos clasificar los frameworks en tres grandes grupos:
 * **Frameworks convencionales**: se enfocan en resolver un área específica del desarrollo, como el backend, la interfaz o la comunicación entre componentes. Son flexibles y permiten decidir con qué otras herramientas combinarlos.
-* **Frameworks full-stack**: abarcan todo el proceso de construcción de una aplicación. Definen cómo se organiza el proyecto y suelen incluir desde la estructura de la base de datos hasta el código del servidor y la interfaz de usuario. Requieren menos intervención manual y están casi listos para usarse con el propósito para el que fueron creados, como un *e-commerce* o un sistema de gestión de contenido.
+* **Frameworks full-stack**: abarcan todo el proceso de construcción de una aplicación. Definen cómo se organiza el proyecto y suelen incluir desde la estructura de la base de datos hasta el código del servidor y la interfaz de usuario. Requieren menos intervención manual y están casi listos para usarse con el propósito para el que fueron creados, como un *e-commerce* o un *sistema de gestión de contenido*.
 * **Metaframeworks**: se construyen sobre otros frameworks ya existentes y ofrecen un nivel adicional de integración y escalabilidad. No dictan exactamente cómo hacer cada cosa, pero sí incluyen herramientas y convenciones para facilitar el desarrollo, optimizar el rendimiento y escalar aplicaciones complejas.
 
 En cualquier caso, todos los frameworks comparten una idea común: buscan acelerar el desarrollo y ofrecer coherencia. Nos liberan de decisiones repetitivas, aunque a cambio **nos piden aceptar sus reglas**.
