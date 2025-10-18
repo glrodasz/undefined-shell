@@ -2,6 +2,12 @@ import { getCollection } from "astro:content";
 import { LOCALES, DEFAULT_LOCALE, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n";
 
+type RSSFeedContext = {
+  site: string;
+  currentLocale?: string;
+  preferredLocale?: string;
+};
+
 export function getLanguageFromSlug(slug: string): Locale {
   const match = slug.match(new RegExp(`^(${LOCALES.join('|')})/`));
   return (match?.[1] as Locale) || DEFAULT_LOCALE;
@@ -38,7 +44,7 @@ export function calculateReadingTime(text: string, wordsPerMinute = 200): number
   return roundedMinutes;
 }
 
-export async function generateRSSFeed(locale: Locale, context: any) {
+export async function generateRSSFeed(locale: Locale, context: RSSFeedContext) {
   const posts = await getPostsByLanguage(locale);
   const messages = getMessages(locale);
   
