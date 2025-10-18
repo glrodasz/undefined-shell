@@ -1,15 +1,17 @@
 ---
 import Layout from "../../layouts/BlogPost.astro";
 import { getMessages } from "../../i18n";
+import { getLocaleFromAstro } from "../../i18n/config";
 
-const messages = getMessages("es");
+const locale = getLocaleFromAstro(Astro) || "es";
+const messages = getMessages(locale);
 ---
 
 <Layout
   title="Acerca del blog"
   description={messages.site.description}
   pubDate={new Date("April 01 2024")}
-  locale="es"
+  locale={locale}
 >
   <p>
     En <strong>Undefined Shell</strong>, somos mucho más que un simple blog de

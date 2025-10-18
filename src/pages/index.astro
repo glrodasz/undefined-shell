@@ -6,18 +6,19 @@ import Container from "../components/Container.astro";
 import SimpleAnalytics from "../components/SimpleAnalytics.astro";
 import PostList from "../components/PostList.astro";
 import { getPostsByLanguage } from "../utils/content";
-import { DEFAULT_LOCALE } from "../i18n/config";
 import { getMessages } from "../i18n";
+import { getLocaleFromAstro } from "../i18n/config";
 
-const posts = (await getPostsByLanguage(DEFAULT_LOCALE)).sort(
+const locale = getLocaleFromAstro(Astro);
+const posts = (await getPostsByLanguage(locale)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
-const messages = getMessages(DEFAULT_LOCALE);
+const messages = getMessages(locale);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={locale}>
   <head>
     <BaseHead
       title={`${messages.site.title} by ${messages.site.author}`}
@@ -25,15 +26,15 @@ const messages = getMessages(DEFAULT_LOCALE);
     />
   </head>
   <body>
-    <Header locale={DEFAULT_LOCALE} />
+    <Header locale={locale} />
     <Container>
       <main>
         <section>
-          <PostList posts={posts} locale={DEFAULT_LOCALE} />
+          <PostList posts={posts} locale={locale} />
         </section>
       </main>
     </Container>
-    <Footer locale={DEFAULT_LOCALE} />
+    <Footer locale={locale} />
     <SimpleAnalytics />
   </body>
 </html>

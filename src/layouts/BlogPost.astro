@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import Container from "../components/Container.astro";
 import SimpleAnalytics from "../components/SimpleAnalytics.astro";
-import { type Locale, DEFAULT_LOCALE } from "../i18n/config";
+import { type Locale, getLocaleFromAstro } from "../i18n/config";
 import { getMessages } from "../i18n";
 
 type Props = CollectionEntry<"posts">["data"] & {
@@ -14,16 +14,10 @@ type Props = CollectionEntry<"posts">["data"] & {
   locale?: Locale;
 };
 
-const {
-  title,
-  description,
-  pubDate,
-  updatedDate,
-  heroImage,
-  readingTime,
-  locale = DEFAULT_LOCALE,
-} = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, readingTime } =
+  Astro.props;
 
+const locale = getLocaleFromAstro(Astro);
 const messages = getMessages(locale);
 const tabTitle = `${title} • ${messages.site.description} • ${messages.site.title} by ${messages.site.author}`;
 ---

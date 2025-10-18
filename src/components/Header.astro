@@ -3,14 +3,18 @@ import HeaderLink from "./HeaderLink.astro";
 import Container from "./Container.astro";
 import Button from "./Button.astro";
 import LanguageSelector from "./LanguageSelector.astro";
-import { type Locale, DEFAULT_LOCALE, getLocalizedPath } from "../i18n/config";
+import {
+  type Locale,
+  getLocaleFromAstro,
+  DEFAULT_LOCALE,
+} from "../i18n/config";
 import { getMessages } from "../i18n";
 
 type Props = {
   locale?: Locale;
 };
 
-const { locale = DEFAULT_LOCALE } = Astro.props;
+const locale = getLocaleFromAstro(Astro);
 const messages = getMessages(locale);
 const currentPath = Astro.url.pathname;
 ---
@@ -20,7 +24,7 @@ const currentPath = Astro.url.pathname;
     <nav>
       <div class="title">
         <h2>
-          <a href={getLocalizedPath("/", locale)}
+          <a href={locale === DEFAULT_LOCALE ? "/" : `/${locale}/`}
             >{messages.site.title}<span class="author"
               >by {messages.site.author}</span
             ></a
@@ -29,10 +33,11 @@ const currentPath = Astro.url.pathname;
       </div>
       <div class="navigation">
         <div class="internal-links">
-          <HeaderLink href={getLocalizedPath("/", locale)}
+          <HeaderLink href={locale === DEFAULT_LOCALE ? "/" : `/${locale}/`}
             >{messages.navigation.home}</HeaderLink
           >
-          <HeaderLink href={getLocalizedPath("/about", locale)}
+          <HeaderLink
+            href={locale === DEFAULT_LOCALE ? "/about" : `/${locale}/about`}
             >{messages.navigation.about}</HeaderLink
           >
           <LanguageSelector currentLocale={locale} currentPath={currentPath} />

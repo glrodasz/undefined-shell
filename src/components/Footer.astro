@@ -1,13 +1,13 @@
 ---
 import Container from "./Container.astro";
-import { type Locale, DEFAULT_LOCALE } from "../i18n/config";
+import { type Locale, getLocaleFromAstro } from "../i18n/config";
 import { getMessages } from "../i18n";
 
 type Props = {
   locale?: Locale;
 };
 
-const { locale = DEFAULT_LOCALE } = Astro.props;
+const locale = getLocaleFromAstro(Astro);
 const messages = getMessages(locale);
 const today = new Date();
 ---

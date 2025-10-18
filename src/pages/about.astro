@@ -1,16 +1,17 @@
 ---
 import Layout from "../layouts/BlogPost.astro";
 import { getMessages } from "../i18n";
-import { DEFAULT_LOCALE } from "../i18n/config";
+import { getLocaleFromAstro } from "../i18n/config";
 
-const messages = getMessages(DEFAULT_LOCALE);
+const locale = getLocaleFromAstro(Astro);
+const messages = getMessages(locale);
 ---
 
 <Layout
   title="About the blog"
   description={messages.site.description}
   pubDate={new Date("April 01 2024")}
-  locale={DEFAULT_LOCALE}
+  locale={locale}
 >
   <p>
     At <strong>Undefined Shell</strong>, we are much more than just a simple

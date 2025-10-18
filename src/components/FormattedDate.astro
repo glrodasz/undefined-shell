@@ -1,5 +1,5 @@
 ---
-import { getLocaleFromUrl } from "../i18n/config";
+import { getLocaleFromAstro } from "../i18n/config";
 
 interface Props {
   date: Date;
@@ -9,7 +9,7 @@ interface Props {
 
 const { date, leadingComma, locale } = Astro.props;
 
-const currentLocale = locale || getLocaleFromUrl(Astro.url);
+const currentLocale = getLocaleFromAstro({ ...Astro, props: { locale } });
 ---
 
 <time datetime={date.toISOString()}>
