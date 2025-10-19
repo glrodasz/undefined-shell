@@ -64,7 +64,7 @@ const formatMessage = (template: string, language: string) => {
 
 <style>
   .flag {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
 
   .language-banner {
@@ -79,15 +79,18 @@ const formatMessage = (template: string, language: string) => {
     color: var(--color-white);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
     font-size: 1rem;
+    border-radius: 0 4px 4px 0;
   }
 
   .language-banner a {
-    color: var(--color-aquarius-100);
+    color: var(--accent);
     text-decoration: underline;
     padding: 0;
+    margin: 0;
   }
 
   .language-banner p {
     margin: 0;
+    line-height: 1.2;
   }
 </style>

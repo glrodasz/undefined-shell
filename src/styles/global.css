@@ -166,6 +166,14 @@ a:hover {
   color: var(--accent);
 }
 
+a:hover:visited {
+  color: var(--accent);
+}
+
+a:visited {
+  color: var(--accent-dark);
+}
+
 a h4 {
   transition: color 0.2s ease-in-out;
 }

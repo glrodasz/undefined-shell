@@ -68,7 +68,7 @@ const tabTitle = `${title} • ${messages.site.description} • ${messages.site.
         line-height: 1;
       }
       .title h1 {
-        margin: 2rem 0 0 0;
+        margin: 3rem 0 2rem;
         color: var(--color-black-pearl-900);
       }
       .date,
@@ -79,8 +79,7 @@ const tabTitle = `${title} • ${messages.site.description} • ${messages.site.
       .subheader {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        margin-bottom: 1em;
+        align-items: flex-end;
       }
 
       .has-hero-image {
@@ -90,11 +89,6 @@ const tabTitle = `${title} • ${messages.site.description} • ${messages.site.
       @media (max-width: 920px) {
         .hero-image img {
           aspect-ratio: 24 / 9;
-        }
-
-        .subheader {
-          flex-direction: column;
-          gap: 0.5em;
         }
 
         .date {
@@ -156,7 +150,11 @@ const tabTitle = `${title} • ${messages.site.description} • ${messages.site.
     <SimpleAnalytics />
     <style>
       .blog-content {
-        margin-top: 3rem;
+        margin-top: 2rem;
+      }
+
+      .last-updated-on {
+        font-style: italic;
       }
     </style>
   </body>

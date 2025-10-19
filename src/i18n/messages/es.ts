@@ -7,7 +7,7 @@ export const messages = {
     url: "https://undefined.sh"
   },
   blog: {
-    lastUpdatedOn: "última actualización el",
+    lastUpdatedOn: "Actualizado el",
     minRead: "min de lectura"
   },
   navigation: {
