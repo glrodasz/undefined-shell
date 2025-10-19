@@ -65,39 +65,39 @@ To illustrate how the bubble sort algorithm works, let's perform a step-by-step 
 
 Following the described process, we'll see how each card finds its correct place through successive comparisons and swaps.
 
-![Figure 1: Hand showing two cards: Three and King of hearts on the left.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-1.jpg) _Figure 1: Hand showing two cards: Three and King of hearts on the left._
+![Figure 1: Hand showing two cards: Three and King of hearts on the left.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-1.jpg) _**Figure 1**: Hand showing two cards: Three and King of hearts on the left._
 We take the first card from the deck, the **3 of hearts** and compare it with the next card, the **King of hearts**.
 
 Since the current card, the **3 of hearts**, is not greater than the next card, we don't make any swap and now the **King of hearts** will be compared with the next card.
 
-![Figure 2: Comparison of King of hearts with Nine of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-2.jpg) _Figure 2: Comparison of King of hearts with Nine of hearts._
+![Figure 2: Comparison of King of hearts with Nine of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-2.jpg) _**Figure 2**: Comparison of King of hearts with Nine of hearts._
 We compare the **King of hearts** with the next card, the **9 of hearts**.
 
-![Figure 3: Swap of King of hearts with Nine of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-3.jpg) _Figure 3: Swap of King of hearts with Nine of hearts._
+![Figure 3: Swap of King of hearts with Nine of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-3.jpg) _**Figure 3**: Swap of King of hearts with Nine of hearts._
 Since in this case the current card, the **King of hearts**, is greater than the next card, **9 of hearts**, we make the swap.
 
 Since there was a swap, the **King of hearts** will continue to be the current card that we'll compare with the next card.
 
-![Figure 4: Comparison of King of hearts with Five of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-4.jpg) _Figure 4: Comparison of King of hearts with Five of hearts._
+![Figure 4: Comparison of King of hearts with Five of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-4.jpg) _**Figure 4**: Comparison of King of hearts with Five of hearts._
 We compare the **King of hearts** again with the next card, the **5 of hearts**.
 
-![Figure 4: Swap of King of hearts with Five of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-5.jpg) _Figure 4: Swap of King of hearts with Five of hearts._
+![Figure 4: Swap of King of hearts with Five of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-5.jpg) _**Figure 4**: Swap of King of hearts with Five of hearts._
 Since again the current card, the **King of hearts**, is greater than the next card, **5 of hearts**, we make the swap.
 
 The process will be very similar since the **King of hearts** will always be greater, and this will then become the last card.
 
 The **King of hearts** will be compared with the **2 of hearts**, there will be a swap and then it will be compared with the **Ace of hearts**, generating a final swap.
 
-![Figure 5: Comparison of Nine of hearts with Five of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-6.jpg) _Figure 5: Comparison of Nine of hearts with Five of hearts._
+![Figure 5: Comparison of Nine of hearts with Five of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-6.jpg) _**Figure 5**: Comparison of Nine of hearts with Five of hearts._
 Since there were swaps in this first cycle, we must start again and continue verifying that the highest card moves to the last position in the following cycles.
 
 For example, in the second cycle we'll initially compare the **3 of hearts** with the **9 of hearts**, not generating a swap, but then we'll compare the **9 of hearts** with the **5 of hearts**, creating a swap.
 
 The **9 of hearts** will continue to be compared and generating swaps until it's right before the **King of hearts**.
-![Figure 6: Swap of Ace of hearts with Two of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-7.jpg) _Figure 6: Swap of Ace of hearts with Two of hearts._
+![Figure 6: Swap of Ace of hearts with Two of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-7.jpg) _**Figure 6**: Swap of Ace of hearts with Two of hearts._
 After a series of cycles, in the last cycle there will be a final swap between the **2 of hearts** and the **Ace of hearts**.
 
-![Figure 7: Sorted cards: Ace, Two, Three, Five, Nine, and King of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-8.jpg) _Figure 7: Sorted cards: Ace, Two, Three, Five, Nine, and King of hearts._
+![Figure 7: Sorted cards: Ace, Two, Three, Five, Nine, and King of hearts.](/images/posts/es/algoritmos-con-naipes-ordenamiento-burbuja/paso-8.jpg) _**Figure 7**: Sorted cards: Ace, Two, Three, Five, Nine, and King of hearts._
 There will be one more cycle comparing the current card with the next one, without any swaps, concluding that the cards are already sorted.
 
 ### This is how bubbles rise to the surface

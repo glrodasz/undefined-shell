@@ -58,24 +58,24 @@ Following the described process, we'll see how we find the searched card, **6 of
 
 > 🃏 Remember that for binary search to work **the set of elements has to be ordered from the beginning**. But, this is not a requirement for all search algorithms, like linear search for example.
 
-![Figure 1: Hand pointing to the middle (Seven of hearts) of an ordered deck of cards.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-1.jpg)_Figure 1: Hand pointing to the middle (Seven of hearts) of an ordered deck of cards._
+![Figure 1: Hand pointing to the middle (Seven of hearts) of an ordered deck of cards.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-1.jpg)_**Figure 1**: Hand pointing to the middle (Seven of hearts) of an ordered deck of cards._
 We define the limits, the first card will be the **Start**, the last one the **End**, and finally the middle card will be the one we'll verify as the card we're looking for.
 
-![Figure 2: Deck of cards divided in the middle, discarding the right section.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-2.jpg)_Figure 2: Deck of cards divided in the middle, discarding the right section._
+![Figure 2: Deck of cards divided in the middle, discarding the right section.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-2.jpg)_**Figure 2**: Deck of cards divided in the middle, discarding the right section._
 Since the middle card was the **seven of hearts**, having a greater value, we'll discard the entire right half.
 
-![Figure 3: Hand pointing to the middle (Three of hearts) of the previous left section.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-3.jpg)_Figure 3: Hand pointing to the middle (Three of hearts) of the previous left section._
+![Figure 3: Hand pointing to the middle (Three of hearts) of the previous left section.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-3.jpg)_**Figure 3**: Hand pointing to the middle (Three of hearts) of the previous left section._
 We'll establish the limits again, this time the end becomes **six of hearts**, and again we'll look for the middle card.
 
 > 🃏 When we had 13 cards in total, to find the middle card we divided 13 by 2. The result gives us 6.5, but since card 6.5 doesn't exist as we're working with integer values, we must decide whether to round down or up. For this occasion we decided to always round up and that's why we took the **7 of hearts**.
 
-![Figure 4: Deck of cards divided in the middle, discarding the previous right section.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-4.jpg)_Figure 4: Deck of cards divided in the middle, discarding the previous right section._
+![Figure 4: Deck of cards divided in the middle, discarding the previous right section.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-4.jpg)_**Figure 4**: Deck of cards divided in the middle, discarding the previous right section._
 The middle card is the **3 of hearts**, since this is less than the searched card, we'll discard the entire left half.
 
-![Figure 5: Hand pointing to the middle (Five of hearts) of the previous right section.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-5.jpg)_Figure 5: Hand pointing to the middle (Five of hearts) of the previous right section._
+![Figure 5: Hand pointing to the middle (Five of hearts) of the previous right section.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-5.jpg)_**Figure 5**: Hand pointing to the middle (Five of hearts) of the previous right section._
 We establish the limits again, the end stays the same but the start becomes the new first card, in this case the **4 of hearts**.
 
-![Figure 6: Hand showing the found card, Six of hearts.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-6.jpg)_Figure 6: Hand showing the found card, Six of hearts._
+![Figure 6: Hand showing the found card, Six of hearts.](/images/posts/es/algoritmos-con-naipes-busqueda-binaria/paso-6.jpg)_**Figure 6**: Hand showing the found card, Six of hearts._
 Finally, the middle card will be less than the searched card, we discard the entire left half again.
 
 Since this time only one card remains, we only need to ask if that card is the **6 of hearts**, and indeed it is!

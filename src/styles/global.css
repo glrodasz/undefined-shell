@@ -202,12 +202,20 @@ p {
 }
 
 li {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .prose li p,
 .prose ol li {
   margin: 0 0 0.5rem;
+}
+
+.footnotes::before {
+  display: block;
+  content: "~";
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1rem;
 }
 
 .footnotes {
@@ -247,6 +255,8 @@ img+em {
   margin: 0 auto;
   color: var(--color-black-pearl-400);
   margin-bottom: 2em;
+  line-height: 1.2;
+  text-wrap: balance;
 }
 
 code {
@@ -288,6 +298,10 @@ hr {
 time {
   margin: 0.2em 0;
   ;
+}
+
+sup {
+  margin-left: 0.2rem;
 }
 
 ::marker {
