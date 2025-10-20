@@ -9,7 +9,7 @@ languageVersions:
     url: "/posts/designing-an-algorithm"
 ---
 
-Antes mencionamos que *un algoritmo no es más que un conjunto de instrucciones que se siguen para realizar una tarea en particular.* Sin embargo, una lista de instrucciones no siempre es la mejor forma de representarlo, ya que no todas las tareas pueden ejecutarse de manera lineal, es decir, paso a paso. Algunos algoritmos requieren que las instrucciones sigan diferentes caminos o incluso se ejecuten en distintos momentos.
+Antes mencionamos que *un algoritmo no es más que un conjunto de instrucciones que se siguen para realizar una tarea en particular.* Sin embargo, una lista de instrucciones no siempre es la mejor forma de representarlo, ya que no todas las tareas pueden ejecutarse de manera lineal, dicho de otro modo, paso a paso. Algunos algoritmos requieren que las instrucciones sigan diferentes caminos o incluso se ejecuten en distintos momentos.
 
 Así que, vamos a explorar una forma más adecuada de diseñar estos algoritmos que no se ejecutan necesariamente de forma lineal.
 
@@ -19,13 +19,13 @@ Una lista de tareas no es la forma más adecuada para representar situaciones hi
 Para estos casos, un **diagrama de flujo** resulta más útil para visualizar las decisiones que pueden tomarse, así que veamos cómo se utiliza este tipo de diagrama para representar dichos algoritmos.
 
 ## Componentes de un diagrama de flujo
-Lo interesante del diagrama de flujo (En inglés flowchart) es que tiene una definición estandarizada, es decir, hay unas reglas muy claras de cómo definirse y usarse en la industria, específicamente **ISO 5807** publicado en 1985, pero revisado por última vez en el 2019.
+Lo interesante del diagrama de flujo (en inglés, flowchart) es que tiene una definición estandarizada. Esto quiere decir que hay unas reglas muy claras de cómo definirse y usarse en la industria, específicamente **ISO 5807** publicado en 1985, pero revisado por última vez en el 2019.
 
 ### Formas básicas populares 
-Aunque no vamos a cubrir todas las formas básicas o extras, si describiremos las más populares. Con estas vamos a poder representar la mayoría de algoritmos que involucran toma de decisiones.
+Aunque no vamos a cubrir todas las formas básicas o extras, sí describiremos las más populares. Con estas vamos a poder representar la mayoría de algoritmos que involucran toma de decisiones.
 
 #### Línea de flujo
-Se representa con una línea (o flecha de ser necesario) y está indica el flujo del algoritmo, es decir el camino por el cual vamos a seguir. Las líneas conectan una forma con otra, saliendo de una y terminando en otra.
+Se representa con una línea (o flecha de ser necesario) y esta indica el flujo del algoritmo, en otras palabras, el camino por el cual vamos a seguir. Las líneas conectan una forma con otra, saliendo de una y terminando en otra.
 ![](/images/posts/es/disenando-un-algoritmo/linea-de-flujo.png)
 
 #### Terminal

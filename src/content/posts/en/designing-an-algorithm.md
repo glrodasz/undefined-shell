@@ -9,23 +9,23 @@ languageVersions:
     url: "/es/posts/disenando-un-algoritmo"
 ---
 
-We previously mentioned that *an algorithm is nothing more than a set of instructions that are followed to perform a particular task.* However, a list of instructions is not always the best way to represent it, since not all tasks can be executed linearly, that is, step by step. Some algorithms require that the instructions follow different paths or even execute at different times.
+We previously mentioned that *an algorithm is nothing more than a set of instructions that are followed to perform a particular task.* However, a list of instructions is not always the best way to represent it, since not all tasks can be executed linearly. Put another way, not all tasks can be executed step by step. Some algorithms require the instructions to follow different paths or even be executed at different times.
 
 So, let's explore a more appropriate way to design these algorithms that don't necessarily execute linearly.
 
 ## Decision making
 A task list is not the most appropriate way to represent hypothetical situations where we choose between different paths, as in the [card algorithms](/posts/algorithms-with-cards-bubble-sort/). Sometimes we needed to check if there were changes in the sorting or if the middle card was greater or less than the card being searched for.
 
-For these cases, a **flowchart** is more useful for visualizing the decisions that can be made, so let's see how this type of diagram is used to represent such algorithms.
+For these cases, a **flowchart** is more useful for visualizing the decisions that can be made. Let's see how this type of diagram is used to represent such algorithms.
 
 ## Flowchart components
-What's interesting about the flowchart (in English flowchart) is that it has a standardized definition, that is, there are very clear rules about how to define and use it in the industry, specifically **ISO 5807** published in 1985, but last reviewed in 2019.
+The interesting thing about flowcharts is that they have a standardized definition. This means there are very clear rules about how to define and use it in the industry, specifically **ISO 5807**, published in 1985, but last reviewed in 2019.
 
 ### Popular basic shapes
-Although we're not going to cover all the basic or extra shapes, we will describe the most popular ones. With these we'll be able to represent most algorithms that involve decision making.
+Although we're not going to cover all the basic or additional shapes, we will describe the most popular ones. With these, we'll be able to represent most algorithms that involve decision making.
 
 #### Flow line
-It's represented with a line (or arrow if necessary) and indicates the flow of the algorithm, that is, the path we're going to follow. The lines connect one shape to another, starting from one and ending in another.
+It's represented with a line (or arrow if necessary) and indicates the flow of the algorithm, in other words, the path we're going to follow. The lines connect one shape to another, starting from one and ending in another.
 ![](/images/posts/es/disenando-un-algoritmo/linea-de-flujo.png)
 
 #### Terminal
