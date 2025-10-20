@@ -23,7 +23,7 @@ Below, we'll explore some of these categories.
 The paradigm is related to the purpose of the language. Generally, when a very specific problem arises, general-purpose languages are usually not efficient. That's why it's common for specialized languages to be developed, optimized to solve those problems, accompanied by writing styles more suitable for their purposes.
 
 ### Imperative
-This is probably the most common category and the one most people start with, because they resemble the lists of instructions we follow in daily life. They are languages that execute through [step-by-step instructions, like a recipe](https://undefined.sh/posts/what-is-an-algorithm/). These languages are useful because they allow detailed control of how tasks are executed, which is particularly important in applications that need a high degree of precision.
+This is probably the most common category and the one most people start with, because they resemble the lists of instructions we follow in daily life. They are languages that execute through [step-by-step instructions, like a recipe](/posts/what-is-an-algorithm/). These languages are useful because they allow detailed control of how tasks are executed, which is particularly important in applications that need a high degree of precision.
 
 **Examples:** Python, Java, PHP, JavaScript.
 ```python

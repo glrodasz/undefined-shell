@@ -23,7 +23,7 @@ A continuación, exploraremos algunas de estas categorías.
 El paradigma está relacionado con el propósito del lenguaje. Generalmente, cuando surge un problema muy específico, los lenguajes de propósito general no suelen ser eficientes. Por eso, es común que se desarrollen lenguajes especializados, optimizados para resolver dichos problemas, acompañados de estilos de escritura más adecuados para sus propósitos.
 
 ### Imperativos
-Esta es probablemente la categoría más común y con la que la mayoría de las personas comienzan, debido a que se asemejan a las listas de instrucciones que seguimos en la vida diaria. Son lenguajes que se ejecutan mediante [instrucciones paso a paso, como una receta](/posts/what-is-an-algorithm/). Estos lenguajes son útiles porque permiten un control detallado de cómo se ejecutan las tareas, lo cual es particularmente importante en aplicaciones que necesitan un alto grado de precisión.
+Esta es probablemente la categoría más común y con la que la mayoría de las personas comienzan, debido a que se asemejan a las listas de instrucciones que seguimos en la vida diaria. Son lenguajes que se ejecutan mediante [instrucciones paso a paso, como una receta](/es/posts/que-es-un-algoritmo/). Estos lenguajes son útiles porque permiten un control detallado de cómo se ejecutan las tareas, lo cual es particularmente importante en aplicaciones que necesitan un alto grado de precisión.
 
 **Ejemplos:** Python, Java, PHP, JavaScript.
 ```python
