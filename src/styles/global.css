@@ -51,6 +51,8 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 html,
@@ -220,6 +222,45 @@ li {
 
 .footnotes {
   margin-top: 3.5rem;
+}
+
+.footnotes li {
+  position: relative;
+}
+
+.footnotes li:target::before {
+  position: absolute;
+  content: "";
+  top: 5%;
+  left: -1%;
+  width: 99%;
+  height: 85%;
+  transform: rotate(-1deg);
+  background-color: var(--color-aquarius-100);
+  z-index: -1;
+  border-radius: 20px;
+}
+
+blockquote:has(sup a:target) {
+  background-color: var(--color-aquarius-100);
+  transition: background-color 0.3s ease-in-out;
+}
+
+p:has(sup a:target) {
+  position: relative;
+}
+
+p:has(sup a:target)::before {
+  position: absolute;
+  content: "";
+  top: 5%;
+  left: -1%;
+  width: 99%;
+  height: 85%;
+  transform: rotate(-1deg);
+  background-color: var(--color-aquarius-100);
+  z-index: -1;
+  border-radius: 20px;
 }
 
 li li {
