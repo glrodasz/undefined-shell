@@ -20,7 +20,7 @@ const messages = getMessages(locale);
 const currentPath = Astro.url.pathname;
 ---
 
-<header>
+<header id="main-header">
   <Container>
     <nav>
       <div class="title">
@@ -56,10 +56,23 @@ const currentPath = Astro.url.pathname;
     width: 100%;
     position: fixed;
     padding: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: white;
+    box-shadow: none;
+    backdrop-filter: none;
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+
+  header.scrolled {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 30%,
+      rgba(255, 255, 255, 0.9) 50%,
+      rgba(255, 255, 255, 0.65) 100%
+    );
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
     backdrop-filter: blur(10px);
-    z-index: 10;
   }
 
   h2 {
@@ -151,3 +164,21 @@ const currentPath = Astro.url.pathname;
     }
   }
 </style>
+
+<script>
+  function handleScroll() {
+    const header = document.getElementById("main-header");
+    if (window.scrollY > 0) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  }
+
+  // Add scroll listener when the page loads
+  document.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener("scroll", handleScroll);
+    // Check initial scroll position
+    handleScroll();
+  });
+</script>
