@@ -25,7 +25,7 @@ Let's see a series of algorithms written in pseudocode that you can apply yourse
 > In the context of computing, to do sorting or searching it's necessary to verify each card individually to be able to determine a solution.
 
 ## Bubble sort
-The bubble sort algorithm, known in English as "Bubble Sort", is a simple method for sorting a list of elements, in this case, a deck of cards.
+The bubble sort algorithm is a simple method for sorting a list of elements, in this case, a deck of cards.
 
 It works by repeatedly reviewing the list of cards, comparing adjacent pairs and, if they are in the wrong order, swapping them.
 

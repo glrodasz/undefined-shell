@@ -26,7 +26,7 @@ Let's see some examples of expressions:
 3. The _expression_ `"Hello " + name` makes use of the concatenation _operator_ to join the string _value_ `"Hello "` with the _variable_ `name`. The result of this operation is unknown until a specific _value_ is assigned to the _variable_ `name`.
 4. The _expression_ `f(x) = x^2` uses the power _operator_ to square the _variable_ `x`. Although the result of this _expression_ is a numeric _value_, it remains unknown until a specific _value_ is provided for `x`. It's important to mention that this _expression_ is actually a _function_ that can _evaluate_ various values for `x`. For example, if `x = 3`, then `f(3) = 9`.
 
-> 💡 A _function_ is a process that takes certain values and transforms them into outputs of other values according to specific rules.
+> 🚜 A _function_ is a process that takes certain values and transforms them into outputs of other values according to specific rules.
 
 Let's look in detail at each of the possible elements that an expression can contain: **values**, **variables**, **operators**, and **functions**.
 
@@ -40,7 +40,7 @@ Let's see some examples of the most commonly used values:
 - To print a value on screen, string type _values_ are used, which are written in quotes. For example `"A"`, `"Hello"`, `"10"` (which is different from the number `10`), `"🥸"` (emojis), and special characters like the letter `"ñ"` or symbols `"©"` (copyright).
 - When making decisions within a program, boolean type _values_ are used. These can only have two states: `true` or `false`.
 
-> 💡 Boolean _values_ are usually called **flags** (flags) where a flag up indicates `true`, (activated) while a flag down indicates `false` (deactivated).
+> 📫 Boolean _values_ are usually called **flags** (flags) where a flag up indicates `true`, (activated) while a flag down indicates `false` (deactivated).
 
 > ℹ️ Each programming language handles a variety of values and types. Later we'll delve into the specific types that JavaScript supports.
 
@@ -48,7 +48,7 @@ Let's see some examples of the most commonly used values:
 
 _Variables_ in programming help us manage and organize information. Imagine they're like folders on a desk. Each folder has a label with a unique name to identify what it contains. These folders, in turn, can house one or several documents, which would represent our _values_.
 
-> 💡 Think of a variable as a folder labeled with a unique name, ready to store a value.
+> 📁 Think of a variable as a folder labeled with a unique name, ready to store a value.
 
 _Variables_ have multiple functions, but for now, we'll focus on two main aspects:
 
@@ -117,9 +117,9 @@ Let's see some examples of **function expressions**.
 1. The function _expression_ `f(x) = x + 2` uses the addition _operator_ to increment the _variable_ `x` by 2. This function will return a numeric value, as long as the value of `x` is also numeric.
 2. The function _expression_ `f(a, b) = (a - b) * 5` uses multiple operators and also defines two parameters `a` and `b`. It will perform a subtraction of `a` and `b` and multiply that result by 5. As long as `a` and `b` are numeric values, this function will return a numeric value.
 
-> 💡 Unlike other expressions, the _variables_ that are listed in the definition of a function, for example, `x`, `a`, and `b` are called **parameters**.
+> 🪂 Unlike other expressions, the _variables_ that are listed in the definition of a function, for example, `x`, `a`, and `b` are called **parameters**.
 
-> 💡 When we evaluate a function and replace its **parameters** with values, we call those values **function arguments**.
+> ⚙️ When we evaluate a function and replace its **parameters** with values, we call those values **function arguments**.
 
 In general, the purpose of a function is to be able to reuse them to be called with different **arguments**, that is, so that their **parameters** have different values.
 
@@ -127,7 +127,7 @@ In our first example, if we give as argument the number `3`, then the parameter 
 
 Also, we could call the same function this time with the argument of the number `10`, making the evaluation this time be `f(10) = 12`, returning the number `12`.
 
-> ⚠️ Functions can become much more complex than the examples shown so far, they can contain from simple expressions, to even other functions with multiple arguments or no arguments and return values that don't match the parameter values or even not return a value.
+> 🏭 Functions can become much more complex than the examples shown so far, they can contain from simple expressions, to even other functions with multiple arguments or no arguments and return values that don't match the parameter values or even not return a value.
 
 ### Let's analyze an expression
 
@@ -150,7 +150,7 @@ Now that we understand everything that can compose an expression: **values**, **
 
 Let's remember again the definition of expression:
 
-> 💡 An expression is a combination of certain **elements** that are **evaluated** to produce a result.
+> 🧠 An expression is a combination of certain **elements** that are **evaluated** to produce a result.
 
 But we've seen that there are operators that don't necessarily produce a result like the **assignment operator**.
 
@@ -159,7 +159,7 @@ Also, in the example of our function `f(a, b) = (a - b) * 5` its body `(a - b) *
 1. The arithmetic expression `a - b` that produces a numeric result.
 2. The arithmetic expression that uses the product operator to multiply the result of the previous expression `(a - b)` with the number `5`, thus generating a new numeric result.
 
-> 💡 Statements are nothing more and nothing less than a set of one or multiple expressions, which may or may not produce a value.
+> 🤯 Statements are nothing more and nothing less than a set of one or multiple expressions, which may or may not produce a value.
 
 Let's analyze the following statement and the expressions that compose it: `a = b * 2`
 
@@ -191,7 +191,7 @@ age;
 ```
 
 3. **Arithmetic expression**:
-   Performs mathematical operations using arithmetic operators like `+`, `-`, `\*`, `/`, and `%`.
+   Performs mathematical operations using arithmetic operators like `+`, `-`, `*`, `/`, and `%`.
 
 ```javascript
 3 + 7;

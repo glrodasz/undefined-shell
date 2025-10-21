@@ -25,7 +25,7 @@ Veamos algunos ejemplos de expresiones:
 3. La _expresión_ `"Hola " + nombre` hace uso del _operador_ de concatenación para unir el _valor_ de cadena de texto `"Hola "` con la _variable_ `nombre`. El resultado de esta operación es desconocido hasta que se asigne un _valor_ específico a la _variable_ `nombre`.
 4. La _expresión_ `f(x) = x^2` emplea el _operador_ de potencia para elevar al cuadrado la _variable_ `x`. Aunque el resultado de esta _expresión_ es un _valor_ numérico, permanece desconocido hasta que se proporcione un _valor_ específico para `x`. Es importante mencionar que esta _expresión_ es en realidad una _función_ que puede _evaluar_ diversos valores para `x`. Por ejemplo, si `x = 3`, entonces `f(3) = 9`.
 
-> 💡 Una _función_ es un proceso que toma ciertos valores y los transforma en salidas de otros valores según reglas específicas.
+> 🚜 Una _función_ es un proceso que toma ciertos valores y los transforma en salidas de otros valores según reglas específicas.
 
 Miremos en detalle entonces cada uno de los posible elementos que puede contener una expresión: **valores**, **variables**, **operadores** y **funciones**.
 
@@ -39,7 +39,7 @@ Veamos algunos ejemplos de los valores más comúnmente utilizados:
 - Para imprimir un valor en pantalla, se utilizan valores de tipo _cadena de texto_, los cuales se escriben entre comillas. Por ejemplo `“A”`, `”Hola"`, `”10"` (que es diferente al número `10`), `”🥸”` (emojis) y caracteres especiales como la letra `"ñ"` o símbolos `"©"` (copyright).
 - Al tomar decisiones dentro de un programa, se hace uso de un valores de tipo _booleano_. Estos solo pueden tener dos estados: `verdadero` o `falso`.
 
-> ￼💡 Los valores _booleanos_ se les suele llamar **flags** (banderas) dónde una bandera arriba indica `verdadero`, (activado) mientras que una bandera abajo  indica `falso` (desactivado).
+> ￼📫 Los valores _booleanos_ se les suele llamar **flags** (banderas) dónde una bandera arriba indica `verdadero`, (activado) mientras que una bandera abajo  indica `falso` (desactivado).
 
 > ￼ℹ️ Cada lenguaje de programación maneja una variedad de valores y tipos. Más adelante profundizaremos en los tipos específicos que soporta JavaScript.
 
@@ -47,7 +47,7 @@ Veamos algunos ejemplos de los valores más comúnmente utilizados:
 
 Las _variables_ en programación nos ayudan a gestionar y organizar información. Imagina que son como carpetas en un escritorio. Cada carpeta lleva una etiqueta con un nombre único para identificar qué contiene. Estas carpetas, a su vez, pueden albergar uno o varios documentos, que representarían nuestros _valores_.
 
-> 💡Piensa en una variable como una carpeta etiquetada con un nombre único, lista para guardar un valor.
+> 📁 Piensa en una variable como una carpeta etiquetada con un nombre único, lista para guardar un valor.
 
 Las _variables_ tienen múltiples funciones, pero por ahora, nos enfocaremos en dos aspectos principales:
 
@@ -116,9 +116,9 @@ Miremos algunos ejemplos de **expresiones de funciones**.
 1. La _expresión_ de función `f(x) = x + 2` emplea el _operador_ de suma para incrementar en 2 la _variable_ `x`. Esta función retornara un valor numérico, siempre y cuando el valor de `x`. también sea numérico.
 2. La _expresión_ de función `f(a, b) = (a - b) * 5` emplea multiples operadores y ademas define dos parámetros `a` y `b`. Efectuará una resta de `a` y `b` y a dicho resultado se le multiplica por 5. Siempre y cuando `a` y ` b` sean valores numéricos esta función retornara un valor numérico.
 
-> ￼💡 A diferencia de otras expresiones, las _variables_ que son listadas en la definición de una función como por ejemplo, `x` , `a` y `b` se le llaman **parámetros**.
+> ￼🪂 A diferencia de otras expresiones, las _variables_ que son listadas en la definición de una función como por ejemplo, `x` , `a` y `b` se le llaman **parámetros**.
 
-> ￼💡Cuando evaluamos una función y remplazamos sus **parámetros** por valores, les llamamos **argumentos** de una función a dichos valores.
+> ⚙️ Cuando evaluamos una función y remplazamos sus **parámetros** por valores, les llamamos **argumentos** de una función a dichos valores.
 
 En general el propósito de una función es poder reutilizarlas para ser llamadas con diferentes **argumentos**, es decir, que sus **parámetros** tengan diferentes valores.
 
@@ -126,7 +126,7 @@ En nuestro primer ejemplo si le damos como argumento el numero `3`, entonces el 
 
 Ademas, podríamos llamar la misma función esta vez con el argumento del numero `10` , haciendo que la evaluación sea esta vez de `f(10) = 12`, retornando el numero `12`.
 
-> ⚠️ Las funciones puede llegar a ser mucho mas complejas que los ejemplos mostrados hasta ahora, estas pueden contener desde simples expresiones, como incluso otras funciones con multiples argumentos o ningún argumento y retornar valores que no coinciden con los valores de los parámetros o incluso no retorna un valor.
+> 🏭 Las funciones puede llegar a ser mucho mas complejas que los ejemplos mostrados hasta ahora, estas pueden contener desde simples expresiones, como incluso otras funciones con multiples argumentos o ningún argumento y retornar valores que no coinciden con los valores de los parámetros o incluso no retorna un valor.
 
 ### Analicemos una expresión
 
@@ -149,7 +149,7 @@ Ahora que entendemos todo lo que puede componer una expresión: **valores**, **v
 
 Recordemos de nuevo la definición de expresión:
 
-> ￼💡 Una expresión es una combinación de ciertos **elementos** que se **evalúan** para producir un resultado.
+> 🧠 Una expresión es una combinación de ciertos **elementos** que se **evalúan** para producir un resultado.
 
 Pero hemos visto que hay operadores que no necesariamente producen un resultado como el **operador de asignación**.
 
@@ -158,7 +158,7 @@ Ademas, en el ejemplo de nuestra función `f(a, b) = (a - b) * 5` su cuerpo `(a 
 1. La expresión aritmética `a - b` que produce un resultado numérico.
 2. La expresión aritmética que emplea el operador de producto para multiplicar el resultado de la expresión anterior `(a - b)` con el numero `5`, generando así un nuevo resultado numérico.
 
-> ￼💡Las sentencias son nada mas y nada menos que un conjunto de una o multiples expresiones, que pueden producir o no un valor.
+> 🤯 Las sentencias son nada mas y nada menos que un conjunto de una o multiples expresiones, que pueden producir o no un valor.
 
 Analicemos la siguiente sentencia y sus expresiones que la componen: ` a = b * 2`
 
@@ -190,7 +190,7 @@ edad;
 ```
 
 3. **Expresión aritmética**:
-   Realiza operaciones matemáticas utilizando operadores aritméticos como `+`, `-`, `\*`, `/`, y `%`.
+   Realiza operaciones matemáticas utilizando operadores aritméticos como `+`, `-`, `*`, `/`, y `%`.
 
 ```javascript
 3 + 7;
