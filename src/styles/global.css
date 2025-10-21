@@ -67,6 +67,7 @@ body {
 }
 
 body {
+  position: relative;
   font-family: "Atkinson", sans-serif;
   margin: 0;
   padding: 0;
@@ -78,6 +79,21 @@ body {
   color: var(--color-black-pearl-700);
   font-size: 20px;
   line-height: 1.8rem;
+}
+
+body.footer-visible {
+  background: var(--color-black-pearl-900);
+}
+
+body.footer-visible::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-black-pearl-50);
+  z-index: -1;
 }
 
 main {
