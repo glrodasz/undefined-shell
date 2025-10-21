@@ -167,6 +167,11 @@ const currentPath = Astro.url.pathname;
 <script>
   function handleScroll() {
     const header = document.getElementById("main-header");
+
+    if (!header) {
+      return;
+    }
+
     if (window.scrollY > 0) {
       header.classList.add("scrolled");
     } else {
