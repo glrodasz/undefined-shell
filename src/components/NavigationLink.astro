@@ -1,0 +1,16 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { type Locale, DEFAULT_LOCALE } from "../i18n/config";
+
+type Props = {
+  href: string;
+  locale: Locale;
+};
+
+const { href, locale } = Astro.props;
+const localizedHref = locale === DEFAULT_LOCALE ? href : `/${locale}${href}`;
+---
+
+<HeaderLink href={localizedHref}>
+  <slot />
+</HeaderLink>

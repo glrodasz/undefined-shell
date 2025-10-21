@@ -51,6 +51,8 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 html,
@@ -166,6 +168,14 @@ a:hover {
   color: var(--accent);
 }
 
+a:hover:visited {
+  color: var(--accent);
+}
+
+a:visited {
+  color: var(--accent-dark);
+}
+
 a h4 {
   transition: color 0.2s ease-in-out;
 }
@@ -194,7 +204,7 @@ p {
 }
 
 li {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .prose li p,
@@ -202,8 +212,55 @@ li {
   margin: 0 0 0.5rem;
 }
 
+.footnotes::before {
+  display: block;
+  content: "~";
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
 .footnotes {
   margin-top: 3.5rem;
+}
+
+.footnotes li {
+  position: relative;
+}
+
+.footnotes li:target::before {
+  position: absolute;
+  content: "";
+  top: 5%;
+  left: -1%;
+  width: 99%;
+  height: 85%;
+  transform: rotate(-1deg);
+  background-color: var(--color-aquarius-100);
+  z-index: -1;
+  border-radius: 20px;
+}
+
+blockquote:has(sup a:target) {
+  background-color: var(--color-aquarius-100);
+  transition: background-color 0.3s ease-in-out;
+}
+
+p:has(sup a:target) {
+  position: relative;
+}
+
+p:has(sup a:target)::before {
+  position: absolute;
+  content: "";
+  top: 5%;
+  left: -1%;
+  width: 99%;
+  height: 85%;
+  transform: rotate(-1deg);
+  background-color: var(--color-aquarius-100);
+  z-index: -1;
+  border-radius: 20px;
 }
 
 li li {
@@ -239,6 +296,8 @@ img+em {
   margin: 0 auto;
   color: var(--color-black-pearl-400);
   margin-bottom: 2em;
+  line-height: 1.2;
+  text-wrap: balance;
 }
 
 code {
@@ -277,13 +336,13 @@ hr {
   border-top: 1px solid rgb(var(--gray-light));
 }
 
-footer .copy {
-  font-size: 0.8em;
-}
-
 time {
   margin: 0.2em 0;
   ;
+}
+
+sup {
+  margin-left: 0.2rem;
 }
 
 ::marker {
@@ -356,7 +415,7 @@ time {
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   h2 {

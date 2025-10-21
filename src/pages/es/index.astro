@@ -1,0 +1,40 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import Container from "../../components/Container.astro";
+import SimpleAnalytics from "../../components/SimpleAnalytics.astro";
+import PostList from "../../components/PostList.astro";
+import { getPostsByLanguage } from "../../utils/content";
+import { getMessages } from "../../i18n";
+import { getLocaleFromAstro } from "../../i18n/config";
+
+const locale = getLocaleFromAstro(Astro);
+const posts = (await getPostsByLanguage(locale)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const messages = getMessages(locale);
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <BaseHead
+      title={`${messages.site.title} by ${messages.site.author}`}
+      description={messages.site.description}
+    />
+  </head>
+  <body>
+    <Header locale={locale} />
+    <Container>
+      <main>
+        <section>
+          <PostList posts={posts} locale={locale} />
+        </section>
+      </main>
+    </Container>
+    <Footer locale={locale} />
+    <SimpleAnalytics />
+  </body>
+</html>

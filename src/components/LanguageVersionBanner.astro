@@ -1,0 +1,96 @@
+---
+import { type Locale, LANGUAGE_CONFIG } from "../i18n/config";
+import { getMessages } from "../i18n";
+
+type LanguageVersion = {
+  language: string;
+  url: string;
+};
+
+type Props = {
+  languageVersions?: LanguageVersion[];
+  currentLocale: Locale;
+};
+
+const { languageVersions, currentLocale } = Astro.props;
+
+if (!languageVersions || languageVersions.length === 0) {
+  return null;
+}
+
+const languageFlags = Object.fromEntries(
+  Object.entries(LANGUAGE_CONFIG).map(([code, config]) => [code, config.flag])
+) as Record<string, string>;
+
+const otherVersions = languageVersions.filter(
+  (version) => version.language !== currentLocale
+);
+
+if (otherVersions.length === 0) {
+  return null;
+}
+
+const formatMessage = (template: string, language: string) => {
+  return template.replace("{language}", language);
+};
+---
+
+{
+  otherVersions.map((version) => {
+    const flag =
+      languageFlags[version.language as keyof typeof languageFlags] || "🌐";
+
+    const targetMessages = getMessages(version.language as Locale);
+    const targetLanguageName =
+      targetMessages.languageBanner.languages[
+        version.language as keyof typeof targetMessages.languageBanner.languages
+      ] || version.language.toUpperCase();
+
+    const message = formatMessage(
+      targetMessages.languageBanner.readIn,
+      targetLanguageName
+    );
+
+    return (
+      <blockquote class="language-banner">
+        <p>
+          <span class="flag">{flag}</span> {message}{" "}
+          <a href={version.url}>{targetMessages.languageBanner.linkText}</a>
+        </p>
+      </blockquote>
+    );
+  })
+}
+
+<style>
+  .flag {
+    margin-right: 0.5rem;
+  }
+
+  .language-banner {
+    margin: 1rem 0;
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--color-black-pearl-800),
+      var(--color-black-pearl-800) 10px,
+      var(--color-black-pearl-900) 10px,
+      var(--color-black-pearl-900) 20px
+    );
+    color: var(--color-white);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .language-banner a {
+    color: var(--accent);
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+  }
+
+  .language-banner p {
+    margin: 0;
+    line-height: 1.2;
+  }
+</style>

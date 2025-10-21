@@ -5,20 +5,38 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import Container from "../components/Container.astro";
-import { SITE_TITLE, SITE_DESCRIPTION, SITE_AUTHOR } from "../consts";
 import SimpleAnalytics from "../components/SimpleAnalytics.astro";
+import LanguageVersionBanner from "../components/LanguageVersionBanner.astro";
+import { type Locale, getLocaleFromAstro } from "../i18n/config";
+import { getMessages } from "../i18n";
+
+type LanguageVersion = {
+  language: string;
+  url: string;
+};
 
 type Props = CollectionEntry<"posts">["data"] & {
   readingTime?: number;
+  locale?: Locale;
+  languageVersions?: LanguageVersion[];
 };
 
-const { title, description, pubDate, updatedDate, heroImage, readingTime } =
-  Astro.props;
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  readingTime,
+  languageVersions,
+} = Astro.props;
 
-const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_AUTHOR}`;
+const locale = getLocaleFromAstro(Astro);
+const messages = getMessages(locale);
+const tabTitle = `${title} • ${messages.site.description} • ${messages.site.title} by ${messages.site.author}`;
 ---
 
-<html lang="es">
+<html lang={locale}>
   <head>
     <BaseHead
       title={title}
@@ -50,7 +68,7 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
         line-height: 1;
       }
       .title h1 {
-        margin: 0;
+        margin: 3rem 0 2rem;
         color: var(--color-black-pearl-900);
       }
       .date,
@@ -61,8 +79,7 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
       .subheader {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        margin-bottom: 1em;
+        align-items: flex-end;
       }
 
       .has-hero-image {
@@ -74,11 +91,6 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
           aspect-ratio: 24 / 9;
         }
 
-        .subheader {
-          flex-direction: column;
-          gap: 0.5em;
-        }
-
         .date {
           display: flex;
           flex-direction: column;
@@ -88,7 +100,7 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
   </head>
 
   <body>
-    <Header />
+    <Header locale={locale} />
     <div class="hero-image">
       {heroImage && <img width={1200} height={510} src={heroImage} alt="" />}
     </div>
@@ -102,12 +114,13 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
                   <FormattedDate
                     date={pubDate}
                     leadingComma={Boolean(updatedDate)}
+                    locale={locale}
                   />
                   {
                     updatedDate && (
                       <span class="last-updated-on">
-                        última actualización el{" "}
-                        <FormattedDate date={updatedDate} />
+                        {messages.blog.lastUpdatedOn}{" "}
+                        <FormattedDate date={updatedDate} locale={locale} />
                       </span>
                     )
                   }
@@ -115,19 +128,34 @@ const tabTitle = `${title} • ${SITE_DESCRIPTION} • ${SITE_TITLE} by ${SITE_A
                 {
                   readingTime && (
                     <strong class="reading-time">
-                      ⏱️ {readingTime} min de lectura
+                      ⏱️ {readingTime} {messages.blog.minRead}
                     </strong>
                   )
                 }
               </div>
               <h1>{title}</h1>
             </div>
-            <slot />
+            <LanguageVersionBanner
+              languageVersions={languageVersions}
+              currentLocale={locale}
+            />
+            <div class="blog-content">
+              <slot />
+            </div>
           </div>
         </article>
       </main>
     </Container>
-    <Footer />
+    <Footer locale={locale} />
     <SimpleAnalytics />
+    <style>
+      .blog-content {
+        margin-top: 2rem;
+      }
+
+      .last-updated-on {
+        font-style: italic;
+      }
+    </style>
   </body>
 </html>
