@@ -72,7 +72,7 @@ Programming is based on logic, but you don't need to write truth tables on paper
 It appears indirectly, especially when working with **databases**. SQL relies on *relational algebra* (an application of set theory) to join tables, intersect results, or select rows that meet certain conditions.
 
 #### Statistics and probability
-In standard web development, advanced statistics is **very limited**. A programmer focused on forms, APIs, or frontend rarely calculates statistical distributions or performs hypothesis tests in their code.
+In standard web development, advanced statistics are **very limited**. A programmer focused on forms, communication between services, and the user interface rarely calculates statistical distributions or performs hypothesis testing on their code.
 
 > 🚨 If at this point you're getting scared, don't worry. As I mentioned at the beginning, **you don't need to master all this before learning to program**. If you already know it, perfect; if not, you'll learn it when you need it.
 

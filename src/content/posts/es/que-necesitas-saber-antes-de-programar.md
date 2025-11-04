@@ -71,7 +71,7 @@ La programación se fundamenta en la lógica, pero no necesitas escribir tablas 
 Aparece indirectamente, sobre todo al trabajar con **bases de datos**. SQL se apoya en *álgebra relacional* (una aplicación de la teoría de conjuntos) para unir tablas, intersectar resultados o seleccionar filas que cumplen ciertas condiciones.
 
 #### Estadística y probabilidad
-En desarrollo web estándar la estadística avanzada es **muy limitada**. Un programador centrado en formularios, APIs o frontend rara vez calcula distribuciones estadísticas o realiza pruebas de hipótesis en su código.
+En el desarrollo web estándar, la estadística avanzada es **muy limitada**. Un programador centrado en formularios, comunicación entre servicios y la interfaz de usuario rara vez calcula distribuciones estadísticas o realiza pruebas de hipótesis en su código.
 
 > 🚨 Si en este punto te estás asustando, no te preocupes. Como mencioné al principio, **no necesitas dominar todo esto antes de aprender a programar**. Si ya lo sabes, perfecto; si no, lo aprenderás cuando lo necesites.
 
