@@ -50,7 +50,7 @@ No necesitas ser un experto en matemáticas ni un físico cuántico. El **progra
 Operaciones de suma, resta, multiplicación y división. Se aplican constantemente, algunos ejemplos son: calcular totales en un carrito de compras, aplicar impuestos o manejar cantidades en la lógica de negocio. También es clave comprender la **prioridad de operaciones** en expresiones más complejas (saber cuándo la multiplicación se realiza antes que la suma, etc.).
 
 ### Porcentajes y proporciones 
-Resulta útil saber calcular porcentajes, ya sea para determinar descuentos (“un 20 % menos en una oferta”) o para diseño responsivo en frontend (por ejemplo, indicar que un elemento ocupe el 80 % del ancho de la pantalla). Comprender proporciones ayuda a distribuir espacios y a interpretar métricas (como tasas de conversión).
+Resulta útil saber calcular porcentajes, ya sea para determinar descuentos (“un 20 % menos en una oferta”) o para diseño responsivo en la interfaz de usuario (por ejemplo, indicar que un elemento ocupe el 80 % del ancho de la pantalla). Comprender proporciones ayuda a distribuir espacios y a interpretar métricas (como tasas de conversión).
 
 ### Álgebra básica 
 Entender variables y fórmulas simples. Aunque rara vez resuelvas ecuaciones manualmente, usas **álgebra elemental de forma implícita** al combinar variables en el código (p. ej., calcular un valor a partir de otros dos). Saber despejar incógnitas sencillas es útil para implementar reglas de negocio.
@@ -59,7 +59,7 @@ Entender variables y fórmulas simples. Aunque rara vez resuelvas ecuaciones man
 Es beneficioso conocer la representación de números en **decimal, binario y hexadecimal**. En el mundo web, se utilizan al trabajar con colores en CSS (#FF5733 es el valor hexadecimal de un color rojizo), al manipular bits para flags lógicos o al entender códigos de caracteres. Son conceptos básicos de matemáticas discretas que normalmente se aprenden en contexto, es decir, a medida que se aprende a programar.
 
 ### Geometría básica
-En ciertos casos de frontend se requieren nociones simples: entender el **sistema de coordenadas cartesiano** para posicionar elementos (el punto 0,0 suele estar en la esquina superior izquierda; `x` crece a la derecha, y `y` hacia abajo). En animaciones o mapas 2D puede aparecer el **teorema de Pitágoras** u otras fórmulas sencillas, aunque no es algo común en el día a día, sino más bien esporádico, por lo que saber que existen es más que suficiente.
+En ciertos casos de la interfaz de usuario se requieren nociones simples: entender el **sistema de coordenadas cartesiano** para posicionar elementos (el punto 0,0 suele estar en la esquina superior izquierda; `x` crece a la derecha, y `y` hacia abajo). En animaciones o mapas 2D puede aparecer el **teorema de Pitágoras** u otras fórmulas sencillas, aunque no es algo común en el día a día, sino más bien esporádico, por lo que saber que existen es más que suficiente.
 
 ### Pensamiento lógico
 Más allá de la aritmética, hay ramas como la lógica formal, teoría de conjuntos, o estadística que **no son explícitamente requeridas** para un desarrollador web promedio, pero sus conceptos existen de forma **implícita** en la programación y se pueden aprender sobre la marcha. Miremos de que formas suelen aparecer:

@@ -51,7 +51,7 @@ You don't need to be a math expert or a quantum physicist. The **average program
 Operations of addition, subtraction, multiplication, and division. They are applied constantly, some examples are: calculating totals in a shopping cart, applying taxes, or handling quantities in business logic. It's also key to understand the **order of operations** in more complex expressions (knowing when multiplication is performed before addition, etc.).
 
 ### Percentages and proportions
-It's useful to know how to calculate percentages, whether to determine discounts ("20% less in an offer") or for responsive design in frontend (for example, indicating that an element occupies 80% of the screen width). Understanding proportions helps distribute spaces and interpret metrics (like conversion rates).
+It's useful to know how to calculate percentages, whether to determine discounts ("20% less in an offer") or for responsive design in the user interface (for example, indicating that an element occupies 80% of the screen width). Understanding proportions helps distribute spaces and interpret metrics (like conversion rates).
 
 ### Basic algebra
 Understanding variables and simple formulas. Although you rarely solve equations manually, you use **elementary algebra implicitly** when combining variables in code (e.g., calculating a value from two others). Knowing how to solve simple unknowns is useful for implementing business rules.
@@ -60,7 +60,7 @@ Understanding variables and simple formulas. Although you rarely solve equations
 It's beneficial to know the representation of numbers in **decimal, binary, and hexadecimal**. In the web world, they are used when working with colors in CSS (#FF5733 is the hexadecimal value of a reddish color), when manipulating bits for logical flags, or when understanding character codes. They are basic concepts of discrete mathematics that are normally learned in context, that is, as you learn to program.
 
 ### Basic geometry
-In certain frontend cases, simple notions are required: understanding the **Cartesian coordinate system** to position elements (point 0,0 is usually in the upper left corner; `x` grows to the right, and `y` downward). In animations or 2D maps, the **Pythagorean theorem** or other simple formulas may appear, although it's not common in daily life, but rather sporadic, so knowing they exist is more than enough.
+In certain user interface cases, simple notions are required: understanding the **Cartesian coordinate system** to position elements (point 0,0 is usually in the upper left corner; `x` grows to the right, and `y` downward). In animations or 2D maps, the **Pythagorean theorem** or other simple formulas may appear, although it's not common in daily life, but rather sporadic, so knowing they exist is more than enough.
 
 ### Logical thinking
 Beyond arithmetic, there are branches like formal logic, set theory, or statistics that **are not explicitly required** for an average web developer, but their concepts exist **implicitly** in programming and can be learned on the go. Let's see in what ways they usually appear:
