@@ -142,9 +142,13 @@ ADD AX, 3    ; Add 3 to value in AX
 ```
 
 # Is HTML a programming language?
+> 🏗️ **HTML** (HyperText Markup Language) is a markup language used to structure and present information on a web page.
+
 This is a very popular and controversial question, but the reality is that HTML itself doesn't work as a programming language. However, with certain advanced controls, it may seem like it is. HTML is a markup language, which means it's used to mark how certain information should be interpreted, similar to XML or Markdown. If beyond presenting information you need to create user interaction, like submitting a form, it's very likely that you'll need JavaScript or a server-side programming language to process that submitted information.
 
 # Is CSS a programming language?
+> 💅 **CSS** (Cascading Style Sheets) is a style language used to define the visual appearance of a web page, such as colors, sizes, and positions.
+
 This is a question that, although equally popular, can be more controversial, due to the fact that in recent years CSS has grown in countless features that have allowed less use of JavaScript in our web applications. But, similar to HTML, CSS is a language that describes how the styles of a website should be interpreted and doesn't usually work on its own, although incredible things have been demonstrated with the use of [a single HTML tag](https://a.singlediv.com/) and [functional games with only HTML and CSS](https://codepen.io/collection/AKkZro).
 
 # What paradigm, execution, or level is better?

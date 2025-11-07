@@ -142,9 +142,13 @@ ADD AX, 3    ; Suma 3 al valor en AX
 ```
 
 # ¿Es HTML un lenguaje de programación?
+> 🏗️ **HTML**  (HyperText Markup Language) es un lenguaje de marcado que se utiliza para estructurar y presentar la información en una página web.
+
 Esta es una pregunta muy popular y polémica, pero la realidad es que el HTML en sí no funciona como un lenguaje de programación. Sin embargo, con ciertos controles avanzados, puede parecer que lo es. HTML es un lenguaje de marcado, lo que significa que se utiliza para marcar cómo se debe interpretar cierta información, similar al XML o Markdown. Si más allá de presentar información se debe crear una interacción con el usuario, como el envío de un formulario, es muy posible que se necesite JavaScript o un lenguaje de programación del lado del servidor para procesar dicha información enviada.
 
 # ¿Es CSS un lenguaje de programación?
+> 💅 **CSS** (Cascading Style Sheets) es un lenguaje de estilos que se usa para definir la apariencia visual de una página web, como colores, tamaños y posiciones.
+
 Esta es una pregunta que, aunque igualmente popular, puede llegar a ser más polémica, debido a que en los últimos años CSS ha crecido en un sinnúmero de características que han permitido un menor uso de JavaScript en nuestras aplicaciones web. Pero, similar a HTML, CSS es un lenguaje que describe cómo se deben interpretar los estilos de un sitio web y no suele funcionar por sí solo, aunque se han demostrado cosas increíbles con el uso de [una sola etiqueta HTML](https://a.singlediv.com/) y [juegos funcionales con solo HTML y CSS](https://codepen.io/collection/AKkZro).
 
 # ¿Que paradigma, ejecucion o nivel es mejor?
