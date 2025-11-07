@@ -40,7 +40,7 @@ Quisiera decirte que para programar basta con saber **sumar, restar, multiplicar
 
 > 🧠 Técnicamente, **sí** podrían bastar las operaciones básicas para tareas muy puntuales como por ejemplo, “maquetar”, pero… rápidamente, en pruebas técnicas o funcionalidades complejas, vas a necesitar algunos operadores matemáticos extra.
 
-> ℹ️ **Maquetar** significa traducir diseños de interfaz de usuario a código. En la web se usaría HTML, CSS y una pizca de JavaScript, por lo que el código imperativo es mínimo (ver más en [Tipos de lenguajes de programación](/posts/types-of-programming-languages/)).
+> ℹ️ **Maquetar** significa traducir diseños de interfaz de usuario a código. En la web se usaría HTML (para estructurar la información), CSS (para definir los estilos visuales) y una pizca de JavaScript (para añadir interactividad), por lo que el código imperativo es mínimo (ver más en [Tipos de lenguajes de programación](/posts/types-of-programming-languages/)).
 
 No necesitas ser un experto en matemáticas ni un físico cuántico. El **programador promedio** en la industria comercial utiliza una cantidad muy limitada de matemáticas, prácticamente lo aprendido en la **educación secundaria**, con alguna que otra excepción. Veamos qué áreas conviene repasar (in necesidad de dominarlas a fondo ni tenerlas frescas antes de empezar a programar):
 

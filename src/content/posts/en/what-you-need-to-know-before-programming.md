@@ -41,7 +41,7 @@ I'd like to tell you that to program it's enough to know **addition, subtraction
 
 > 🧠 Technically, **yes**, basic operations could be enough for very specific tasks like, for example, "layout," but... quickly, in technical tests or complex functionalities, you're going to need some extra mathematical operators.
 
-> ℹ️ **Layout** means translating user interface designs into code. On the web, HTML, CSS, and a pinch of JavaScript would be used, so imperative code is minimal (see more in [Types of programming languages](/posts/types-of-programming-languages/)).
+> ℹ️ **Layout** means translating user interface designs into code. On the web, HTML (to structure the information), CSS (to define visual styles), and a pinch of JavaScript (to add interactivity) would be used, so imperative code is minimal (see more in [Types of programming languages](/posts/types-of-programming-languages/)).
 
 You don't need to be a math expert or a quantum physicist. The **average programmer** in the commercial industry uses a very limited amount of math, practically what was learned in **secondary education**, with some exceptions. Let's see what areas it's good to review (no need to master them thoroughly or have them fresh before starting to program):
 
