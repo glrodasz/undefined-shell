@@ -63,7 +63,7 @@ As we mentioned before, **Brendan Eich** had very little time to create the firs
 
 That's why JavaScript, while object-oriented, implements a **prototypal inheritance** model instead of traditional classes, something that, according to Eich, can be *more powerful* than classical class-based inheritance.
 
-With such little gestation time, the first versions of JavaScript had several **peculiarities and design flaws**. For example, **weak comparison** with == (which performs implicit type conversions) was included, which soon proved to be error-prone; years later strict comparison === was introduced to remedy this.
+With such little gestation time, the first versions of JavaScript had several **peculiarities and design flaws**. For example, **weak comparison** with `==` (which performs implicit type conversions) was included, which soon proved to be error-prone; years later strict comparison `===` was introduced to remedy this.
 
 Similarly, a famous *bug* remained for posterity: `typeof null` returns `"object"` instead of `"null"`, an erroneous behavior recognized from the beginning, caused by internal implementation details, but impossible to fix now without **breaking compatibility**. Despite these initial defects, JavaScript fulfilled its goal of being simple and was "ready" at just the right moment for the web explosion.
 

@@ -63,7 +63,7 @@ Como mencionamos antes, **Brendan Eich** tuvo muy poco tiempo para crear el prim
 
 Es por eso que JavaScript, si bien es orientado a objetos, implementa un modelo de **herencia prototipal** en lugar de clases tradicionales, algo que, según Eich, puede ser *más poderoso* que la herencia clásica basada en clases.
 
-Con tan poco tiempo de gestación, las primeras versiones de JavaScript tenían varias **peculiaridades y fallos de diseño**. Por ejemplo, se incluyó la **comparación débil** con == (que realiza conversiones de tipo implícitas), lo cual pronto demostró ser propenso a errores; años después se introdujo la comparación estricta === para remediar esto.
+Con tan poco tiempo de gestación, las primeras versiones de JavaScript tenían varias **peculiaridades y fallos de diseño**. Por ejemplo, se incluyó la **comparación débil** con `==` (que realiza conversiones de tipo implícitas), lo cual pronto demostró ser propenso a errores; años después se introdujo la comparación estricta `===` para remediar esto.
 
 Así mismo, quedó para la posteridad un famoso *bug*: `typeof null` devuelve `”object"` en lugar de `”null"`, un comportamiento erróneo reconocido desde los inicios, causado por detalles de implementación interna, pero imposible de corregir ahora sin **romper compatibilidad**. A pesar de estos defectos iniciales, JavaScript cumplió su objetivo de ser sencillo y estuvo “listo” en el momento justo para la explosión de la web.
 
