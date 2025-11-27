@@ -33,7 +33,7 @@ Se representan con un rectángulo de esquinas redondeadas (forma de estadio depo
 ![](/images/posts/es/disenando-un-algoritmo/terminal.png)
 
 #### Decisión
-Se representan con un rombo (diamante) y indica una condición que suele tener al dos opciones, generalmente Si / No. Esto quiere decir que del rombo siempre salen dos líneas de flujo donde cada línea representa la decisión tomada por donde continua el algoritmo. Es igual a cuando nos encontramos un camino que se bifurca y luego debemos decidir por dónde continuar.
+Se representan con un rombo (diamante) y indica una condición que suele tener al menos dos opciones, generalmente Si / No. Esto quiere decir que del rombo siempre salen dos líneas de flujo donde cada línea representa la decisión tomada por donde continua el algoritmo. Es igual a cuando nos encontramos un camino que se bifurca y luego debemos decidir por dónde continuar.
 ![](/images/posts/es/disenando-un-algoritmo/decision.png)
 
 #### Proceso
