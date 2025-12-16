@@ -148,6 +148,86 @@ const tabTitle = `${title} • ${messages.site.description} • ${messages.site.
     </Container>
     <Footer locale={locale} />
     <SimpleAnalytics />
+    <script>
+      const headings = Array.from(
+        document.querySelectorAll(
+          ".blog-content h2[id], .blog-content h3[id], .blog-content h4[id], .blog-content h5[id], .blog-content h6[id]"
+        )
+      );
+
+      const copyLinkToClipboard = async (url: string) => {
+        if (navigator.clipboard?.writeText) {
+          try {
+            await navigator.clipboard.writeText(url);
+            return true;
+          } catch (error) {
+            console.warn("Clipboard write failed, falling back to execCommand.", error);
+          }
+        }
+
+        const helper = document.createElement("textarea");
+        helper.value = url;
+        helper.setAttribute("readonly", "");
+        helper.style.position = "absolute";
+        helper.style.left = "-9999px";
+        document.body.appendChild(helper);
+        helper.select();
+        const copied = document.execCommand("copy");
+        document.body.removeChild(helper);
+        return copied;
+      };
+
+      const handleCopy = (heading: HTMLHeadingElement) => {
+        const id = heading.id;
+        if (!id) return;
+        const url = `${window.location.origin}${window.location.pathname}#${id}`;
+
+        window.history.replaceState(null, "", `#${id}`);
+        copyLinkToClipboard(url);
+        heading.classList.add("copied");
+        window.setTimeout(() => heading.classList.remove("copied"), 1500);
+      };
+
+      headings.forEach((heading) => {
+        if (!(heading instanceof HTMLHeadingElement)) return;
+        if (heading.dataset.shareableHeading === "true" || !heading.id) return;
+
+        const headingText = heading.textContent?.trim() ?? "section";
+        heading.dataset.shareableHeading = "true";
+        heading.tabIndex = 0;
+        heading.classList.add("shareable-heading");
+
+        const linkButton = document.createElement("button");
+        linkButton.type = "button";
+        linkButton.className = "heading-copy";
+        linkButton.setAttribute(
+          "aria-label",
+          `Copy link to "${headingText}"`
+        );
+        linkButton.innerHTML = `
+          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <path fill="currentColor" d="M10.59 13.41a1 1 0 0 1 0-1.41l2.83-2.83a1 1 0 0 1 1.41 1.41l-2.83 2.83a1 1 0 0 1-1.41 0m-1.18-.83 2.83-2.83a3 3 0 0 1 4.24 4.24l-2.83 2.83a3 3 0 0 1-4.24-4.24m-4.95 5.66 2.83-2.83a1 1 0 0 1 1.41 1.41l-2.83 2.83a1 1 0 0 1-1.41-1.41m8.49-8.49 2.83-2.83a1 1 0 0 1 1.41 1.41l-2.83 2.83a1 1 0 0 1-1.41-1.41M3.64 19.78a3 3 0 0 1 0-4.24l2.83-2.83a3 3 0 1 1 4.24 4.24l-2.83 2.83a3 3 0 0 1-4.24 0m4.95-5.66a1 1 0 0 1 1.41 0 1 1 0 0 1 0 1.41 1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41" />
+          </svg>
+        `;
+
+        const copyHandler = (event: Event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          handleCopy(heading);
+        };
+
+        linkButton.addEventListener("click", copyHandler);
+        heading.addEventListener("click", copyHandler);
+        heading.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            handleCopy(heading);
+          }
+        });
+
+        heading.appendChild(linkButton);
+      });
+    </script>
     <style>
       .blog-content {
         margin-top: 2rem;
@@ -155,6 +235,63 @@ const tabTitle = `${title} • ${messages.site.description} • ${messages.site.
 
       .last-updated-on {
         font-style: italic;
+      }
+
+      .blog-content h2.shareable-heading,
+      .blog-content h3.shareable-heading,
+      .blog-content h4.shareable-heading,
+      .blog-content h5.shareable-heading,
+      .blog-content h6.shareable-heading {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .shareable-heading {
+        position: relative;
+        cursor: pointer;
+        scroll-margin-top: 6rem;
+      }
+
+      .heading-copy {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        color: var(--color-black-pearl-400);
+        padding: 0.15rem;
+        border-radius: 6px;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out,
+          background-color 0.2s ease-in-out;
+      }
+
+      .shareable-heading:hover .heading-copy,
+      .shareable-heading:focus-within .heading-copy,
+      .shareable-heading.copied .heading-copy {
+        opacity: 1;
+      }
+
+      .heading-copy:focus-visible,
+      .heading-copy:hover {
+        color: var(--accent);
+        background-color: rgba(var(--gray), 0.08);
+      }
+
+      .heading-copy:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+      }
+
+      .shareable-heading.copied .heading-copy {
+        color: var(--accent);
+      }
+
+      .heading-copy svg {
+        width: 1em;
+        height: 1em;
+        pointer-events: none;
       }
     </style>
   </body>
