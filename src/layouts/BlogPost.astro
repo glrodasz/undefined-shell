@@ -9,6 +9,9 @@ import SimpleAnalytics from "../components/SimpleAnalytics.astro";
 import LanguageVersionBanner from "../components/LanguageVersionBanner.astro";
 import { type Locale, getLocaleFromAstro } from "../i18n/config";
 import { getMessages } from "../i18n";
+import { Link } from "lucide";
+
+const linkIconPaths = Link;
 
 type LanguageVersion = {
   language: string;
@@ -148,6 +151,84 @@ const tabTitle = `${title} • ${messages.site.description} • ${messages.site.
     </Container>
     <Footer locale={locale} />
     <SimpleAnalytics />
+    <script define:vars={{ linkIconPaths: JSON.stringify(linkIconPaths) }}>
+      const linkIconData = JSON.parse(linkIconPaths);
+      const headings = Array.from(
+        document.querySelectorAll(
+          ".blog-content h2[id], .blog-content h3[id], .blog-content h4[id], .blog-content h5[id], .blog-content h6[id]"
+        )
+      );
+
+      const copyLinkToClipboard = async (url) => {
+        if (navigator.clipboard?.writeText) {
+          try {
+            await navigator.clipboard.writeText(url);
+            return true;
+          } catch (error) {
+            console.warn(
+              "Clipboard write failed, falling back to execCommand.",
+              error
+            );
+          }
+        }
+
+        const helper = document.createElement("textarea");
+        helper.value = url;
+        helper.setAttribute("readonly", "");
+        helper.style.position = "absolute";
+        helper.style.left = "-9999px";
+        document.body.appendChild(helper);
+        helper.select();
+        const copied = document.execCommand("copy");
+        document.body.removeChild(helper);
+        return copied;
+      };
+
+      const handleCopy = (heading) => {
+        const id = heading.id;
+        if (!id) return;
+        const url = `${window.location.origin}${window.location.pathname}#${id}`;
+
+        window.history.replaceState(null, "", `#${id}`);
+        copyLinkToClipboard(url);
+        heading.classList.add("copied");
+        window.setTimeout(() => heading.classList.remove("copied"), 1500);
+      };
+
+      headings.forEach((heading) => {
+        if (!(heading instanceof HTMLHeadingElement)) return;
+        if (heading.dataset.shareableHeading === "true" || !heading.id) return;
+
+        const headingText = heading.textContent?.trim() ?? "section";
+        heading.dataset.shareableHeading = "true";
+        heading.tabIndex = 0;
+        heading.classList.add("shareable-heading");
+
+        const linkIcon = document.createElement("span");
+        linkIcon.className = "heading-link-icon";
+        linkIcon.setAttribute("aria-hidden", "true");
+        linkIcon.innerHTML = `
+          <svg width="0.5em" height="0.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            ${linkIconData.map(([_, attrs]) => `<path d="${attrs.d}" />`).join("")}
+          </svg>
+        `;
+
+        const copyHandler = (event) => {
+          event.preventDefault();
+          handleCopy(heading);
+        };
+
+        heading.addEventListener("click", copyHandler);
+        heading.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            handleCopy(heading);
+          }
+        });
+
+        heading.appendChild(linkIcon);
+      });
+    </script>
     <style>
       .blog-content {
         margin-top: 2rem;
