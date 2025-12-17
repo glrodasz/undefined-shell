@@ -208,7 +208,7 @@ const tabTitle = `${title} • ${messages.site.description} • ${messages.site.
         linkIcon.className = "heading-link-icon";
         linkIcon.setAttribute("aria-hidden", "true");
         linkIcon.innerHTML = `
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="0.5em" height="0.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             ${linkIconData.map(([_, attrs]) => `<path d="${attrs.d}" />`).join("")}
           </svg>
         `;
@@ -236,63 +236,6 @@ const tabTitle = `${title} • ${messages.site.description} • ${messages.site.
 
       .last-updated-on {
         font-style: italic;
-      }
-
-      .blog-content h2.shareable-heading,
-      .blog-content h3.shareable-heading,
-      .blog-content h4.shareable-heading,
-      .blog-content h5.shareable-heading,
-      .blog-content h6.shareable-heading {
-        position: relative;
-        padding-right: 2rem;
-      }
-
-      .shareable-heading {
-        cursor: pointer;
-        scroll-margin-top: 6rem;
-      }
-
-      .heading-link-icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--color-black-pearl-300);
-        margin-left: 0.5rem;
-        vertical-align: middle;
-        transition:
-          opacity 0.2s ease-in-out,
-          color 0.2s ease-in-out;
-        pointer-events: none;
-        flex-shrink: 0;
-      }
-
-      .shareable-heading.copied .heading-link-icon {
-        color: var(--accent);
-      }
-
-      .heading-link-icon svg {
-        width: 14px;
-        height: 14px;
-        display: block;
-        flex-shrink: 0;
-      }
-
-      @media (max-width: 920px) {
-        .shareable-heading .heading-link-icon {
-          opacity: 1 !important;
-        }
-      }
-
-      @media (min-width: 921px) {
-        .shareable-heading .heading-link-icon {
-          opacity: 0 !important;
-        }
-
-        .shareable-heading:hover .heading-link-icon,
-        .shareable-heading:focus-within .heading-link-icon,
-        .shareable-heading.copied .heading-link-icon {
-          opacity: 1 !important;
-        }
       }
     </style>
   </body>
