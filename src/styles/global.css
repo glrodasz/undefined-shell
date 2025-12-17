@@ -466,7 +466,7 @@ sup {
 .heading-link-icon {
   display: inline-block !important;
   color: var(--color-black-pearl-300);
-  margin-left: 0.3rem;
+  margin: 0 0.2em;
   transition:
     opacity 0.2s ease-in-out,
     color 0.2s ease-in-out;
