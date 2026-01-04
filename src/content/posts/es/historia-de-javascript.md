@@ -1,5 +1,5 @@
 ---
-title: Historia de JavaScript
+title: Historia y evolución de JavaScript
 description: "La historia de JavaScript es la historia de la web misma: nació con prisa en 1995, creció en medio del caos y maduró a base de experimentos. Lo que comenzó como un lenguaje improvisado para dar vida a las páginas web terminó expandiéndose hacia servidores, dispositivos móviles y entornos distribuidos, desde Netscape y V8 hasta Node.js, TypeScript, Deno y Bun."
 pubDate: "2025-11-09T00:00:00.000Z"
 tags: Aprende a programar

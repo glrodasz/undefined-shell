@@ -1,5 +1,5 @@
 ---
-title: JavaScript History
+title: JavaScript History and Evolution
 description: "JavaScript's history is the history of the web itself: born in haste in 1995, it grew in the midst of chaos and matured through experimentation. What began as an improvised language to bring web pages to life ended up expanding to servers, mobile devices, and distributed environments, from Netscape and V8 to Node.js, TypeScript, Deno, and Bun."
 pubDate: "2025-11-09T00:00:00.000Z"
 tags: [Learn to program]
