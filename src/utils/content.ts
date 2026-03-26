@@ -47,14 +47,22 @@ export function calculateReadingTime(text: string, wordsPerMinute = 200): number
 export async function generateRSSFeed(locale: Locale, context: RSSFeedContext) {
   const posts = await getPostsByLanguage(locale);
   const messages = getMessages(locale);
-  
+
+  const sortedPosts = posts.sort(
+    (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+  );
+
   return {
     title: messages.site.title,
     description: messages.site.description,
     site: context.site,
-    items: posts.map((post) => ({
+    xmlns: { media: "http://search.yahoo.com/mrss/" },
+    items: sortedPosts.map((post) => ({
       ...post.data,
       link: getPostUrl(post.slug, locale),
+      customData: post.data.heroImage
+        ? `<media:content url="${context.site}${post.data.heroImage}" medium="image" />`
+        : undefined,
     })),
   };
 }
