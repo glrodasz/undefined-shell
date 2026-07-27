@@ -57,6 +57,7 @@ Reject or rewrite any draft containing these patterns:
 - Colloquialisms are welcome in moderation ("uy", "ojo", "un montón", "cuadrar algo", "botar ideas"). Don't force them; one or two per post is plenty.
 - Anglicisms stay when they're what devs actually say: *side project, early adopter, feedback, framework, codebase, prompt*. Italicize on first use when it reads as foreign.
 - Write "IA" (from "Inteligencia Artificial"), never "AI", anywhere in the text — titles, slugs/filenames, description, headings, and body alike. Exception: a verbatim quoted/cited title of an external source (e.g., a footnote citing a video or article's original title) keeps its original wording, "AI" included — don't alter someone else's title to enforce this rule.
+- Quotes: use curly double quotes `" "` for quoted terms, phrases, and sayings — never guillemets (`«` `»`). This matches every other published post.
 
 ### English (translation target)
 - English posts are **translations of the Spanish original**, not rewrites. Keep the same structure, jokes, and asides.

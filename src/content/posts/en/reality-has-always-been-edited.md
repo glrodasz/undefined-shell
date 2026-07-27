@@ -9,20 +9,28 @@ languageVersions:
     url: "/es/posts/la-realidad-siempre-fue-editada"
 ---
 
-Although today we talk a lot about reality distorted by artificial intelligence, I think that distortion has existed for many years. You could say that, in some way, it has always existed.
+Today we see how reality is being distorted by artificial intelligence, but I think this distortion has existed for a long time. You could even say it has always existed.
 
-The media has always had the ability to manipulate a story, omit details, or tell the facts from a specific point of view. Even history itself is usually shaped by that. There's a well-known saying that goes "history is written by the victors," and even if it sounds like a cliché, it holds some truth.
+The big media outlets have always been very good at manipulating a story: leaving out details or telling the facts from whatever angle suits them.
 
-Whoever wins a battle, receives an award, or manages to build a successful venture ends up being heard. Not just because they did something important, but because many people want to understand how they got there and, in some way, replicate that success.
+The problem is that the history of humanity itself is infected with this. There's a very popular saying that goes, "history is written by the winners," and it happens to be true. We tend to hear success stories because, in many cases, that's what inspires and impresses us.
 
-But when someone tells their own story, they also decide what to show, what to hide, and what to exaggerate. Sometimes they do it to make the story more interesting. Other times, to protect themselves. And many times, because that version benefits them more. In the end, many details get lost, modified, or rearranged.
+Whoever wins a battle, receives an award, or manages to build a successful venture ends up being the one we listen to. We want to understand how they got there because we believe we can replicate that success, as if every story were simple instructions, when we've already talked about how often it all comes down to luck.
 
-In that sense, we could say that we have always lived within a partially constructed reality. Not necessarily an absolute lie, but an edited version of events.
+Something we tend to ignore is that when someone tells their own story, they also decide what to show, what to hide, and what to exaggerate.
 
-The difference now is that artificial intelligence, especially when it enters the visual realm, creates a much stronger stimulus for the brain. Reading an incredible story is not the same as watching a ten-second video where something apparently impossible happens right before your eyes. In that moment, your brain tries to process the image and the reaction is almost immediate: "What just happened?"
+Sometimes they do it to make the story more interesting, but many times it's to protect themselves or avoid unnecessary details and questions that might expose suffering, or a reality that would make their story less compelling.
 
-That's where the idea that a picture is worth a thousand words comes in. For a long time, manipulating the narrative was relatively easy: changing the angle of a news story, choosing certain words, omitting context, or presenting only part of the story. But convincingly manipulating the audiovisual medium was much harder.
+In the end, a lot of details get lost, changed, or rearranged.
 
-Today you can't just alter the narrative. You can also fabricate the visual evidence that accompanies it. And that gives the lie a much greater force, because we no longer just read it: we also see it.
+That's why I say we have always lived inside a constructed reality: an edited version of events, like one of those filters you put on in Instagram or TikTok.
 
-The problem is that we have always had manipulated narratives, biased media, and incomplete stories. The difference is that now those versions can arrive in audiovisual format, with an intensity that is much harder to question in real time.
+The big difference today is that artificial intelligence, especially in visual media, creates a much stronger stimulus for our brain. It's not the same to read a story as to watch a few seconds of video that seems to confirm the facts just because it was "recorded."
+
+This captures the saying "a picture is worth a thousand words" pretty well, except, even worse, a video is made up of dozens of images.
+
+Historically, manipulating an audiovisual medium has been hard, while manipulating a narrative was fairly simple: all it took was changing the angle, choosing certain words, or leaving out context.
+
+Today it's not just easy to alter a narrative, you can also fabricate visual evidence to go along with it. Even though many of us can spot AI-generated content, we have to admit it's getting harder every time. That gives lies a lot more force and pushes us to assume that, by default, anything could be untrue.
+
+We've always had manipulated narratives, biased media, and incomplete stories. But today, those versions in audiovisual format generate a credibility so intense that it keeps us from questioning reality in real time.
