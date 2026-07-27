@@ -9,20 +9,28 @@ languageVersions:
     url: "/posts/reality-has-always-been-edited"
 ---
 
-Aunque hoy hablamos mucho de la realidad distorsionada por la inteligencia artificial, creo que esa distorsión existe desde hace muchos años. Se podría decir que, de alguna forma, siempre ha existido.
+Hoy vemos cómo la realidad se está distorsionando por la inteligencia artificial, pero creo que esta distorsión existe desde mucho antes. Incluso se podría decir que siempre ha existido.
 
-Los medios de comunicación siempre han tenido la capacidad de manipular una historia, omitir detalles o contar los hechos desde un punto de vista específico. Incluso la historia misma suele estar atravesada por eso. Hay una frase muy conocida que dice que "la historia la escriben los vencedores", y aunque suene a cliché, tiene algo de cierto.
+Los grandes medios de comunicación siempre han tenido una gran habilidad para manipular una historia: omitir detalles o contar los hechos desde un punto de vista que les conviene.
 
-Quien gana una batalla, recibe un premio o logra construir un emprendimiento exitoso termina siendo escuchado. No solo porque hizo algo importante, sino porque muchas personas quieren entender cómo llegó ahí y, de alguna forma, replicar ese éxito.
+El problema es que la propia historia de la humanidad está infectada por esto. Hay una frase muy popular que dice que "la historia la escriben los ganadores", y justamente es cierta. Solemos escuchar las historias de éxito porque, en muchos casos, es lo que nos inspira e impresiona.
 
-Pero cuando alguien cuenta su propia historia, también decide qué mostrar, qué ocultar y qué exagerar. A veces lo hace para que la historia sea más interesante. Otras veces, para protegerse. Y muchas otras, porque esa versión le conviene más. Al final, muchos detalles se pierden, se modifican o se acomodan.
+Quien gana una batalla, recibe un premio o logra construir un emprendimiento exitoso termina siendo escuchado. Queremos entender cómo llegó hasta ahí porque creemos que podemos replicar ese éxito, como si cada historia fueran instrucciones simples, cuando ya hemos hablado de que muchas veces todo depende de la suerte.
 
-En ese sentido, podríamos decir que siempre hemos vivido dentro de una realidad parcialmente construida. No necesariamente una mentira absoluta, pero sí una versión editada de los hechos.
+Algo que ignoramos es que, cuando alguien cuenta su propia historia, también decide qué mostrar, qué ocultar y qué exagerar.
 
-La diferencia ahora es que la inteligencia artificial, especialmente cuando entra en el terreno visual, crea un estímulo mucho más fuerte para el cerebro. No es lo mismo leer una historia increíble que ver un video de diez segundos donde algo aparentemente imposible ocurre frente a tus ojos. En ese momento, tu cerebro intenta procesar la imagen y la reacción es casi inmediata: "¿qué acaba de pasar?".
+A veces lo hace para que la historia sea más interesante, pero muchas veces es para protegerse o evitar detalles y preguntas innecesarias que podrían exponer sufrimiento o una realidad que haría su historia menos llamativa.
 
-Ahí aparece la idea de que una imagen vale más que mil palabras. Durante mucho tiempo, manipular el relato era relativamente fácil: cambiar el enfoque de una noticia, elegir ciertas palabras, omitir contexto o presentar solo una parte de la historia. Pero manipular de forma convincente el medio audiovisual era mucho más difícil.
+Al final, muchos detalles se pierden, se modifican o se acomodan.
 
-Hoy no solo se puede alterar el relato. También se puede fabricar la evidencia visual que acompaña ese relato. Y eso hace que la mentira tenga una fuerza mucho mayor, porque ya no solo la leemos: también la vemos.
+Por eso digo que siempre hemos vivido dentro de una realidad construida: una versión editada de los hechos, como uno de esos filtros que te pones en Instagram o TikTok.
 
-El problema es que siempre hemos tenido relatos manipulados, medios sesgados e historias incompletas. La diferencia es que ahora esas versiones pueden llegar en formato audiovisual, con una intensidad mucho más difícil de cuestionar en tiempo real.
+La gran diferencia hoy es que la inteligencia artificial, especialmente en el medio visual, crea un estímulo mucho más fuerte para nuestro cerebro. No es lo mismo leer una historia que ver un video de unos segundos que parece confirmar los hechos solo por haber sido "grabado".
+
+Esto representa muy bien el dicho "una imagen vale más que mil palabras", solo que, aún peor, un video está compuesto por decenas de imágenes.
+
+Históricamente, manipular un medio audiovisual ha sido difícil, mientras que manipular un relato era bastante sencillo: bastaba con cambiar el enfoque, elegir ciertas palabras u omitir contexto.
+
+Hoy ya no solo es muy fácil alterar un relato, también se puede fabricar evidencia visual para acompañarlo. Aunque muchos podamos identificar contenido generado por IA, hay que admitir que cada vez es más difícil. Esto hace que la mentira tenga una fuerza mucho mayor y nos obliga a pensar que, por defecto, todo podría no ser cierto.
+
+Aunque siempre hemos tenido relatos manipulados, medios sesgados e historias incompletas, hoy esas versiones en formato audiovisual generan una credibilidad tan intensa que nos impide cuestionar la realidad en tiempo real.
