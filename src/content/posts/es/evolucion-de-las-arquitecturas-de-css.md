@@ -193,7 +193,7 @@ Finalmente, hay que tener en cuenta que su abuso puede llegar a ser perjudicial.
 
 Atomic Design no es una metodología de CSS, pero como metodología de estructuración de componentes ayuda mucho. Al elegir un paradigma orientado a componentes se nos facilita el problema de reutilización de estilos. Pues, estos deben convivir con el componente definido y no tenemos que pensar en otras formas de abstracción.
 
-La manera como trabajo con Atomic Design y CSS es asegurándome de que los estilos no generen una colisión de clases usando alguna herramienta como CSS Modules, Scoped CSS o CSS-in-JS. También, suelo tener un archivo de _Custom Properties_ que refleja mis [Design Tokens](https://undefined.sh/design-tokens-al-rescate/) y [un normalizador de estilos liviano](https://jgthms.com/minireset.css/).
+La manera como trabajo con Atomic Design y CSS es asegurándome de que los estilos no generen una colisión de clases usando alguna herramienta como CSS Modules, Scoped CSS o CSS-in-JS. También, suelo tener un archivo de _Custom Properties_ que refleja mis [Design Tokens](/es/posts/design-tokens-al-rescate/) y [un normalizador de estilos liviano](https://jgthms.com/minireset.css/).
 
 Atomic Design establece que nuestros componentes pueden ser representados por:
 
@@ -210,7 +210,7 @@ Lo interesante de usar Atomic Design es que la reutilización de estilos no se d
 
 # CUBE CSS
 
-CUBE CSS es una metodología que nace en la modernidad supliendo las necesidades de conceptos como los Design Systems y los [Design Tokens](https://undefined.sh/design-tokens-al-rescate/).
+CUBE CSS es una metodología que nace en la modernidad supliendo las necesidades de conceptos como los Design Systems y los [Design Tokens](/es/posts/design-tokens-al-rescate/).
 
 Las categorías que propone CUBE CSS son las siguientes:
 
@@ -245,7 +245,7 @@ CSS Modules y CSS-in-JS nos ayudan con el problema de colisión de clases. Si se
 
 Al usar el paradigma de programación orientada a componentes evitaremos pensar en clases genéricas para los elementos. Lo que va a suceder es que vamos a tener una duplicación de reglas. Sin embargo, esto no importa, pues un componente debe funcionar de manera independiente y esto solo se logra si es dueño de sus propios estilos.
 
-Librerías como React, Vue y Angular suelen traer soluciones para aislar el CSS. En caso de no hacer uso de estas librerías es posible obtener el mismo resultado mediante CSS Modules o [Shadow DOM](https://undefined.sh/introduccion-a-los-web-components/#shadow-dom).
+Librerías como React, Vue y Angular suelen traer soluciones para aislar el CSS. En caso de no hacer uso de estas librerías es posible obtener el mismo resultado mediante CSS Modules o [Shadow DOM](/es/posts/introduccion-a-los-web-components/#shadow-dom).
 
 ### Librerías de Utilidades
 
