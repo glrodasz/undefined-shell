@@ -14,7 +14,7 @@ Han pasado muchos meses desde que escribí mi primer artículo en español sobre
 
 # ¿Que son los Design tokens?
 
-Si no tienes ni idea de lo que estoy hablando, te recomiendo empezar por mi primer artículo, que es una introducción a tan maravillosa metodología que uso sin falta en mis sistemas de diseño: https://undefined.sh/design-tokens-al-rescate/
+Si no tienes ni idea de lo que estoy hablando, te recomiendo empezar por mi primer artículo, que es una introducción a tan maravillosa metodología que uso sin falta en mis sistemas de diseño: https://blog.guillermorodas.com/es/posts/design-tokens-al-rescate/
 
 # Los Design Tokens ya tienen un formato estándar
 
@@ -88,7 +88,7 @@ Lo que sí es importante a tener en cuenta es que en el nombre del token debe es
 
 Cada vez se cierra más la brecha del uso de Atomic Design como metodología de composición en los sistemas de diseño. Más allá de seguir al pie de la letra lo que dicta Atomic Design, es promover el concepto de la composición desde la definición, componentes de Figma y, finalmente, componentes en tu framework favorito… React, coff, coff.
 
-Si quieres saber más de Atomic Design, puedes leer un post donde lo menciono y comparo junto con otras metodologías: https://undefined.sh/evolucion-de-las-arquitecturas-de-css/#atomic-design
+Si quieres saber más de Atomic Design, puedes leer un post donde lo menciono y comparo junto con otras metodologías: https://blog.guillermorodas.com/es/posts/evolucion-de-las-arquitecturas-de-css/#atomic-design
 
 Los Design Tokens forman parte de dicha composición, y es por eso que se ha hablado de integrarlos directamente a la metodología, llamándolos ions, que técnicamente más que una composición se referiría a un “estado del componente” compartido;
 

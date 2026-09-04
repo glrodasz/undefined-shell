@@ -18,6 +18,7 @@ import { type Locale, getLocaleFromAstro } from "../i18n/config";
 import { getMessages } from "../i18n";
 import { Link } from "lucide";
 import Info from "lucide-astro/Info";
+import { SITE_URL } from "../consts";
 
 const linkIconPaths = Link;
 
@@ -80,11 +81,11 @@ const tags = rawTags
         "@type": "BlogPosting",
         "headline": title,
         "description": description,
-        "image": new URL(computedImage, Astro.site ?? "https://undefined.sh").href,
+        "image": new URL(computedImage, Astro.site ?? SITE_URL).href,
         "datePublished": pubDate.toISOString(),
         "dateModified": (updatedDate ?? pubDate).toISOString(),
-        "author": { "@type": "Person", "name": "Guillermo Rodas", "url": "https://undefined.sh" },
-        "publisher": { "@type": "Organization", "name": "Undefined Shell", "url": "https://undefined.sh" },
+        "author": { "@type": "Person", "name": "Guillermo Rodas", "url": "https://guillermorodas.com" },
+        "publisher": { "@type": "Organization", "name": messages.site.title, "url": SITE_URL },
         "url": canonicalUrl,
         "inLanguage": locale,
       })} />

@@ -1,4 +1,4 @@
-# AGENTS.md — Undefined Shell (undefined.sh)
+# AGENTS.md — Undefined Shell (blog.guillermorodas.com)
 
 Instructions for any LLM/agent helping write, polish, or translate articles for this blog.
 

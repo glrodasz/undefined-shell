@@ -1,1 +1,1 @@
-export const SITE_URL = "https://undefined.sh";
+export const SITE_URL = "https://blog.guillermorodas.com";
